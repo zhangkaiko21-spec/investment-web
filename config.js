@@ -13,7 +13,7 @@ const CONFIG = {
     ZHIPU_API_KEY: '6c17c076f2934c50a09a21dae5195c33.RfWC2RgrZN0IpfOE', // 智谱AI密钥
 
     // 智谱AI API设置
-    ZHIPU_MODEL: 'glm-4-plus', // 使用的模型 (glm-4-plus 或 glm-4-flash)
+    ZHIPU_MODEL: 'glm-4.7', // 使用的模型 (glm-4-plus 或 glm-4-flash)
     ZHIPU_MAX_TOKENS: 4096, // 最大生成token数
     ZHIPU_TEMPERATURE: 0.7, // 温度参数 (0-1)
 
@@ -313,3 +313,4 @@ function formatCurrency(num, currency = '¥') {
         maximumFractionDigits: 2
     });
 }
+
