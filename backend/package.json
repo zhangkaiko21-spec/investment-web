@@ -1,0 +1,19 @@
+{
+  "name": "investment-web-backend",
+  "version": "1.0.0",
+  "description": "投资分析助手 - 后端API代理服务",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
