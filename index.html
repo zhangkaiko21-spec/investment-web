@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI投资分析助手 - 专业投资决策支持</title>
+    <meta name="description" content="基于AI的专业投资分析系统，具备27项投资分析能力">
+
+    <!-- Chart.js 图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- Chart.js 财务图表插件 -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.1.1/dist/chartjs-chart-financial.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
+
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="header-content">
+                <h1>💼 AI投资分析助手</h1>
+                <p class="subtitle">基于Claude AI · 27项专业投资能力</p>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">在线</span>
+            </div>
+        </header>
+
+        <!-- 聊天区域 -->
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- 欢迎消息 -->
+                <div class="message assistant-message">
+                    <div class="message-avatar">
+                        <span class="avatar-icon">🤖</span>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            <p>您好！我是AI投资分析助手，具备以下专业能力：</p>
+                            <div class="capabilities-grid">
+                                <div class="capability-item">📊 A股分析</div>
+                                <div class="capability-item">🇺🇸 美股分析</div>
+                                <div class="capability-item">🏆 黄金监控</div>
+                                <div class="capability-item">🌍 全球事件</div>
+                                <div class="capability-item">📈 技术分析</div>
+                                <div class="capability-item">💰 基本面</div>
+                                <div class="capability-item">⚠️ 风险管理</div>
+                                <div class="capability-item">🔮 趋势预测</div>
+                            </div>
+                            <p>您可以问我：</p>
+                            <ul class="example-questions">
+                                <li>"分析一下贵州茅台"</li>
+                                <li>"Apple股票值得买吗？"</li>
+                                <li>"金价今天怎么样？"</li>
+                                <li>"今天有什么大事？"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 输入区域 -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea
+                    id="userInput"
+                    class="message-input"
+                    placeholder="输入您的问题... (例如：分析一下贵州茅台)"
+                    rows="1"
+                ></textarea>
+                <button id="sendButton" class="send-button">
+                    <span class="send-icon">📤</span>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span class="hint">💡 提示：可以直接输入股票名称或代码</span>
+                <span class="disclaimer">⚠️ 仅供参考，不构成投资建议</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载指示器 -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">正在分析中...</div>
+    </div>
+
+    <!-- 图表模态框 -->
+    <div class="modal" id="chartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="chartTitle">股票图表</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <canvas id="stockChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- 配置文件 -->
+    <script src="config.js"></script>
+    <!-- 工具函数 -->
+    <script src="js/utils.js"></script>
+    <!-- API调用 -->
+    <script src="js/api.js"></script>
+    <!-- 图表绘制 -->
+    <script src="js/chart.js"></script>
+    <!-- 主逻辑 -->
+    <script src="js/app.js"></script>
+</body>
+</html>
