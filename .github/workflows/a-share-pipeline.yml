@@ -18,7 +18,6 @@ on:
     paths:
       - market_data/**
       - .github/workflows/a-share-pipeline.yml
-      - data/a_share/account_state.json
   schedule:
     # Beijing time: 09:35, 10:35, 13:35, 14:35, 14:50 on A-share weekdays.
     - cron: '35 1 * * 1-5'
@@ -107,6 +106,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes"
           else
-            git commit -m "data: refresh A-share strategy results"
+            git commit -m "data: refresh A-share strategy results [skip ci]"
             git push
           fi
