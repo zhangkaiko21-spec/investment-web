@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-07-20T00:00:00+08:00",
+  "ok": false,
+  "mode": "pending_bootstrap",
+  "spot_count": 0,
+  "candidate_count": 0,
+  "sources": [],
+  "message": "等待GitHub Actions首次成功运行。健康状态变为ok=true前，禁止自动新增模拟交易。"
+}
