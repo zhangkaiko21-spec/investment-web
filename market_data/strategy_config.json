@@ -1,0 +1,32 @@
+{
+  "strategy": {
+    "name": "周月箱体复利战法2.1",
+    "early_target_min_pct": 5.0,
+    "early_target_max_pct": 10.0,
+    "hard_monthly_deadline": true,
+    "no_new_position_within_trading_days": 3,
+    "cautious_window_trading_days": 5
+  },
+  "screening": {
+    "max_box_width_pct": 15.0,
+    "max_lower_location": 0.38,
+    "min_recovery_score": 0.55,
+    "min_reward_risk": 1.5,
+    "min_amount_cny": 100000000,
+    "max_price": 120,
+    "history_prefilter_limit": 280,
+    "history_workers": 12,
+    "output_limit": 12
+  },
+  "data_quality": {
+    "min_market_rows": 1000,
+    "max_cross_source_price_diff_pct": 0.8
+  },
+  "fees": {
+    "commission_rate": 0.0003,
+    "commission_min": 5.0,
+    "stamp_duty_sell_rate": 0.0005,
+    "transfer_fee_rate": 0.00001
+  },
+  "holidays": []
+}
