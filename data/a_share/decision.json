@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-07-20T00:00:00+08:00",
-  "mode": "pending_bootstrap",
+  "generated_at": "2026-07-20T23:40:23+08:00",
+  "mode": "bootstrap",
   "cycle_id": 1,
   "cycle_status": "active",
   "cycle_start": "2026-06-26",
   "forced_close": "2026-07-24",
+  "natural_days_left": 4,
+  "trading_days_left": 5,
   "equity": 10457.53,
   "target_equity": 10500.0,
   "gap_to_target": 42.47,
@@ -12,12 +14,22 @@
   "deadline_reached": false,
   "can_open": false,
   "strict_mode": true,
+  "selected_candidate": null,
   "actions": [],
   "account_summary": {
     "cash": 10457.53,
     "market_value": 0.0,
     "equity": 10457.53,
-    "holdings": []
+    "holdings": [],
+    "cycle": {
+      "id": 1,
+      "start": "2026-06-26",
+      "forced_close": "2026-07-24",
+      "starting_capital": 10000.0,
+      "target_min": 0.05,
+      "target_max": 0.1,
+      "status": "active"
+    }
   },
-  "message": "等待首次健康运行，当前不新增模拟交易。"
+  "top_candidates": []
 }

@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-07-20T00:00:00+08:00",
-  "mode": "pending_bootstrap",
+  "generated_at": "2026-07-20T23:40:23+08:00",
+  "mode": "bootstrap",
   "count": 0,
   "rules": {
     "max_15d_box_pct": 15.0,
     "max_60d_box_pct": 15.0,
+    "max_position_15d": 0.5,
+    "max_position_60d": 0.38,
     "min_recovery_score": 0.6,
     "min_reward_risk": 1.5
   },
