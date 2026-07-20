@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-07-20T00:00:00+08:00",
+  "mode": "pending_bootstrap",
+  "cycle_id": 1,
+  "cycle_status": "active",
+  "cycle_start": "2026-06-26",
+  "forced_close": "2026-07-24",
+  "equity": 10457.53,
+  "target_equity": 10500.0,
+  "gap_to_target": 42.47,
+  "target_reached": false,
+  "deadline_reached": false,
+  "can_open": false,
+  "strict_mode": true,
+  "actions": [],
+  "account_summary": {
+    "cash": 10457.53,
+    "market_value": 0.0,
+    "equity": 10457.53,
+    "holdings": []
+  },
+  "message": "等待首次健康运行，当前不新增模拟交易。"
+}
