@@ -1,316 +1,60 @@
 /**
- * AI投资分析助手 - 配置文件
+ * AI投资分析助手配置。
  *
- * ⚠️ 重要提示：
- * 1. 请将CLAUDE_API_KEY替换为您自己的API密钥
- * 2. 不要将此文件公开分享给他人
- * 3. 建议在Anthropic控制台设置使用限额
+ * 安全规则：浏览器端代码不得写入真实API密钥。
+ * 需要本地调试时，可在浏览器控制台执行：
+ * localStorage.setItem('ZHIPU_API_KEY', '你的临时密钥')
  */
 
-// ========== API配置 ==========
 const CONFIG = {
-    // 智谱AI API配置
-    ZHIPU_API_KEY: '6c17c076f2934c50a09a21dae5195c33.RfWC2RgrZN0IpfOE', // 智谱AI密钥
-
-    // 智谱AI API设置
-    ZHIPU_MODEL: 'glm-4.7', // 使用的模型 (glm-4-plus 或 glm-4-flash)
-    ZHIPU_MAX_TOKENS: 4096, // 最大生成token数
-    ZHIPU_TEMPERATURE: 0.7, // 温度参数 (0-1)
-
-    // Alpha Vantage配置 (可选，用于美股数据)
-    // 免费获取: https://www.alphavantage.co/support/#api-key
-    ALPHA_VANTAGE_API_KEY: 'YOUR_ALPHA_VANTAGE_KEY_HERE', // 可选
-
-    // 默认设置
-    DEFAULT_STOCK: '600519', // 默认股票 (贵州茅台)
-    DEFAULT_THEME: 'light', // 主题: light 或 dark
-    LANGUAGE: 'zh-CN', // 语言
-
-    // API端点
+    ZHIPU_API_KEY: localStorage.getItem('ZHIPU_API_KEY') || '',
+    ZHIPU_MODEL: 'glm-4.7',
+    ZHIPU_MAX_TOKENS: 4096,
+    ZHIPU_TEMPERATURE: 0.7,
+    ALPHA_VANTAGE_API_KEY: localStorage.getItem('ALPHA_VANTAGE_API_KEY') || '',
+    DEFAULT_STOCK: '600519',
+    DEFAULT_THEME: 'light',
+    LANGUAGE: 'zh-CN',
     ZHIPU_API_ENDPOINT: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
-
-    // 股票API端点
     YAHOO_FINANCE_API: 'https://query1.finance.yahoo.com/v8/finance/chart',
-    ALPHA_VANTAGE_API: 'https://www.alphavantage.co/query',
+    ALPHA_VANTAGE_API: 'https://www.alphavantage.co/query'
 };
 
-// ========== 系统提示词 ==========
-const SYSTEM_PROMPT = `你是一个专业的投资分析助手，基于Claude AI构建，具备27项投资分析能力。
+const SYSTEM_PROMPT = `你是专业、谨慎的投资分析助手。只基于可验证数据进行分析，明确区分事实、推断和不确定性；所有交易建议必须包含风险、仓位、止损和数据时间。分析仅供参考，不构成投资建议。`;
 
-【核心能力】
-1. 中国股票分析（技术面+基本面+新闻情感）
-2. 美国股票分析
-3. 全球事件监控与影响分析
-4. 黄金实时监控与异常波动提醒
-5. 人性分析与市场情绪判断
-6. 长远视角与产业趋势分析
-7. 周期分析与资产配置
-8. 风险管理与护城河评估
-9. 资产配置系统
-10. 交易系统
-11. 学习进化系统
-12. 估值深化模块
-13. 财报分析深化
-14. 国际宏观分析
-15. 期权与衍生品（风险警示）
-16. 房地产投资分析
-17. 加密资产警示
-18. 债券深度分析
-
-【分析原则】
-- 只基于事实和数据
-- 不受媒体情绪影响
-- 明确区分"事实"和"观点"
-- 所有预测标注不确定性
-- 添加风险提示
-- 客观理性的态度
-
-【A股分析格式】
-当用户询问中国股票时，按以下格式回答：
-
-📊 基本信息
-- 股票名称及代码
-- 当前价格
-- 涨跌幅
-- 成交量
-
-📈 技术分析
-- 趋势判断（上升/下降/横盘）
-- 支撑位
-- 阻力位
-- 技术指标分析
-
-💰 基本面
-- PE（市盈率）
-- PB（市净率）
-- ROE（净资产收益率）
-- 盈利能力评估
-
-📰 新闻情感
-- 最新消息摘要
-- 市场热度
-- 情感倾向
-
-⭐ 综合评分
-- 总体评分 (0-100分)
-- 星级评级 (⭐-⭐⭐⭐⭐⭐)
-
-🎯 操作建议
-- 买入/持有/卖出
-- 建议仓位
-- 止损位
-- 止盈位
-
-⚠️ 风险提示
-- 主要风险点
-- 注意事项
-
-【美股分析格式】
-当用户询问美国股票时，按以下格式回答：
-
-Company Overview
-- Company Name & Ticker
-- Current Price & Change
-
-Valuation Analysis
-- P/E Ratio
-- Market Cap
-- Valuation Assessment
-
-Growth Metrics
-- Revenue Growth
-- Profit Margins
-- Competitive Position
-
-Technical Analysis
-- Trend Analysis
-- Support & Resistance
-- Volume Analysis
-
-Investment Recommendation
-- Rating (Buy/Hold/Sell)
-- Price Targets
-- Risk Factors
-
-⚠️ Disclaimer: 分析仅供参考，不构成投资建议
-
-【黄金分析格式】
-当用户询问黄金时，按以下格式回答：
-
-🏆 国际黄金价格
-- 现货黄金价格
-- 涨跌幅
-- 今日最高/最低
-
-📊 趋势分析
-- 短期趋势
-- 中期趋势
-- 长期趋势
-
-🔍 影响因素
-- 美元指数
-- 地缘政治
-- 通胀预期
-- 央行政策
-
-💡 操作建议
-- 激进型建议
-- 平衡型建议
-- 保守型建议
-- 关键价位
-
-【全球事件分析格式】
-当用户询问重大事件时，按以下格式回答：
-
-📌 事件概述
-- 事件描述
-- 时间节点
-- 影响程度
-
-🔍 独立分析
-- 事件本质
-- 市场影响机制
-- 历史类比
-
-✅ 受益板块
-- 行业/资产
-- 影响逻辑
-- 关注标的
-
-❌ 受损板块
-- 行业/资产
-- 风险因素
-- 规避建议
-
-🎯 操作策略
-- 短期策略
-- 中期策略
-- 风险控制
-
-【通用规则】
-1. 每次回答必须在末尾包含完整风险提示：
-   "⚠️ 以上分析仅供参考，不构成投资建议。投资有风险，入市需谨慎。"
-
-2. 使用清晰的数据和事实
-3. 避免绝对化语言
-4. 标注不确定性和风险
-5. 提供可操作的建议
-6. 保持客观中立
-
-【特别警示】
-- 加密货币：强调这是赌博而非投资
-- 期权/衍生品：强调极高风险，不适合大多数人
-- 杠杆投资：强烈警告危险
-- 短期炒作：建议长期视角`;
-
-// ========== 股票代码映射 ==========
 const STOCK_SYMBOLS = {
-    // 中国股票 (A股)
-    '贵州茅台': '600519.SS',
-    '茅台': '600519.SS',
-    '600519': '600519.SS',
-
-    '五粮液': '000858.SZ',
-    '五粮液': '000858.SZ',
-    '000858': '000858.SZ',
-
-    '中国平安': '601318.SS',
-    '平安': '601318.SS',
-    '601318': '601318.SS',
-
-    '招商银行': '600036.SS',
-    '招行': '600036.SS',
-    '600036': '600036.SS',
-
-    '腾讯控股': '0700.HK',
-    '腾讯': '0700.HK',
-
-    '阿里巴巴': 'BABA',
-    '阿里': 'BABA',
-
-    '比亚迪': '002594.SZ',
-    '002594': '002594.SZ',
-
-    '宁德时代': '300750.SZ',
-    '300750': '300750.SZ',
-
-    // 美国股票
-    'Apple': 'AAPL',
-    '苹果': 'AAPL',
-
-    'Microsoft': 'MSFT',
-    '微软': 'MSFT',
-
-    'Google': 'GOOGL',
-    '谷歌': 'GOOGL',
-
-    'Amazon': 'AMZN',
-    '亚马逊': 'AMZN',
-
-    'Tesla': 'TSLA',
-    '特斯拉': 'TSLA',
-
-    'NVIDIA': 'NVDA',
-    '英伟达': 'NVDA',
-
-    'Meta': 'META',
-    'Facebook': 'META',
-
-    // 黄金
-    '黄金': 'GC=F',
-    'Gold': 'GC=F',
-    '金价': 'GC=F',
-
-    // 原油
-    '原油': 'CL=F',
-    'Oil': 'CL=F',
+    '贵州茅台': '600519.SS', '茅台': '600519.SS', '600519': '600519.SS',
+    '五粮液': '000858.SZ', '000858': '000858.SZ',
+    '中国平安': '601318.SS', '平安': '601318.SS', '601318': '601318.SS',
+    '招商银行': '600036.SS', '招行': '600036.SS', '600036': '600036.SS',
+    '比亚迪': '002594.SZ', '002594': '002594.SZ',
+    '宁德时代': '300750.SZ', '300750': '300750.SZ',
+    'Apple': 'AAPL', '苹果': 'AAPL',
+    'Microsoft': 'MSFT', '微软': 'MSFT',
+    'Tesla': 'TSLA', '特斯拉': 'TSLA',
+    'NVIDIA': 'NVDA', '英伟达': 'NVDA',
+    '黄金': 'GC=F', 'Gold': 'GC=F', '金价': 'GC=F',
+    '原油': 'CL=F', 'Oil': 'CL=F'
 };
 
-// ========== 常用函数 ==========
-
-/**
- * 获取股票代码
- * @param {string} name - 股票名称或代码
- * @returns {string} Yahoo Finance格式的股票代码
- */
 function getStockSymbol(name) {
     return STOCK_SYMBOLS[name] || name;
 }
 
-/**
- * 格式化数字
- * @param {number} num - 数字
- * @param {number} decimals - 小数位数
- * @returns {string} 格式化后的字符串
- */
 function formatNumber(num, decimals = 2) {
-    if (isNaN(num)) return 'N/A';
-    return num.toFixed(decimals);
+    return Number.isFinite(Number(num)) ? Number(num).toFixed(decimals) : 'N/A';
 }
 
-/**
- * 格式化百分比
- * @param {number} num - 数字
- * @param {number} decimals - 小数位数
- * @returns {string} 格式化后的百分比字符串
- */
 function formatPercent(num, decimals = 2) {
-    if (isNaN(num)) return 'N/A';
-    const sign = num >= 0 ? '+' : '';
-    return sign + num.toFixed(decimals) + '%';
+    if (!Number.isFinite(Number(num))) return 'N/A';
+    const value = Number(num);
+    return `${value >= 0 ? '+' : ''}${value.toFixed(decimals)}%`;
 }
 
-/**
- * 格式化货币
- * @param {number} num - 数字
- * @param {string} currency - 货币符号
- * @returns {string} 格式化后的货币字符串
- */
 function formatCurrency(num, currency = '¥') {
-    if (isNaN(num)) return 'N/A';
-    return currency + num.toLocaleString('zh-CN', {
+    if (!Number.isFinite(Number(num))) return 'N/A';
+    return currency + Number(num).toLocaleString('zh-CN', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     });
 }
-
