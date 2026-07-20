@@ -1,63 +1,51 @@
 {
   "strategy": "周月箱体复利战法2.1",
+  "initial_capital": 10000.0,
   "cash": 10457.53,
+  "market_value": 0.0,
+  "equity": 10457.53,
   "holdings": [],
-  "pending_action": null,
-  "rounds": [
+  "cycle": {
+    "id": 1,
+    "start": "2026-06-26",
+    "forced_close": "2026-07-24",
+    "starting_capital": 10000.0,
+    "target_min": 0.05,
+    "target_max": 0.1,
+    "status": "active"
+  },
+  "locked_trades": [
     {
-      "id": "round-2026-06-26",
-      "start_date": "2026-06-26",
-      "forced_close_date": "2026-07-24",
-      "starting_equity": 10000.0,
-      "status": "active"
-    }
-  ],
-  "ledger": [
-    {
-      "id": "sell-2026-07-07-000651-100-39.06",
-      "date": "2026-07-07",
-      "action": "sell",
       "code": "000651",
       "name": "格力电器",
+      "action": "SELL",
       "shares": 100,
       "price": 39.06,
-      "fees": 8.95,
-      "net_cash_change": 3897.05,
-      "note": "第一档止盈，永久锁定，不得重复"
+      "net_cash": 3897.05,
+      "reason": "第一档止盈，已锁定，不得重复"
     },
     {
-      "id": "sell-2026-07-15-600887-100-25.30",
-      "date": "2026-07-15",
-      "action": "sell",
       "code": "600887",
       "name": "伊利股份",
+      "action": "SELL",
       "shares": 100,
       "price": 25.3,
-      "fees": 6.37,
-      "net_cash_change": 2523.63,
-      "note": "止盈，仅记录一次"
+      "net_cash": 2523.63,
+      "reason": "止盈，已锁定，不得重复"
     },
     {
-      "id": "sell-2026-07-16-000651-100-39.20",
-      "date": "2026-07-16",
-      "action": "sell",
       "code": "000651",
       "name": "格力电器",
+      "action": "SELL",
       "shares": 100,
       "price": 39.2,
-      "fees": 7.06,
-      "net_cash_change": 3912.94,
-      "note": "第二档止盈，仅记录一次"
+      "net_cash": 3912.94,
+      "reason": "第二档止盈，已锁定，不得重复"
     }
   ],
-  "updated_at": "2026-07-20T00:00:00+08:00",
-  "metrics": {
-    "cash": 10457.53,
-    "holdings_value": 0.0,
-    "total_equity": 10457.53,
-    "round_profit": 457.53,
-    "round_return_pct": 4.575,
-    "target_equity_5pct": 10500.0,
-    "gap_to_5pct": 42.47
-  }
+  "trades": [],
+  "completed_cycles": [],
+  "locked_realized_pnl": 457.53,
+  "realized_pnl": 457.53,
+  "updated_at": "2026-07-20T00:00:00+08:00"
 }
