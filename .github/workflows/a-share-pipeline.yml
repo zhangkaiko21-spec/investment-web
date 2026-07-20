@@ -75,29 +75,43 @@ jobs:
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Running mode: $MODE"
 
-      - name: Run multi-source A-share pipeline
-        run: python market_data/a_share_pipeline.py --mode "${{ steps.mode.outputs.mode }}"
-
-      - name: Validate generated JSON
+      - name: Run pipeline with retries and diagnostics
+        id: pipeline
         shell: bash
         run: |
-          python - <<'PY'
+          mkdir -p data/a_share
+          set +e
+          EXIT_CODE=1
+          for ATTEMPT in 1 2 3; do
+            echo "Pipeline attempt $ATTEMPT/3"
+            python market_data/a_share_pipeline.py --mode "${{ steps.mode.outputs.mode }}" 2>&1 | tee data/a_share/run.log
+            EXIT_CODE=${PIPESTATUS[0]}
+            if [[ "$EXIT_CODE" -eq 0 ]]; then
+              break
+            fi
+            sleep $((ATTEMPT * 20))
+          done
+          echo "exit_code=$EXIT_CODE" >> "$GITHUB_OUTPUT"
+          if [[ ! -f data/a_share/health.json ]]; then
+            python - <<'PY'
           import json
+          from datetime import datetime, timezone, timedelta
           from pathlib import Path
-          required = ['health.json', 'market_summary.json', 'candidates.json', 'decision.json', 'account_state.json']
-          base = Path('data/a_share')
-          for name in required:
-              path = base / name
-              if not path.exists():
-                  raise SystemExit(f'missing {path}')
-              json.loads(path.read_text(encoding='utf-8'))
-          health = json.loads((base / 'health.json').read_text(encoding='utf-8'))
-          if not health.get('ok'):
-              raise SystemExit(f'data health failed: {health}')
-          print('JSON validation passed')
+          cn = timezone(timedelta(hours=8))
+          log = Path('data/a_share/run.log')
+          payload = {
+              'ok': False,
+              'status': 'pipeline_crashed',
+              'generated_at': datetime.now(cn).isoformat(timespec='seconds'),
+              'error': log.read_text(encoding='utf-8', errors='replace')[-12000:] if log.exists() else 'no log generated',
+          }
+          Path('data/a_share/health.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
+          fi
+          exit 0
 
-      - name: Publish latest results
+      - name: Publish results and diagnostics
+        if: always()
         shell: bash
         run: |
           git config user.name "a-share-strategy-bot"
@@ -107,5 +121,31 @@ jobs:
             echo "No data changes"
           else
             git commit -m "data: refresh A-share strategy results [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
+
+      - name: Enforce health gate
+        if: always()
+        shell: bash
+        env:
+          PIPELINE_EXIT_CODE: ${{ steps.pipeline.outputs.exit_code }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          required = ['health.json', 'market_summary.json', 'candidates.json', 'decision.json', 'account_state.json']
+          base = Path('data/a_share')
+          missing = [name for name in required if not (base / name).exists()]
+          if missing:
+              raise SystemExit(f'missing generated files: {missing}')
+          for name in required:
+              json.loads((base / name).read_text(encoding='utf-8'))
+          health = json.loads((base / 'health.json').read_text(encoding='utf-8'))
+          if os.environ.get('PIPELINE_EXIT_CODE') != '0':
+              raise SystemExit(f"pipeline failed after retries; diagnostic health={health}")
+          if not health.get('ok'):
+              raise SystemExit(f'data health failed: {health}')
+          print('Pipeline and JSON health validation passed')
+          PY
