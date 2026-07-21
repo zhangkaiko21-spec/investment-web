@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-21T13:38:17+08:00",
+  "generated_at": "2026-07-21T15:37:55+08:00",
   "ok": true,
-  "mode": "intraday",
-  "elapsed_seconds": 148.58,
+  "mode": "bootstrap",
+  "elapsed_seconds": 1271.1,
   "spot_count": 5316,
   "candidate_count": 0,
   "sources": [
@@ -10,50 +10,50 @@
       "name": "eastmoney_spot",
       "ok": false,
       "records": 0,
-      "error": "https://82.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://69.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://push2.eastmoney.com/api/qt/clist/get: insufficient records 100",
-      "timestamp": "2026-07-21T13:36:01+08:00"
+      "error": "https://82.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://69.push2.eastmoney.com/api/qt/clist/get: request failed: https://69.push2.eastmoney.com/api/qt/clist/get: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) | https://push2.eastmoney.com/api/qt/clist/get: request failed: https://push2.eastmoney.com/api/qt/clist/get: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6000&po=1&np=1&fltt=2&invt=2&fid=f6&fs=m%3A0%2Bt%3A6%2Cm%3A0%2Bt%3A80%2Cm%3A1%2Bt%3A2%2Cm%3A1%2Bt%3A23%2Cm%3A0%2Bt%3A81%2Bs%3A2048&fields=f12%2Cf14%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf10%2Cf13%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21",
+      "timestamp": "2026-07-21T15:17:37+08:00"
     },
     {
       "name": "sina_spot",
       "ok": true,
       "records": 5316,
       "error": null,
-      "timestamp": "2026-07-21T13:37:17+08:00"
+      "timestamp": "2026-07-21T15:21:25+08:00"
     },
     {
       "name": "tencent_quote",
       "ok": true,
       "records": 0,
       "error": null,
-      "timestamp": "2026-07-21T13:38:17+08:00"
+      "timestamp": "2026-07-21T15:37:55+08:00"
     }
   ],
   "history": {
-    "eligible": 3915,
-    "requested": 180,
-    "refreshed": 157,
-    "cached": 1423,
+    "eligible": 4220,
+    "requested": 1200,
+    "refreshed": 1128,
+    "cached": 1451,
     "errors": [
-      "920193:tencent history insufficient: 0",
       "920072:tencent history insufficient: 0",
-      "920189:tencent history insufficient: 0",
-      "920125:tencent history insufficient: 0",
-      "920211:tencent history insufficient: 0",
       "920117:tencent history insufficient: 0",
       "920178:tencent history insufficient: 0",
-      "920186:tencent history insufficient: 0",
+      "920125:tencent history insufficient: 0",
+      "920181:tencent history insufficient: 0",
+      "920179:tencent history insufficient: 0",
+      "920136:tencent history insufficient: 0",
+      "920116:tencent history insufficient: 0",
+      "920015:tencent history insufficient: 0",
+      "920185:tencent history insufficient: 0",
+      "920012:tencent history insufficient: 0",
+      "920010:tencent history insufficient: 0",
       "920161:tencent history insufficient: 0",
-      "920083:tencent history insufficient: 0",
-      "920701:tencent history insufficient: 0",
-      "920735:tencent history insufficient: 0",
-      "920821:tencent history insufficient: 0",
-      "920925:tencent history insufficient: 0",
-      "920770:tencent history insufficient: 0",
-      "920799:tencent history insufficient: 0",
+      "920002:tencent history insufficient: 0",
       "920081:tencent history insufficient: 0",
-      "920982:tencent history insufficient: 0",
-      "920981:tencent history insufficient: 0",
-      "920957:tencent history insufficient: 0"
+      "920139:tencent history insufficient: 0",
+      "920088:tencent history insufficient: 0",
+      "920077:tencent history insufficient: 0",
+      "920190:tencent history insufficient: 0",
+      "920111:tencent history insufficient: 0"
     ]
   },
   "data_freshness_note": "实时价来自东财并对最终候选使用腾讯行情交叉验证；券商App与公开源冲突时，以券商App为最终执行依据。"

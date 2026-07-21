@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T13:38:17+08:00",
-  "mode": "intraday",
+  "generated_at": "2026-07-21T15:37:55+08:00",
+  "mode": "bootstrap",
   "count": 0,
   "rules": {
     "max_15d_box_pct": 15.0,
