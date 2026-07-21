@@ -19,12 +19,12 @@ on:
       - market_data/**
       - .github/workflows/a-share-pipeline.yml
   schedule:
-    # Beijing time: 09:35, 10:35, 13:35, 14:35, 14:50 on A-share weekdays.
+    # Beijing time: 09:35, 10:35, 13:35, 14:35, 14:45 on A-share weekdays.
     - cron: '35 1 * * 1-5'
     - cron: '35 2 * * 1-5'
     - cron: '35 5 * * 1-5'
     - cron: '35 6 * * 1-5'
-    - cron: '50 6 * * 1-5'
+    - cron: '45 6 * * 1-5'
 
 permissions:
   contents: write
@@ -67,7 +67,7 @@ jobs:
             MODE="${{ inputs.mode }}"
           elif [[ "${{ github.event_name }}" == "push" ]]; then
             MODE="bootstrap"
-          elif [[ "${{ github.event.schedule }}" == "50 6 * * 1-5" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "45 6 * * 1-5" ]]; then
             MODE="decision"
           else
             MODE="intraday"
