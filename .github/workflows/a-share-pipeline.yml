@@ -6,7 +6,7 @@ on:
       mode:
         description: Run mode
         required: false
-        default: bootstrap
+        default: intraday
         type: choice
         options:
           - bootstrap
@@ -16,22 +16,26 @@ on:
   push:
     branches: [main]
     paths:
-      - market_data/**
+      - market_data/a_share_pipeline.py
+      - market_data/a_share_pipeline_v2.py
+      - market_data/strategy_config.json
+      - market_data/trigger.json
       - .github/workflows/a-share-pipeline.yml
   schedule:
-    # Beijing time: 09:35, 10:35, 13:35, 14:35, 14:45 on A-share weekdays.
-    - cron: '35 1 * * 1-5'
-    - cron: '35 2 * * 1-5'
-    - cron: '35 5 * * 1-5'
-    - cron: '35 6 * * 1-5'
-    - cron: '45 6 * * 1-5'
+    # Backup schedules, written in UTC. Beijing: 09:20, 10:20, 13:20, 14:20, 14:40, 16:20.
+    - cron: '20 1 * * 1-5'
+    - cron: '20 2 * * 1-5'
+    - cron: '20 5 * * 1-5'
+    - cron: '20 6 * * 1-5'
+    - cron: '40 6 * * 1-5'
+    - cron: '20 8 * * 1-5'
 
 permissions:
   contents: write
 
 concurrency:
   group: a-share-box-pipeline
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   scan:
@@ -62,34 +66,49 @@ jobs:
       - name: Resolve run mode
         id: mode
         shell: bash
+        env:
+          HEAD_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
         run: |
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             MODE="${{ inputs.mode }}"
           elif [[ "${{ github.event_name }}" == "push" ]]; then
+            if [[ "$HEAD_COMMIT_MESSAGE" == trigger:* ]] && [[ -f market_data/trigger.json ]]; then
+              MODE=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('market_data/trigger.json').read_text(encoding='utf-8'))
+          mode = data.get('mode', 'intraday')
+          print(mode if mode in {'bootstrap', 'intraday', 'decision', 'close'} else 'intraday')
+          PY
+              )
+            else
+              MODE="bootstrap"
+            fi
+          elif [[ "${{ github.event.schedule }}" == "20 8 * * 1-5" ]]; then
             MODE="bootstrap"
-          elif [[ "${{ github.event.schedule }}" == "45 6 * * 1-5" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]]; then
             MODE="decision"
           else
             MODE="intraday"
           fi
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
-          echo "Running mode: $MODE"
+          echo "Requested mode: $MODE"
 
-      - name: Run pipeline with retries and diagnostics
+      - name: Run time-safe pipeline with retries
         id: pipeline
         shell: bash
         run: |
           mkdir -p data/a_share
           set +e
           EXIT_CODE=1
-          for ATTEMPT in 1 2 3; do
-            echo "Pipeline attempt $ATTEMPT/3"
-            python market_data/a_share_pipeline.py --mode "${{ steps.mode.outputs.mode }}" 2>&1 | tee data/a_share/run.log
+          for ATTEMPT in 1 2; do
+            echo "Pipeline attempt $ATTEMPT/2"
+            python market_data/a_share_pipeline_v2.py --mode "${{ steps.mode.outputs.mode }}" 2>&1 | tee data/a_share/run.log
             EXIT_CODE=${PIPESTATUS[0]}
             if [[ "$EXIT_CODE" -eq 0 ]]; then
               break
             fi
-            sleep $((ATTEMPT * 20))
+            sleep $((ATTEMPT * 15))
           done
           echo "exit_code=$EXIT_CODE" >> "$GITHUB_OUTPUT"
           if [[ ! -f data/a_share/health.json ]]; then
@@ -101,6 +120,8 @@ jobs:
           log = Path('data/a_share/run.log')
           payload = {
               'ok': False,
+              'pipeline_ok': False,
+              'trade_allowed': False,
               'status': 'pipeline_crashed',
               'generated_at': datetime.now(cn).isoformat(timespec='seconds'),
               'error': log.read_text(encoding='utf-8', errors='replace')[-12000:] if log.exists() else 'no log generated',
@@ -125,7 +146,7 @@ jobs:
             git push origin HEAD:main
           fi
 
-      - name: Enforce health gate
+      - name: Enforce pipeline health gate
         if: always()
         shell: bash
         env:
@@ -145,7 +166,7 @@ jobs:
           health = json.loads((base / 'health.json').read_text(encoding='utf-8'))
           if os.environ.get('PIPELINE_EXIT_CODE') != '0':
               raise SystemExit(f"pipeline failed after retries; diagnostic health={health}")
-          if not health.get('ok'):
-              raise SystemExit(f'data health failed: {health}')
+          if not health.get('pipeline_ok', health.get('ok')):
+              raise SystemExit(f'pipeline health failed: {health}')
           print('Pipeline and JSON health validation passed')
           PY
