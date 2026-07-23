@@ -1,6 +1,6 @@
 {
   "mode": "intraday",
-  "requested_at": "2026-07-23T15:25:00+08:00",
-  "source": "chatgpt_manual_recovery",
-  "nonce": "20260723T152500+0800"
+  "requested_at": "2026-07-23T15:51:00+08:00",
+  "source": "chatgpt_preflight",
+  "nonce": "20260723T155100+0800"
 }
