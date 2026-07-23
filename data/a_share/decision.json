@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-23T17:04:15+08:00",
-  "mode": "intraday",
+  "generated_at": "2026-07-23T18:47:50+08:00",
+  "mode": "bootstrap",
   "cycle_id": 1,
   "cycle_status": "active",
   "cycle_start": "2026-06-26",
@@ -16,9 +16,9 @@
   "strict_mode": true,
   "selected_candidate": null,
   "market_date": "2026-07-23",
-  "requested_mode": "intraday",
-  "effective_mode": "intraday",
-  "mode_reason": "intraday observation",
+  "requested_mode": "bootstrap",
+  "effective_mode": "bootstrap",
+  "mode_reason": "history maintenance",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
@@ -37,5 +37,35 @@
       "status": "active"
     }
   },
-  "top_candidates": []
+  "top_candidates": [
+    {
+      "code": "002675",
+      "name": "东诚药业",
+      "price": 12.57,
+      "pct_change": -0.554,
+      "amount": 84533535.0,
+      "source": "sina",
+      "quote_time": "15:35:30",
+      "low15": 12.25,
+      "high15": 13.67,
+      "width15_pct": 11.592,
+      "position15": 0.2254,
+      "low60": 12.05,
+      "high60": 13.67,
+      "width60_pct": 13.444,
+      "position60": 0.321,
+      "recovery_score": 0.7,
+      "reward_risk": 3.437,
+      "target_price": 13.67,
+      "stop_price": 12.1888,
+      "score": 54.827,
+      "history_source": "tencent",
+      "history_date": "2026-07-23",
+      "verified": true,
+      "secondary_source": "tencent",
+      "secondary_price": 12.57,
+      "secondary_time": "20260723161424",
+      "price_diff_pct": 0.0
+    }
+  ]
 }
