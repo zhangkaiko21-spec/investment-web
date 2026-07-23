@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -131,19 +131,45 @@ jobs:
           fi
           exit 0
 
-      - name: Publish results and diagnostics
+      - name: Publish JSON results safely
         if: always()
         shell: bash
         run: |
+          set -euo pipefail
           git config user.name "a-share-strategy-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/a_share
-          if git diff --cached --quiet; then
-            echo "No data changes"
-          else
+
+          SNAPSHOT_DIR=$(mktemp -d)
+          cp data/a_share/*.json "$SNAPSHOT_DIR"/
+
+          PUBLISHED=0
+          for ATTEMPT in 1 2 3; do
+            echo "Publish attempt $ATTEMPT/3"
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p data/a_share
+            cp "$SNAPSHOT_DIR"/*.json data/a_share/
+            git add data/a_share/*.json
+
+            if git diff --cached --quiet; then
+              echo "No JSON data changes"
+              PUBLISHED=1
+              break
+            fi
+
             git commit -m "data: refresh A-share strategy results [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            if git push origin HEAD:main; then
+              PUBLISHED=1
+              break
+            fi
+
+            echo "Remote advanced while publishing; retrying from latest main"
+            sleep $((ATTEMPT * 5))
+          done
+
+          if [[ "$PUBLISHED" -ne 1 ]]; then
+            echo "Failed to publish JSON results after retries" >&2
+            exit 1
           fi
 
       - name: Enforce pipeline health gate
