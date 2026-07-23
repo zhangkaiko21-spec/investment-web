@@ -18,16 +18,18 @@ on:
     paths:
       - market_data/a_share_pipeline.py
       - market_data/a_share_pipeline_v2.py
+      - market_data/a_share_pipeline_v3.py
       - market_data/strategy_config.json
       - market_data/trigger.json
       - .github/workflows/a-share-pipeline.yml
   schedule:
-    # Backup schedules, written in UTC. Beijing: 09:20, 10:20, 13:20, 14:20, 14:40, 16:20.
+    # Backup schedules in UTC. Beijing: 09:20, 10:20, 13:20, 14:20, 14:43, 16:20.
+    # The exact ChatGPT trigger runs at 09:38, 10:38, 13:38 and 14:38.
     - cron: '20 1 * * 1-5'
     - cron: '20 2 * * 1-5'
     - cron: '20 5 * * 1-5'
     - cron: '20 6 * * 1-5'
-    - cron: '40 6 * * 1-5'
+    - cron: '43 6 * * 1-5'
     - cron: '20 8 * * 1-5'
 
 permissions:
@@ -86,7 +88,7 @@ jobs:
             fi
           elif [[ "${{ github.event.schedule }}" == "20 8 * * 1-5" ]]; then
             MODE="bootstrap"
-          elif [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "43 6 * * 1-5" ]]; then
             MODE="decision"
           else
             MODE="intraday"
@@ -103,7 +105,7 @@ jobs:
           EXIT_CODE=1
           for ATTEMPT in 1 2; do
             echo "Pipeline attempt $ATTEMPT/2"
-            python market_data/a_share_pipeline_v2.py --mode "${{ steps.mode.outputs.mode }}" 2>&1 | tee data/a_share/run.log
+            python market_data/a_share_pipeline_v3.py --mode "${{ steps.mode.outputs.mode }}" 2>&1 | tee data/a_share/run.log
             EXIT_CODE=${PIPESTATUS[0]}
             if [[ "$EXIT_CODE" -eq 0 ]]; then
               break
@@ -172,7 +174,7 @@ jobs:
             exit 1
           fi
 
-      - name: Enforce pipeline health gate
+      - name: Enforce pipeline health and ledger gate
         if: always()
         shell: bash
         env:
@@ -182,17 +184,31 @@ jobs:
           import json
           import os
           from pathlib import Path
+
           required = ['health.json', 'market_summary.json', 'candidates.json', 'decision.json', 'account_state.json']
           base = Path('data/a_share')
           missing = [name for name in required if not (base / name).exists()]
           if missing:
               raise SystemExit(f'missing generated files: {missing}')
+
+          payloads = {}
           for name in required:
-              json.loads((base / name).read_text(encoding='utf-8'))
-          health = json.loads((base / 'health.json').read_text(encoding='utf-8'))
+              payloads[name] = json.loads((base / name).read_text(encoding='utf-8'))
+
+          health = payloads['health.json']
+          decision = payloads['decision.json']
+          account = payloads['account_state.json']
+
           if os.environ.get('PIPELINE_EXIT_CODE') != '0':
               raise SystemExit(f"pipeline failed after retries; diagnostic health={health}")
           if not health.get('pipeline_ok', health.get('ok')):
               raise SystemExit(f'pipeline health failed: {health}')
-          print('Pipeline and JSON health validation passed')
+          if not health.get('invariants_ok'):
+              raise SystemExit(f'ledger invariants were not validated: {health}')
+          if decision.get('account_summary', {}).get('equity') != account.get('equity'):
+              raise SystemExit('decision/account equity mismatch')
+          if decision.get('actions') and not health.get('trade_allowed'):
+              raise SystemExit('actions exist while trading is disallowed')
+
+          print('Pipeline, JSON and unique-ledger validation passed')
           PY
