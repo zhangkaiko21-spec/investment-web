@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-07-22T17:19:09+08:00",
-  "mode": "intraday",
+  "generated_at": "2026-07-23T11:08:03+08:00",
+  "market_date": "2026-07-23",
+  "requested_mode": "bootstrap",
+  "effective_mode": "bootstrap",
   "count": 0,
   "rules": {
     "max_15d_box_pct": 15.0,
