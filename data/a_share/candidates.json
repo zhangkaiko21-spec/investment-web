@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-24T16:48:46+08:00",
+  "generated_at": "2026-07-24T17:10:27+08:00",
   "market_date": "2026-07-24",
-  "requested_mode": "intraday",
+  "requested_mode": "decision",
   "effective_mode": "intraday",
   "count": 2,
   "rules": {
@@ -72,5 +72,5 @@
       "price_diff_pct": 0.0
     }
   ],
-  "calculation_started_at": "2026-07-24T16:47:08+08:00"
+  "calculation_started_at": "2026-07-24T17:08:51+08:00"
 }
