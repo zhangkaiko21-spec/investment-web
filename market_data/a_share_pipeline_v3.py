@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """Safety wrapper for 周月箱体复利战法2.1 pipeline.
 
-This wrapper keeps the lightweight v2 data path, but adds two hard guarantees:
+This wrapper keeps the lightweight v2 data path, but adds hard guarantees:
 1. No decision or forced-close action can be generated outside the permitted
    Beijing-time execution window.
 2. JSON and ledger invariants are validated before a run is considered healthy.
+3. generated_at represents completed JSON publication time, while quote time
+   remains separately available for strict trading-freshness checks.
 """
 
 from __future__ import annotations
 
 import json
 from datetime import datetime, time as dtime
-from pathlib import Path
 from typing import Any
 
 import a_share_pipeline as core
@@ -64,16 +65,62 @@ def load_required() -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
 
 
 def mark_invariant_failure(health: dict[str, Any], errors: list[str]) -> None:
+    completed_at = core.now_cn().isoformat(timespec="seconds")
+    started_at = health.get("generated_at")
+    if started_at:
+        health["started_at"] = started_at
     health.update(
         {
+            "generated_at": completed_at,
             "ok": False,
             "pipeline_ok": False,
             "trade_allowed": False,
             "status": "ledger_invariant_failed",
             "invariant_errors": errors,
-            "validated_at": core.now_cn().isoformat(timespec="seconds"),
+            "validated_at": completed_at,
         }
     )
+    core.atomic_write_json(core.DATA_DIR / "health.json", health)
+
+
+def normalize_completion_timestamps(
+    health: dict[str, Any],
+    decision: dict[str, Any],
+    account: dict[str, Any],
+) -> None:
+    """Make generated_at mean completion time, not process start time."""
+    completed_at = core.now_cn().isoformat(timespec="seconds")
+
+    health_started = health.get("generated_at")
+    if health_started:
+        health["started_at"] = health_started
+    health["generated_at"] = completed_at
+    health["validated_at"] = completed_at
+
+    decision_started = decision.get("generated_at")
+    if decision_started:
+        decision["calculation_started_at"] = decision_started
+    decision["generated_at"] = completed_at
+
+    account_started = account.get("generated_at")
+    if account_started:
+        account["calculation_started_at"] = account_started
+    account["generated_at"] = completed_at
+    account["updated_at"] = completed_at
+
+    for filename in ("candidates.json", "market_summary.json"):
+        path = core.DATA_DIR / filename
+        payload = core.load_json(path, {})
+        if not isinstance(payload, dict) or not payload:
+            continue
+        started_at = payload.get("generated_at")
+        if started_at:
+            payload["calculation_started_at"] = started_at
+        payload["generated_at"] = completed_at
+        core.atomic_write_json(path, payload)
+
+    core.atomic_write_json(core.DATA_DIR / "decision.json", decision)
+    core.atomic_write_json(core.DATA_DIR / "account_state.json", account)
     core.atomic_write_json(core.DATA_DIR / "health.json", health)
 
 
@@ -142,8 +189,7 @@ def validate_outputs() -> int:
         return 4
 
     health["invariants_ok"] = True
-    health["validated_at"] = core.now_cn().isoformat(timespec="seconds")
-    core.atomic_write_json(core.DATA_DIR / "health.json", health)
+    normalize_completion_timestamps(health, decision, account)
     print(json.dumps({"ok": True, "invariants_ok": True}, ensure_ascii=False))
     return 0
 
