@@ -23,13 +23,15 @@ on:
       - market_data/trigger.json
       - .github/workflows/a-share-pipeline.yml
   schedule:
-    # Backup schedules in UTC. Beijing: 09:20, 10:20, 13:20, 14:20, 14:43, 16:20.
-    # The exact ChatGPT trigger runs at 09:38, 10:38, 13:38 and 14:38.
+    # Native backups in UTC. Beijing: 09:20, 10:20, 13:20, 14:20,
+    # 14:40 and 14:46 tail decisions, then 16:20 history maintenance.
+    # The ChatGPT exact trigger remains an additional independent path.
     - cron: '20 1 * * 1-5'
     - cron: '20 2 * * 1-5'
     - cron: '20 5 * * 1-5'
     - cron: '20 6 * * 1-5'
-    - cron: '43 6 * * 1-5'
+    - cron: '40 6 * * 1-5'
+    - cron: '46 6 * * 1-5'
     - cron: '20 8 * * 1-5'
 
 permissions:
@@ -37,7 +39,8 @@ permissions:
 
 concurrency:
   group: a-share-box-pipeline
-  cancel-in-progress: true
+  # Queue overlapping backups instead of cancelling a valid tail decision.
+  cancel-in-progress: false
 
 jobs:
   scan:
@@ -88,7 +91,7 @@ jobs:
             fi
           elif [[ "${{ github.event.schedule }}" == "20 8 * * 1-5" ]]; then
             MODE="bootstrap"
-          elif [[ "${{ github.event.schedule }}" == "43 6 * * 1-5" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "46 6 * * 1-5" ]]; then
             MODE="decision"
           else
             MODE="intraday"
@@ -210,5 +213,13 @@ jobs:
           if decision.get('actions') and not health.get('trade_allowed'):
               raise SystemExit('actions exist while trading is disallowed')
 
-          print('Pipeline, JSON and unique-ledger validation passed')
+          if health.get('requested_mode') in {'decision', 'close'} and decision.get('effective_mode') in {'decision', 'close'}:
+              tail_path = base / 'tail_snapshot.json'
+              if not tail_path.exists():
+                  raise SystemExit('valid tail run did not create tail_snapshot.json')
+              tail = json.loads(tail_path.read_text(encoding='utf-8'))
+              if tail.get('market_date') != health.get('market_date') or not tail.get('snapshot_valid'):
+                  raise SystemExit(f'invalid locked tail snapshot: {tail}')
+
+          print('Pipeline, JSON, tail snapshot and unique-ledger validation passed')
           PY
