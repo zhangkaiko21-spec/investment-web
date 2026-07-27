@@ -12,7 +12,7 @@
     "starting_capital": 10457.53,
     "target_min": 0.05,
     "target_max": 0.1,
-    "status": "scheduled"
+    "status": "active"
   },
   "locked_trades": [
     {
@@ -57,8 +57,8 @@
   ],
   "locked_realized_pnl": 457.53,
   "realized_pnl": 457.53,
-  "updated_at": "2026-07-24T18:42:15+08:00",
-  "market_date": "2026-07-24",
-  "generated_at": "2026-07-24T18:42:15+08:00",
-  "calculation_started_at": "2026-07-24T18:29:14+08:00"
+  "updated_at": "2026-07-27T09:56:44+08:00",
+  "market_date": "2026-07-27",
+  "generated_at": "2026-07-27T09:56:44+08:00",
+  "calculation_started_at": "2026-07-27T09:55:03+08:00"
 }
