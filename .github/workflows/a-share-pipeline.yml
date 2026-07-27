@@ -38,7 +38,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: a-share-box-pipeline
+  # New queue isolates time-critical runs from old heavy bootstrap jobs.
+  group: a-share-box-pipeline-stable-v4
   # Queue overlapping backups instead of cancelling a valid tail decision.
   cancel-in-progress: false
 
@@ -87,7 +88,8 @@ jobs:
           PY
               )
             else
-              MODE="bootstrap"
+              # Code/config updates must be lightweight and may never block tail runs.
+              MODE="intraday"
             fi
           elif [[ "${{ github.event.schedule }}" == "20 8 * * 1-5" ]]; then
             MODE="bootstrap"
