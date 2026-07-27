@@ -1,6 +1,6 @@
 {
   "mode": "decision",
-  "requested_at": "2026-07-27T17:17:00+08:00",
-  "source": "chatgpt_preflight_after_close",
-  "nonce": "20260727T171700+0800"
+  "requested_at": "2026-07-27T17:23:00+08:00",
+  "source": "chatgpt_preflight_stable_queue",
+  "nonce": "20260727T172300+0800"
 }
