@@ -1,80 +1,80 @@
 {
-  "generated_at": "2026-07-27T13:41:07+08:00",
+  "generated_at": "2026-07-27T14:02:45+08:00",
   "stocks": 5315,
-  "up": 4468,
-  "down": 784,
-  "flat": 63,
-  "total_amount": 1572707126084.0,
+  "up": 4650,
+  "down": 620,
+  "flat": 45,
+  "total_amount": 1656625908708.0,
   "top_gainers": [
     {
       "code": "920176",
       "name": "N维琪",
-      "price": 200.0,
-      "pct_change": 802.527,
-      "amount": 382760097.0
+      "price": 172.02,
+      "pct_change": 676.264,
+      "amount": 401284272.0
     },
     {
       "code": "688825",
       "name": "N长鑫",
-      "price": 51.66,
-      "pct_change": 496.536,
-      "amount": 129110604380.0
+      "price": 50.57,
+      "pct_change": 483.949,
+      "amount": 130854535385.0
     },
     {
       "code": "300534",
       "name": "陇神戎发",
       "price": 13.42,
       "pct_change": 20.036,
-      "amount": 966706214.0
+      "amount": 969788788.0
     },
     {
       "code": "688171",
       "name": "纬德信息",
       "price": 28.2,
       "pct_change": 20.0,
-      "amount": 109620777.0
+      "amount": 111783350.0
     },
     {
       "code": "300897",
       "name": "山科智能",
       "price": 14.94,
       "pct_change": 20.0,
-      "amount": 71399443.0
+      "amount": 72146443.0
     },
     {
       "code": "301234",
       "name": "五洲医疗",
       "price": 70.5,
       "pct_change": 20.0,
-      "amount": 705830044.0
+      "amount": 711427744.0
     },
     {
       "code": "301085",
       "name": "亚康股份",
       "price": 61.51,
       "pct_change": 19.996,
-      "amount": 410466832.0
+      "amount": 426969965.0
     },
     {
       "code": "300753",
       "name": "爱朋医疗",
       "price": 21.91,
       "pct_change": 19.989,
-      "amount": 312605209.0
+      "amount": 313725686.0
     },
     {
       "code": "301121",
       "name": "紫建电子",
       "price": 33.86,
       "pct_change": 19.986,
-      "amount": 73042773.0
+      "amount": 73455865.0
     },
     {
       "code": "300214",
       "name": "日科化学",
       "price": 14.23,
       "pct_change": 19.983,
-      "amount": 1014519129.0
+      "amount": 1016341992.0
     }
   ],
   "top_losers": [
@@ -83,71 +83,71 @@
       "name": "武汉天源",
       "price": 15.25,
       "pct_change": -19.948,
-      "amount": 766519609.0
+      "amount": 792510483.0
     },
     {
       "code": "920088",
       "name": "科力股份",
-      "price": 44.96,
-      "pct_change": -15.17,
-      "amount": 296248404.0
+      "price": 44.94,
+      "pct_change": -15.208,
+      "amount": 306054950.0
     },
     {
       "code": "300164",
       "name": "通源石油",
-      "price": 10.55,
-      "pct_change": -11.642,
-      "amount": 1610537108.0
+      "price": 10.5,
+      "pct_change": -12.06,
+      "amount": 1667213363.0
     },
     {
       "code": "300191",
       "name": "潜能恒信",
-      "price": 27.93,
-      "pct_change": -11.023,
-      "amount": 716004965.0
-    },
-    {
-      "code": "688347",
-      "name": "华虹宏力",
-      "price": 296.6,
-      "pct_change": -10.094,
-      "amount": 7548799523.0
+      "price": 27.94,
+      "pct_change": -10.991,
+      "amount": 735790908.0
     },
     {
       "code": "000672",
       "name": "上峰材料",
       "price": 14.02,
       "pct_change": -10.013,
-      "amount": 508904960.0
+      "amount": 514371358.0
     },
     {
       "code": "603619",
       "name": "中曼石油",
       "price": 20.43,
       "pct_change": -10.0,
-      "amount": 776559392.0
+      "amount": 781115282.0
     },
     {
       "code": "603823",
       "name": "百合花",
       "price": 68.32,
       "pct_change": -9.999,
-      "amount": 1188964951.0
+      "amount": 1206420711.0
     },
     {
       "code": "002774",
       "name": "快意电梯",
       "price": 15.88,
       "pct_change": -9.977,
-      "amount": 195256153.0
+      "amount": 198824389.0
     },
     {
       "code": "600722",
       "name": "金牛化工",
       "price": 10.29,
       "pct_change": -9.974,
-      "amount": 116845008.0
+      "amount": 120951747.0
+    },
+    {
+      "code": "603903",
+      "name": "中持股份",
+      "price": 11.58,
+      "pct_change": -9.883,
+      "amount": 259616997.0
     }
   ],
-  "calculation_started_at": "2026-07-27T13:41:07+08:00"
+  "calculation_started_at": "2026-07-27T14:02:44+08:00"
 }
