@@ -1,80 +1,80 @@
 {
-  "generated_at": "2026-07-27T14:52:36+08:00",
+  "generated_at": "2026-07-27T16:54:21+08:00",
   "stocks": 5315,
-  "up": 4964,
-  "down": 315,
-  "flat": 36,
-  "total_amount": 1991295886563.0,
+  "up": 5003,
+  "down": 273,
+  "flat": 39,
+  "total_amount": 2078822101818.0,
   "top_gainers": [
     {
       "code": "920176",
       "name": "N维琪",
-      "price": 154.55,
-      "pct_change": 597.428,
-      "amount": 420608344.0
+      "price": 155.01,
+      "pct_change": 599.504,
+      "amount": 427199778.0
     },
     {
       "code": "688825",
       "name": "N长鑫",
       "price": 49.0,
       "pct_change": 465.82,
-      "amount": 138322970092.0
+      "amount": 141186633032.0
     },
     {
       "code": "300534",
       "name": "陇神戎发",
       "price": 13.42,
       "pct_change": 20.036,
-      "amount": 973987906.0
+      "amount": 977501262.0
     },
     {
       "code": "300802",
       "name": "矩子科技",
       "price": 22.72,
       "pct_change": 20.021,
-      "amount": 427571013.0
+      "amount": 429813477.0
     },
     {
       "code": "688171",
       "name": "纬德信息",
       "price": 28.2,
       "pct_change": 20.0,
-      "amount": 117168422.0
+      "amount": 117538914.0
     },
     {
       "code": "300897",
       "name": "山科智能",
       "price": 14.94,
       "pct_change": 20.0,
-      "amount": 73595280.0
+      "amount": 74324352.0
     },
     {
       "code": "301234",
       "name": "五洲医疗",
       "price": 70.5,
       "pct_change": 20.0,
-      "amount": 728256094.0
+      "amount": 729659044.0
     },
     {
       "code": "301526",
       "name": "国际复材",
       "price": 30.84,
       "pct_change": 20.0,
-      "amount": 6431250672.0
+      "amount": 6471469116.0
     },
     {
       "code": "301085",
       "name": "亚康股份",
       "price": 61.51,
       "pct_change": 19.996,
-      "amount": 442052217.0
+      "amount": 444980093.0
     },
     {
       "code": "300753",
       "name": "爱朋医疗",
       "price": 21.91,
       "pct_change": 19.989,
-      "amount": 318144933.0
+      "amount": 318775941.0
     }
   ],
   "top_losers": [
@@ -83,71 +83,71 @@
       "name": "武汉天源",
       "price": 15.24,
       "pct_change": -20.0,
-      "amount": 824655422.0
+      "amount": 843400622.0
     },
     {
       "code": "920088",
       "name": "科力股份",
-      "price": 45.09,
-      "pct_change": -14.925,
-      "amount": 375495493.0
+      "price": 44.68,
+      "pct_change": -15.698,
+      "amount": 403316124.0
     },
     {
       "code": "300164",
       "name": "通源石油",
-      "price": 10.55,
-      "pct_change": -11.642,
-      "amount": 1950650531.0
+      "price": 10.49,
+      "pct_change": -12.144,
+      "amount": 2082843800.0
     },
     {
       "code": "300191",
       "name": "潜能恒信",
-      "price": 27.93,
-      "pct_change": -11.023,
-      "amount": 842324026.0
+      "price": 27.96,
+      "pct_change": -10.927,
+      "amount": 876708018.0
     },
     {
       "code": "000672",
       "name": "上峰材料",
       "price": 14.02,
       "pct_change": -10.013,
-      "amount": 589724589.0
+      "amount": 618430440.0
     },
     {
       "code": "603619",
       "name": "中曼石油",
       "price": 20.43,
       "pct_change": -10.0,
-      "amount": 804203225.0
+      "amount": 817811648.0
     },
     {
       "code": "603823",
       "name": "百合花",
       "price": 68.32,
       "pct_change": -9.999,
-      "amount": 1261035719.0
+      "amount": 1286833351.0
     },
     {
       "code": "002774",
       "name": "快意电梯",
       "price": 15.88,
       "pct_change": -9.977,
-      "amount": 211315597.0
+      "amount": 214455073.0
     },
     {
       "code": "600722",
       "name": "金牛化工",
       "price": 10.29,
       "pct_change": -9.974,
-      "amount": 140850549.0
+      "amount": 152277594.0
     },
     {
       "code": "600909",
       "name": "华安证券",
-      "price": 8.19,
-      "pct_change": -9.101,
-      "amount": 2371671076.0
+      "price": 8.16,
+      "pct_change": -9.434,
+      "amount": 2515224078.0
     }
   ],
-  "calculation_started_at": "2026-07-27T14:52:35+08:00"
+  "calculation_started_at": "2026-07-27T16:54:21+08:00"
 }

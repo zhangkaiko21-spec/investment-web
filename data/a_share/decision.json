@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T14:52:36+08:00",
+  "generated_at": "2026-07-27T16:54:21+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -41,32 +41,32 @@
     {
       "code": "601021",
       "name": "春秋航空",
-      "price": 45.91,
-      "pct_change": 2.845,
-      "amount": 339563549.0,
+      "price": 45.87,
+      "pct_change": 2.755,
+      "amount": 354179521.0,
       "source": "sina",
-      "quote_time": "14:51:32",
+      "quote_time": "15:34:59",
       "low15": 44.37,
       "high15": 48.66,
       "width15_pct": 9.669,
-      "position15": 0.359,
+      "position15": 0.3497,
       "low60": 43.63,
       "high60": 49.91,
       "width60_pct": 14.394,
-      "position60": 0.3631,
+      "position60": 0.3567,
       "recovery_score": 0.65,
-      "reward_risk": 1.786,
+      "reward_risk": 1.86,
       "target_price": 48.66,
       "stop_price": 44.1481,
-      "score": 49.412,
+      "score": 49.993,
       "history_source": "tencent",
       "history_date": "2026-07-24",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 45.9,
-      "secondary_time": "20260727145232",
-      "price_diff_pct": 0.0218
+      "secondary_price": 45.87,
+      "secondary_time": "20260727161456",
+      "price_diff_pct": 0.0
     }
   ],
-  "calculation_started_at": "2026-07-27T14:52:35+08:00"
+  "calculation_started_at": "2026-07-27T16:54:21+08:00"
 }
