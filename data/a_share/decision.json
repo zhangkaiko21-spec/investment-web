@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T10:40:49+08:00",
+  "generated_at": "2026-07-28T12:32:18+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -37,37 +37,6 @@
       "status": "active"
     }
   },
-  "top_candidates": [
-    {
-      "code": "002675",
-      "name": "东诚药业",
-      "price": 12.57,
-      "pct_change": -0.789,
-      "amount": 29209062.0,
-      "source": "sina",
-      "quote_time": "10:40:24",
-      "low15": 12.25,
-      "high15": 13.67,
-      "width15_pct": 11.592,
-      "position15": 0.2254,
-      "low60": 12.05,
-      "high60": 13.67,
-      "width60_pct": 13.444,
-      "position60": 0.321,
-      "recovery_score": 0.875,
-      "reward_risk": 3.437,
-      "target_price": 13.67,
-      "stop_price": 12.1888,
-      "score": 57.12,
-      "history_source": "tencent",
-      "history_date": "2026-07-27",
-      "verified": true,
-      "secondary_source": "tencent",
-      "secondary_price": 12.56,
-      "secondary_time": "20260728104042",
-      "price_diff_pct": 0.0796,
-      "secondary_age_seconds": 7.5
-    }
-  ],
-  "calculation_started_at": "2026-07-28T10:40:49+08:00"
+  "top_candidates": [],
+  "calculation_started_at": "2026-07-28T12:32:18+08:00"
 }
