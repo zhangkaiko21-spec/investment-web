@@ -1,6 +1,6 @@
 {
   "mode": "intraday",
-  "requested_at": "2026-07-27T17:28:00+08:00",
-  "source": "chatgpt_snapshot_preservation_test",
-  "nonce": "20260727T172800+0800"
+  "requested_at": "2026-07-28T09:38:32+08:00",
+  "source": "chatgpt_automation",
+  "nonce": "20260728T093832+0800"
 }
