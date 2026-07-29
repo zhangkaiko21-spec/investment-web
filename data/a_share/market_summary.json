@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-07-29T14:38:59+08:00",
+  "generated_at": "2026-07-29T16:02:22+08:00",
   "stocks": 5315,
-  "up": 3938,
-  "down": 1329,
-  "flat": 48,
-  "total_amount": 2121035361814.0,
+  "up": 4101,
+  "down": 1174,
+  "flat": 40,
+  "total_amount": 2299268442746.0,
   "top_gainers": [
     {
       "code": "920065",
       "name": "N千岸",
-      "price": 58.08,
-      "pct_change": 139.012,
-      "amount": 899822918.0
+      "price": 58.03,
+      "pct_change": 138.807,
+      "amount": 943969957.0
+    },
+    {
+      "code": "300169",
+      "name": "天晟新材",
+      "price": 5.38,
+      "pct_change": 20.089,
+      "amount": 268990489.0
     },
     {
       "code": "300359",
       "name": "全通教育",
       "price": 4.43,
       "pct_change": 20.054,
-      "amount": 197202336.0
+      "amount": 198626138.0
     },
     {
       "code": "300333",
       "name": "兆日科技",
       "price": 8.87,
       "pct_change": 20.027,
-      "amount": 253266166.0
+      "amount": 266610194.0
     },
     {
       "code": "300530",
       "name": "领湃科技",
       "price": 20.38,
       "pct_change": 20.024,
-      "amount": 256649179.0
+      "amount": 259932397.0
     },
     {
       "code": "300997",
       "name": "欢乐家",
       "price": 18.0,
       "pct_change": 20.0,
-      "amount": 350458511.0
+      "amount": 351587111.0
     },
     {
       "code": "301112",
       "name": "信邦智能",
       "price": 34.2,
       "pct_change": 20.0,
-      "amount": 180980453.0
+      "amount": 182160353.0
     },
     {
       "code": "688260",
       "name": "昀冢科技",
       "price": 88.51,
       "pct_change": 19.997,
-      "amount": 831371136.0
+      "amount": 837722437.0
     },
     {
       "code": "300981",
       "name": "中红医疗",
       "price": 12.85,
       "pct_change": 19.981,
-      "amount": 60268787.0
-    },
-    {
-      "code": "920779",
-      "name": "武汉蓝电",
-      "price": 24.38,
-      "pct_change": 19.451,
-      "amount": 73779053.0
+      "amount": 60943412.0
     },
     {
       "code": "920786",
       "name": "骑士乳业",
-      "price": 7.15,
-      "pct_change": 18.377,
-      "amount": 170090262.0
+      "price": 7.14,
+      "pct_change": 18.212,
+      "amount": 182810854.0
     }
   ],
   "top_losers": [
     {
       "code": "920176",
       "name": "维琪科技",
-      "price": 79.96,
-      "pct_change": -26.311,
-      "amount": 527152498.0
+      "price": 81.0,
+      "pct_change": -25.353,
+      "amount": 560768718.0
     },
     {
       "code": "688796",
       "name": "百奥赛图",
-      "price": 116.03,
-      "pct_change": -16.525,
-      "amount": 585705597.0
-    },
-    {
-      "code": "688502",
-      "name": "茂莱光学",
-      "price": 338.69,
-      "pct_change": -13.599,
-      "amount": 1251232413.0
+      "price": 112.34,
+      "pct_change": -19.18,
+      "amount": 683261979.0
     },
     {
       "code": "301520",
       "name": "万邦医药",
-      "price": 52.76,
-      "pct_change": -13.537,
-      "amount": 632311609.0
+      "price": 51.8,
+      "pct_change": -15.11,
+      "amount": 728017611.0
     },
     {
       "code": "300592",
       "name": "华凯易佰",
       "price": 13.0,
       "pct_change": -13.506,
-      "amount": 525946286.0
+      "amount": 571820639.0
     },
     {
       "code": "301392",
       "name": "汇成真空",
-      "price": 136.36,
-      "pct_change": -13.169,
-      "amount": 1062741829.0
+      "price": 136.5,
+      "pct_change": -13.079,
+      "amount": 1196433729.0
     },
     {
-      "code": "688147",
-      "name": "微导纳米",
-      "price": 94.67,
-      "pct_change": -11.927,
-      "amount": 1665551757.0
+      "code": "301234",
+      "name": "五洲医疗",
+      "price": 67.89,
+      "pct_change": -12.682,
+      "amount": 487570280.0
+    },
+    {
+      "code": "688502",
+      "name": "茂莱光学",
+      "price": 344.7,
+      "pct_change": -12.066,
+      "amount": 1324352512.0
     },
     {
       "code": "920367",
       "name": "新赣江",
       "price": 20.5,
       "pct_change": -11.714,
-      "amount": 152371787.0
-    },
-    {
-      "code": "300478",
-      "name": "杭州高新",
-      "price": 24.05,
-      "pct_change": -11.451,
-      "amount": 208624113.0
+      "amount": 169867341.0
     },
     {
       "code": "300260",
       "name": "新莱应材",
-      "price": 49.51,
-      "pct_change": -11.431,
-      "amount": 2314422328.0
+      "price": 49.5,
+      "pct_change": -11.449,
+      "amount": 2467942585.0
+    },
+    {
+      "code": "300478",
+      "name": "杭州高新",
+      "price": 24.07,
+      "pct_change": -11.377,
+      "amount": 238049921.0
     }
   ],
-  "calculation_started_at": "2026-07-29T14:38:59+08:00"
+  "calculation_started_at": "2026-07-29T16:02:22+08:00"
 }
