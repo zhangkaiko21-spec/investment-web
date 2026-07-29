@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "strategy": "周月箱体复利战法2.1",
-  "market_date": "2026-07-28",
-  "locked_at": "2026-07-28T14:38:25+08:00",
+  "market_date": "2026-07-29",
+  "locked_at": "2026-07-29T14:38:59+08:00",
   "snapshot_valid": true,
   "validation_errors": [],
   "requested_mode": "decision",
@@ -11,9 +11,9 @@
   "invariants_ok": true,
   "trade_allowed": true,
   "primary_source": "sina_spot",
-  "spot_count": 5314,
+  "spot_count": 5315,
   "freshness": {
-    "quote_received_at": "2026-07-28T14:37:23+08:00",
+    "quote_received_at": "2026-07-29T14:37:42+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
@@ -47,7 +47,7 @@
   "decision": {
     "cycle_id": 2,
     "cycle_status": "active",
-    "trading_days_left": 23,
+    "trading_days_left": 22,
     "target_equity": 10980.41,
     "gap_to_target": 522.88,
     "can_open": true,
@@ -55,189 +55,158 @@
     "selected_candidate": null,
     "actions": []
   },
-  "candidates": [
-    {
-      "code": "002675",
-      "name": "东诚药业",
-      "price": 12.52,
-      "pct_change": -1.184,
-      "amount": 48206994.0,
-      "source": "sina",
-      "quote_time": "14:37:57",
-      "low15": 12.25,
-      "high15": 13.67,
-      "width15_pct": 11.592,
-      "position15": 0.1901,
-      "low60": 12.05,
-      "high60": 13.67,
-      "width60_pct": 13.444,
-      "position60": 0.2901,
-      "recovery_score": 0.875,
-      "reward_risk": 4.259,
-      "target_price": 13.67,
-      "stop_price": 12.1888,
-      "score": 59.813,
-      "history_source": "tencent",
-      "history_date": "2026-07-27",
-      "verified": true,
-      "secondary_source": "tencent",
-      "secondary_price": 12.51,
-      "secondary_time": "20260728143821",
-      "price_diff_pct": 0.0799,
-      "secondary_age_seconds": 4.4
-    }
-  ],
+  "candidates": [],
   "market_summary": {
-    "generated_at": "2026-07-28T14:38:25+08:00",
-    "stocks": 5314,
-    "up": 2215,
-    "down": 2941,
-    "flat": 158,
-    "total_amount": 1836592945376.0,
+    "generated_at": "2026-07-29T14:38:59+08:00",
+    "stocks": 5315,
+    "up": 3938,
+    "down": 1329,
+    "flat": 48,
+    "total_amount": 2121035361814.0,
     "top_gainers": [
       {
-        "code": "920690",
-        "name": "捷众科技",
-        "price": 18.08,
-        "pct_change": 29.978,
-        "amount": 54364668.0
+        "code": "920065",
+        "name": "N千岸",
+        "price": 58.08,
+        "pct_change": 139.012,
+        "amount": 899822918.0
       },
       {
-        "code": "300067",
-        "name": "安诺其",
-        "price": 5.62,
-        "pct_change": 20.085,
-        "amount": 818100491.0
+        "code": "300359",
+        "name": "全通教育",
+        "price": 4.43,
+        "pct_change": 20.054,
+        "amount": 197202336.0
       },
       {
-        "code": "301421",
-        "name": "波长光电",
-        "price": 82.12,
-        "pct_change": 20.006,
-        "amount": 356445720.0
+        "code": "300333",
+        "name": "兆日科技",
+        "price": 8.87,
+        "pct_change": 20.027,
+        "amount": 253266166.0
       },
       {
-        "code": "300663",
-        "name": "科蓝软件",
-        "price": 8.96,
-        "pct_change": 19.946,
-        "amount": 577409579.0
+        "code": "300530",
+        "name": "领湃科技",
+        "price": 20.38,
+        "pct_change": 20.024,
+        "amount": 256649179.0
       },
       {
-        "code": "300901",
-        "name": "中胤时尚",
-        "price": 15.35,
-        "pct_change": 18.077,
-        "amount": 177885475.0
+        "code": "300997",
+        "name": "欢乐家",
+        "price": 18.0,
+        "pct_change": 20.0,
+        "amount": 350458511.0
       },
       {
-        "code": "300753",
-        "name": "爱朋医疗",
-        "price": 25.63,
-        "pct_change": 16.979,
-        "amount": 915534880.0
+        "code": "301112",
+        "name": "信邦智能",
+        "price": 34.2,
+        "pct_change": 20.0,
+        "amount": 180980453.0
       },
       {
-        "code": "300293",
-        "name": "蓝英装备",
-        "price": 16.67,
-        "pct_change": 15.443,
-        "amount": 464440779.0
+        "code": "688260",
+        "name": "昀冢科技",
+        "price": 88.51,
+        "pct_change": 19.997,
+        "amount": 831371136.0
       },
       {
-        "code": "300746",
-        "name": "汉嘉数智",
-        "price": 11.87,
-        "pct_change": 15.355,
-        "amount": 191189006.0
+        "code": "300981",
+        "name": "中红医疗",
+        "price": 12.85,
+        "pct_change": 19.981,
+        "amount": 60268787.0
       },
       {
-        "code": "920118",
-        "name": "太湖远大",
-        "price": 19.44,
-        "pct_change": 14.42,
-        "amount": 60799960.0
+        "code": "920779",
+        "name": "武汉蓝电",
+        "price": 24.38,
+        "pct_change": 19.451,
+        "amount": 73779053.0
       },
       {
-        "code": "300809",
-        "name": "华辰装备",
-        "price": 24.74,
-        "pct_change": 13.382,
-        "amount": 471008270.0
+        "code": "920786",
+        "name": "骑士乳业",
+        "price": 7.15,
+        "pct_change": 18.377,
+        "amount": 170090262.0
       }
     ],
     "top_losers": [
       {
         "code": "920176",
         "name": "维琪科技",
-        "price": 108.51,
-        "pct_change": -29.998,
-        "amount": 10430198.0
+        "price": 79.96,
+        "pct_change": -26.311,
+        "amount": 527152498.0
       },
       {
-        "code": "688783",
-        "name": "西安奕材",
-        "price": 28.42,
-        "pct_change": -20.011,
-        "amount": 1932729656.0
+        "code": "688796",
+        "name": "百奥赛图",
+        "price": 116.03,
+        "pct_change": -16.525,
+        "amount": 585705597.0
       },
       {
-        "code": "688765",
-        "name": "禾元生物",
-        "price": 36.89,
-        "pct_change": -19.978,
-        "amount": 629105470.0
+        "code": "688502",
+        "name": "茂莱光学",
+        "price": 338.69,
+        "pct_change": -13.599,
+        "amount": 1251232413.0
       },
       {
-        "code": "688759",
-        "name": "必贝特",
-        "price": 22.44,
-        "pct_change": -19.971,
-        "amount": 446472566.0
+        "code": "301520",
+        "name": "万邦医药",
+        "price": 52.76,
+        "pct_change": -13.537,
+        "amount": 632311609.0
       },
       {
         "code": "300592",
         "name": "华凯易佰",
-        "price": 15.03,
-        "pct_change": -19.968,
-        "amount": 764530476.0
+        "price": 13.0,
+        "pct_change": -13.506,
+        "amount": 525946286.0
       },
       {
-        "code": "688808",
-        "name": "联讯仪器",
-        "price": 1751.21,
-        "pct_change": -18.597,
-        "amount": 3471128928.0
+        "code": "301392",
+        "name": "汇成真空",
+        "price": 136.36,
+        "pct_change": -13.169,
+        "amount": 1062741829.0
       },
       {
-        "code": "688766",
-        "name": "普冉股份",
-        "price": 305.02,
-        "pct_change": -17.957,
-        "amount": 4351204713.0
+        "code": "688147",
+        "name": "微导纳米",
+        "price": 94.67,
+        "pct_change": -11.927,
+        "amount": 1665551757.0
       },
       {
-        "code": "688498",
-        "name": "源杰科技",
-        "price": 1216.58,
-        "pct_change": -17.409,
-        "amount": 7522753940.0
+        "code": "920367",
+        "name": "新赣江",
+        "price": 20.5,
+        "pct_change": -11.714,
+        "amount": 152371787.0
       },
       {
-        "code": "300502",
-        "name": "新易盛",
-        "price": 406.99,
-        "pct_change": -17.11,
-        "amount": 30001559458.0
+        "code": "300478",
+        "name": "杭州高新",
+        "price": 24.05,
+        "pct_change": -11.451,
+        "amount": 208624113.0
       },
       {
-        "code": "300308",
-        "name": "中际旭创",
-        "price": 900.11,
-        "pct_change": -16.42,
-        "amount": 46420675253.0
+        "code": "300260",
+        "name": "新莱应材",
+        "price": 49.51,
+        "pct_change": -11.431,
+        "amount": 2314422328.0
       }
     ],
-    "calculation_started_at": "2026-07-28T14:38:25+08:00"
+    "calculation_started_at": "2026-07-29T14:38:59+08:00"
   }
 }
