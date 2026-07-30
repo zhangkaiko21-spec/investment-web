@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T13:21:30+08:00",
+  "generated_at": "2026-07-30T13:37:54+08:00",
   "market_date": "2026-07-30",
   "ok": true,
   "pipeline_ok": true,
@@ -8,7 +8,7 @@
   "effective_mode": "intraday",
   "mode_reason": "intraday observation",
   "market_session": "afternoon",
-  "elapsed_seconds": 68.2,
+  "elapsed_seconds": 74.08,
   "spot_count": 5320,
   "candidate_count": 1,
   "primary_source": "sina_spot",
@@ -18,33 +18,33 @@
       "ok": true,
       "records": 5320,
       "error": null,
-      "timestamp": "2026-07-30T13:21:27+08:00"
+      "timestamp": "2026-07-30T13:37:50+08:00"
     },
     {
       "name": "tencent_quote",
       "ok": true,
       "records": 1,
       "error": null,
-      "timestamp": "2026-07-30T13:21:30+08:00"
+      "timestamp": "2026-07-30T13:37:53+08:00"
     }
   ],
   "history": {
     "policy": "read_only_intraday",
-    "eligible": 3291,
+    "eligible": 3432,
     "requested": 0,
     "refreshed": 0,
     "cached": 4296,
-    "eligible_covered": 3231,
-    "coverage_pct": 98.18,
+    "eligible_covered": 3366,
+    "coverage_pct": 98.08,
     "errors": []
   },
   "freshness": {
-    "quote_received_at": "2026-07-30T13:20:22+08:00",
+    "quote_received_at": "2026-07-30T13:36:39+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
   "data_freshness_note": "本次全市场行情源为sina_spot；最终候选使用腾讯报价交叉验证。券商App与公开源冲突时，以券商App为最终执行依据。",
   "invariants_ok": true,
-  "started_at": "2026-07-30T13:20:22+08:00",
-  "validated_at": "2026-07-30T13:21:30+08:00"
+  "started_at": "2026-07-30T13:36:39+08:00",
+  "validated_at": "2026-07-30T13:37:54+08:00"
 }
