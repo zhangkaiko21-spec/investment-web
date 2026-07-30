@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T09:40:22+08:00",
+  "generated_at": "2026-07-30T10:38:10+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -38,5 +38,5 @@
     }
   },
   "top_candidates": [],
-  "calculation_started_at": "2026-07-30T09:40:21+08:00"
+  "calculation_started_at": "2026-07-30T10:38:10+08:00"
 }
