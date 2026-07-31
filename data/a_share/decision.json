@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T17:22:02+08:00",
+  "generated_at": "2026-07-31T17:33:06+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -16,9 +16,9 @@
   "strict_mode": false,
   "selected_candidate": null,
   "market_date": "2026-07-31",
-  "requested_mode": "intraday",
+  "requested_mode": "decision",
   "effective_mode": "intraday",
-  "mode_reason": "intraday observation",
+  "mode_reason": "decision request outside 14:35-14:58",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
@@ -38,5 +38,5 @@
     }
   },
   "top_candidates": [],
-  "calculation_started_at": "2026-07-31T17:22:02+08:00"
+  "calculation_started_at": "2026-07-31T17:33:06+08:00"
 }
