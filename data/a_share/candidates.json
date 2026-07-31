@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-31T14:40:02+08:00",
+  "generated_at": "2026-07-31T16:12:52+08:00",
   "market_date": "2026-07-31",
-  "requested_mode": "decision",
-  "effective_mode": "decision",
+  "requested_mode": "intraday",
+  "effective_mode": "intraday",
   "count": 0,
   "rules": {
     "max_15d_box_pct": 15.0,
@@ -13,5 +13,5 @@
     "min_reward_risk": 1.5
   },
   "candidates": [],
-  "calculation_started_at": "2026-07-31T14:38:44+08:00"
+  "calculation_started_at": "2026-07-31T16:11:31+08:00"
 }
