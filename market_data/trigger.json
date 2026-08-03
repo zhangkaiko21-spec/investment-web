@@ -1,6 +1,6 @@
 {
-  "mode": "decision",
-  "requested_at": "2026-07-31T14:38:00+08:00",
+  "mode": "intraday",
+  "requested_at": "2026-08-03T09:38:53+08:00",
   "source": "chatgpt_automation",
-  "nonce": "20260731-143800"
+  "nonce": "20260803-093853"
 }
