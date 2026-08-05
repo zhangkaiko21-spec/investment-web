@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "strategy": "周月箱体复利战法2.1",
-  "market_date": "2026-08-04",
-  "locked_at": "2026-08-04T14:38:19+08:00",
+  "market_date": "2026-08-05",
+  "locked_at": "2026-08-05T14:39:34+08:00",
   "snapshot_valid": true,
   "validation_errors": [],
   "requested_mode": "decision",
@@ -11,9 +11,9 @@
   "invariants_ok": true,
   "trade_allowed": true,
   "primary_source": "sina_spot",
-  "spot_count": 5322,
+  "spot_count": 5325,
   "freshness": {
-    "quote_received_at": "2026-08-04T14:37:06+08:00",
+    "quote_received_at": "2026-08-05T14:38:33+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
@@ -47,7 +47,7 @@
   "decision": {
     "cycle_id": 2,
     "cycle_status": "active",
-    "trading_days_left": 18,
+    "trading_days_left": 17,
     "target_equity": 10980.41,
     "gap_to_target": 522.88,
     "can_open": true,
@@ -57,156 +57,156 @@
   },
   "candidates": [],
   "market_summary": {
-    "generated_at": "2026-08-04T14:38:19+08:00",
-    "stocks": 5322,
-    "up": 3278,
-    "down": 1900,
+    "generated_at": "2026-08-05T14:39:34+08:00",
+    "stocks": 5325,
+    "up": 3223,
+    "down": 1958,
     "flat": 144,
-    "total_amount": 2018033590523.0,
+    "total_amount": 2459551225710.0,
     "top_gainers": [
       {
-        "code": "001232",
-        "name": "N嘉立创",
-        "price": 215.0,
-        "pct_change": 154.558,
-        "amount": 6287477044.0
+        "code": "920038",
+        "name": "N森合",
+        "price": 48.33,
+        "pct_change": 66.311,
+        "amount": 1044709624.0
+      },
+      {
+        "code": "920117",
+        "name": "龙鑫智能",
+        "price": 35.17,
+        "pct_change": 29.97,
+        "amount": 295796014.0
       },
       {
         "code": "920092",
         "name": "汉鑫科技",
-        "price": 30.43,
-        "pct_change": 29.987,
-        "amount": 195260949.0
+        "price": 38.4,
+        "pct_change": 26.191,
+        "amount": 362749474.0
       },
       {
-        "code": "920045",
-        "name": "蘅东光",
-        "price": 294.0,
-        "pct_change": 20.789,
-        "amount": 690964761.0
+        "code": "300248",
+        "name": "新开普",
+        "price": 10.07,
+        "pct_change": 20.024,
+        "amount": 340817361.0
       },
       {
-        "code": "300615",
-        "name": "欣天科技",
-        "price": 12.52,
-        "pct_change": 20.038,
-        "amount": 10162985.0
+        "code": "300552",
+        "name": "万集科技",
+        "price": 24.88,
+        "pct_change": 20.019,
+        "amount": 524476128.0
       },
       {
-        "code": "301227",
-        "name": "森鹰窗业",
-        "price": 21.46,
-        "pct_change": 20.022,
-        "amount": 132680611.0
+        "code": "688549",
+        "name": "中巨芯",
+        "price": 23.21,
+        "pct_change": 20.01,
+        "amount": 2183570400.0
       },
       {
-        "code": "300052",
-        "name": "中青宝",
-        "price": 12.05,
-        "pct_change": 20.02,
-        "amount": 579171064.0
+        "code": "300686",
+        "name": "智动力",
+        "price": 15.06,
+        "pct_change": 20.0,
+        "amount": 217985666.0
       },
       {
-        "code": "300209",
-        "name": "行云科技",
-        "price": 33.64,
-        "pct_change": 20.014,
-        "amount": 5467829592.0
+        "code": "301045",
+        "name": "天禄科技",
+        "price": 63.36,
+        "pct_change": 20.0,
+        "amount": 259021611.0
       },
       {
-        "code": "301270",
-        "name": "汉仪股份",
-        "price": 35.26,
-        "pct_change": 20.014,
-        "amount": 491147753.0
+        "code": "301026",
+        "name": "浩通科技",
+        "price": 21.49,
+        "pct_change": 19.989,
+        "amount": 553699902.0
       },
       {
-        "code": "300720",
-        "name": "海川智能",
-        "price": 59.75,
-        "pct_change": 20.004,
-        "amount": 780932789.0
-      },
-      {
-        "code": "300620",
-        "name": "光库科技",
-        "price": 254.33,
-        "pct_change": 20.001,
-        "amount": 4256520218.0
+        "code": "688600",
+        "name": "皖仪科技",
+        "price": 27.44,
+        "pct_change": 19.983,
+        "amount": 166084629.0
       }
     ],
     "top_losers": [
       {
-        "code": "920258",
-        "name": "聚仁新材",
-        "price": 13.84,
-        "pct_change": -11.959,
-        "amount": 264846738.0
+        "code": "300912",
+        "name": "凯龙高科",
+        "price": 20.57,
+        "pct_change": -10.135,
+        "amount": 279804096.0
       },
       {
-        "code": "688036",
-        "name": "传音控股",
-        "price": 58.1,
-        "pct_change": -7.778,
-        "amount": 2069938154.0
+        "code": "600363",
+        "name": "联创光电",
+        "price": 24.64,
+        "pct_change": -10.007,
+        "amount": 115884384.0
       },
       {
-        "code": "688068",
-        "name": "热景生物",
-        "price": 98.62,
-        "pct_change": -7.207,
-        "amount": 423280280.0
+        "code": "600499",
+        "name": "科达制造",
+        "price": 14.31,
+        "pct_change": -8.679,
+        "amount": 1286452829.0
       },
       {
-        "code": "002541",
-        "name": "鸿路钢构",
-        "price": 19.17,
-        "pct_change": -6.851,
-        "amount": 342824462.0
+        "code": "300308",
+        "name": "中际旭创",
+        "price": 944.4,
+        "pct_change": -7.592,
+        "amount": 64635890603.0
       },
       {
-        "code": "002244",
-        "name": "滨江集团",
-        "price": 8.49,
-        "pct_change": -5.876,
-        "amount": 409276165.0
+        "code": "300989",
+        "name": "蕾奥规划",
+        "price": 13.43,
+        "pct_change": -7.379,
+        "amount": 231324007.0
       },
       {
-        "code": "002695",
-        "name": "煌上煌",
-        "price": 10.24,
-        "pct_change": -4.388,
-        "amount": 361990983.0
+        "code": "920339",
+        "name": "恒太照明",
+        "price": 11.52,
+        "pct_change": -6.494,
+        "amount": 28251977.0
       },
       {
-        "code": "603816",
-        "name": "顾家家居",
-        "price": 25.22,
+        "code": "300164",
+        "name": "通源石油",
+        "price": 10.64,
+        "pct_change": -5.506,
+        "amount": 1592736557.0
+      },
+      {
+        "code": "300502",
+        "name": "新易盛",
+        "price": 423.41,
+        "pct_change": -5.489,
+        "amount": 34852013558.0
+      },
+      {
+        "code": "301270",
+        "name": "汉仪股份",
+        "price": 33.74,
+        "pct_change": -4.311,
+        "amount": 491604070.0
+      },
+      {
+        "code": "300798",
+        "name": "锦鸡股份",
+        "price": 7.59,
         "pct_change": -4.288,
-        "amount": 235208629.0
-      },
-      {
-        "code": "603225",
-        "name": "新凤鸣",
-        "price": 18.89,
-        "pct_change": -4.257,
-        "amount": 272030340.0
-      },
-      {
-        "code": "000893",
-        "name": "亚钾国际",
-        "price": 48.38,
-        "pct_change": -4.236,
-        "amount": 898711839.0
-      },
-      {
-        "code": "300677",
-        "name": "英科医疗",
-        "price": 47.4,
-        "pct_change": -4.204,
-        "amount": 602524636.0
+        "amount": 328534198.0
       }
     ],
-    "calculation_started_at": "2026-08-04T14:38:19+08:00"
+    "calculation_started_at": "2026-08-05T14:39:34+08:00"
   }
 }
