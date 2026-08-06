@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-08-06T13:29:45+08:00",
+  "generated_at": "2026-08-06T13:38:56+08:00",
   "stocks": 5326,
-  "up": 1268,
-  "down": 3975,
-  "flat": 83,
-  "total_amount": 1944324069975.0,
+  "up": 1190,
+  "down": 4061,
+  "flat": 75,
+  "total_amount": 2003057848669.0,
   "top_gainers": [
     {
       "code": "603468",
       "name": "N津富",
-      "price": 38.79,
-      "pct_change": 122.165,
-      "amount": 1013887418.0
+      "price": 39.35,
+      "pct_change": 125.372,
+      "amount": 1030195859.0
     },
     {
       "code": "301251",
       "name": "威尔高",
       "price": 39.83,
       "pct_change": 20.006,
-      "amount": 475271952.0
+      "amount": 478684587.0
     },
     {
       "code": "688693",
       "name": "锴威特",
       "price": 77.82,
       "pct_change": 20.0,
-      "amount": 31559434.0
+      "amount": 31987755.0
     },
     {
       "code": "300903",
       "name": "科翔股份",
       "price": 64.32,
       "pct_change": 20.0,
-      "amount": 2443673500.0
+      "amount": 2446883068.0
     },
     {
       "code": "300540",
       "name": "蜀道装备",
       "price": 33.61,
       "pct_change": 19.993,
-      "amount": 706649610.0
+      "amount": 723790710.0
     },
     {
       "code": "300711",
       "name": "广哈通信",
       "price": 19.03,
       "pct_change": 19.987,
-      "amount": 260281349.0
+      "amount": 260660046.0
     },
     {
       "code": "300615",
       "name": "欣天科技",
       "price": 18.02,
       "pct_change": 19.973,
-      "amount": 758969768.0
+      "amount": 759649122.0
     },
     {
       "code": "300386",
       "name": "飞天诚信",
       "price": 12.56,
       "pct_change": 19.962,
-      "amount": 236019928.0
+      "amount": 238180248.0
     },
     {
       "code": "688549",
       "name": "中巨芯",
-      "price": 27.71,
-      "pct_change": 19.388,
-      "amount": 4292955961.0
+      "price": 27.5,
+      "pct_change": 18.483,
+      "amount": 4393652600.0
     },
     {
       "code": "920924",
       "name": "广脉科技",
-      "price": 17.55,
-      "pct_change": 16.225,
-      "amount": 139829513.0
+      "price": 17.58,
+      "pct_change": 16.424,
+      "amount": 141522770.0
     }
   ],
   "top_losers": [
     {
-      "code": "920092",
-      "name": "汉鑫科技",
-      "price": 32.86,
-      "pct_change": -12.233,
-      "amount": 233355022.0
-    },
-    {
       "code": "300654",
       "name": "世纪天鸿",
-      "price": 11.06,
-      "pct_change": -11.52,
-      "amount": 531485474.0
+      "price": 11.03,
+      "pct_change": -11.76,
+      "amount": 542973546.0
     },
     {
       "code": "300779",
       "name": "惠城环保",
-      "price": 76.84,
-      "pct_change": -11.28,
-      "amount": 2194452735.0
+      "price": 77.85,
+      "pct_change": -10.114,
+      "amount": 2339108215.0
     },
     {
       "code": "600363",
       "name": "联创光电",
       "price": 22.18,
       "pct_change": -9.984,
-      "amount": 64641392.0
+      "amount": 65626184.0
+    },
+    {
+      "code": "920092",
+      "name": "汉鑫科技",
+      "price": 33.76,
+      "pct_change": -9.829,
+      "amount": 245690221.0
     },
     {
       "code": "001232",
       "name": "C嘉立创",
-      "price": 182.01,
-      "pct_change": -8.954,
-      "amount": 2584346917.0
+      "price": 181.37,
+      "pct_change": -9.274,
+      "amount": 2635499429.0
     },
     {
       "code": "300989",
       "name": "蕾奥规划",
-      "price": 12.47,
-      "pct_change": -8.443,
-      "amount": 123111792.0
+      "price": 12.46,
+      "pct_change": -8.517,
+      "amount": 125465496.0
     },
     {
       "code": "002659",
       "name": "凯文教育",
       "price": 4.61,
       "pct_change": -7.8,
-      "amount": 234509306.0
+      "amount": 239935096.0
     },
     {
-      "code": "603580",
-      "name": "艾艾精工",
-      "price": 51.88,
-      "pct_change": -7.72,
-      "amount": 542036760.0
-    },
-    {
-      "code": "920130",
-      "name": "立方控股",
-      "price": 19.5,
-      "pct_change": -7.627,
-      "amount": 127458822.0
+      "code": "300209",
+      "name": "行云科技",
+      "price": 34.1,
+      "pct_change": -7.763,
+      "amount": 5966472205.0
     },
     {
       "code": "300981",
       "name": "中红医疗",
-      "price": 14.42,
-      "pct_change": -7.564,
-      "amount": 349851391.0
+      "price": 14.4,
+      "pct_change": -7.692,
+      "amount": 354801349.0
+    },
+    {
+      "code": "002607",
+      "name": "中公教育",
+      "price": 2.17,
+      "pct_change": -7.66,
+      "amount": 962264869.0
     }
   ],
-  "calculation_started_at": "2026-08-06T13:29:45+08:00"
+  "calculation_started_at": "2026-08-06T13:38:56+08:00"
 }
