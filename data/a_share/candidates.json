@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T10:41:31+08:00",
+  "generated_at": "2026-08-07T12:06:00+08:00",
   "market_date": "2026-08-07",
   "requested_mode": "intraday",
   "effective_mode": "intraday",
@@ -18,9 +18,9 @@
       "name": "国联民生",
       "price": 8.91,
       "pct_change": -0.669,
-      "amount": 67200470.0,
+      "amount": 88888382.0,
       "source": "sina",
-      "quote_time": "10:39:24",
+      "quote_time": "11:30:00",
       "low15": 8.77,
       "high15": 9.19,
       "width15_pct": 4.789,
@@ -33,16 +33,16 @@
       "reward_risk": 2.0,
       "target_price": 9.19,
       "stop_price": 8.7261,
-      "score": 53.883,
+      "score": 54.013,
       "history_source": "tencent",
       "history_date": "2026-08-06",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 8.9,
-      "secondary_time": "20260807104130",
-      "price_diff_pct": 0.1122,
-      "secondary_age_seconds": 1.7
+      "secondary_price": 8.91,
+      "secondary_time": "20260807120536",
+      "price_diff_pct": 0.0,
+      "secondary_age_seconds": 24.1
     }
   ],
-  "calculation_started_at": "2026-08-07T10:39:15+08:00"
+  "calculation_started_at": "2026-08-07T12:04:11+08:00"
 }
