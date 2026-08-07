@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T12:06:00+08:00",
+  "generated_at": "2026-08-07T12:34:51+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -37,37 +37,6 @@
       "status": "active"
     }
   },
-  "top_candidates": [
-    {
-      "code": "601456",
-      "name": "国联民生",
-      "price": 8.91,
-      "pct_change": -0.669,
-      "amount": 88888382.0,
-      "source": "sina",
-      "quote_time": "11:30:00",
-      "low15": 8.77,
-      "high15": 9.19,
-      "width15_pct": 4.789,
-      "position15": 0.3333,
-      "low60": 8.49,
-      "high60": 9.65,
-      "width60_pct": 13.663,
-      "position60": 0.3621,
-      "recovery_score": 0.6154,
-      "reward_risk": 2.0,
-      "target_price": 9.19,
-      "stop_price": 8.7261,
-      "score": 54.013,
-      "history_source": "tencent",
-      "history_date": "2026-08-06",
-      "verified": true,
-      "secondary_source": "tencent",
-      "secondary_price": 8.91,
-      "secondary_time": "20260807120536",
-      "price_diff_pct": 0.0,
-      "secondary_age_seconds": 24.1
-    }
-  ],
-  "calculation_started_at": "2026-08-07T12:06:00+08:00"
+  "top_candidates": [],
+  "calculation_started_at": "2026-08-07T12:34:51+08:00"
 }
