@@ -24,12 +24,16 @@ on:
       - .github/workflows/a-share-pipeline.yml
   schedule:
     # Native backups in UTC. Beijing: 09:20, 10:20, 13:20, 14:20,
-    # 14:40 and 14:46 tail decisions, then 16:20 history maintenance.
-    # The ChatGPT exact trigger remains an additional independent path.
+    # plus staggered tail-decision requests. Early requests are harmless because
+    # pipeline_v3 downgrades decision to intraday before 14:35; delayed GitHub
+    # schedules can still land safely inside the 14:35-14:58 decision window.
     - cron: '20 1 * * 1-5'
     - cron: '20 2 * * 1-5'
     - cron: '20 5 * * 1-5'
     - cron: '20 6 * * 1-5'
+    - cron: '25 6 * * 1-5'
+    - cron: '30 6 * * 1-5'
+    - cron: '35 6 * * 1-5'
     - cron: '40 6 * * 1-5'
     - cron: '46 6 * * 1-5'
     - cron: '20 8 * * 1-5'
@@ -93,7 +97,7 @@ jobs:
             fi
           elif [[ "${{ github.event.schedule }}" == "20 8 * * 1-5" ]]; then
             MODE="bootstrap"
-          elif [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "46 6 * * 1-5" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "25 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "30 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "35 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "46 6 * * 1-5" ]]; then
             MODE="decision"
           else
             MODE="intraday"
