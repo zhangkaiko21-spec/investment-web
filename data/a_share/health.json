@@ -1,76 +1,50 @@
 {
-  "generated_at": "2026-08-11T17:28:38+08:00",
-  "market_date": "2026-08-11",
+  "generated_at": "2026-08-12T11:33:37+08:00",
+  "market_date": "2026-08-12",
   "ok": true,
   "pipeline_ok": true,
   "trade_allowed": false,
-  "requested_mode": "bootstrap",
-  "effective_mode": "bootstrap",
-  "mode_reason": "history maintenance",
-  "market_session": "after_close",
-  "elapsed_seconds": 771.01,
-  "spot_count": 5333,
+  "requested_mode": "intraday",
+  "effective_mode": "intraday",
+  "mode_reason": "intraday observation",
+  "market_session": "lunch",
+  "elapsed_seconds": 196.58,
+  "spot_count": 5334,
   "candidate_count": 0,
   "primary_source": "sina_spot",
   "sources": [
     {
-      "name": "eastmoney_spot",
-      "ok": false,
-      "records": 0,
-      "error": "https://82.push2.eastmoney.com/api/qt/clist/get: request failed: https://82.push2.eastmoney.com/api/qt/clist/get: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) | https://69.push2.eastmoney.com/api/qt/clist/get: request failed: https://69.push2.eastmoney.com/api/qt/clist/get: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) | https://push2.eastmoney.com/api/qt/clist/get: request failed: https://push2.eastmoney.com/api/qt/clist/get: 502 Server Error: Bad Gateway for url: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6000&po=1&np=1&fltt=2&invt=2&fid=f6&fs=m%3A0%2Bt%3A6%2Cm%3A0%2Bt%3A80%2Cm%3A1%2Bt%3A2%2Cm%3A1%2Bt%3A23%2Cm%3A0%2Bt%3A81%2Bs%3A2048&fields=f12%2Cf14%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf10%2Cf13%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21",
-      "timestamp": "2026-08-11T17:16:16+08:00"
-    },
-    {
       "name": "sina_spot",
       "ok": true,
-      "records": 5333,
+      "records": 5334,
       "error": null,
-      "timestamp": "2026-08-11T17:17:20+08:00"
+      "timestamp": "2026-08-12T11:33:34+08:00"
     },
     {
       "name": "tencent_quote",
       "ok": true,
       "records": 0,
       "error": null,
-      "timestamp": "2026-08-11T17:28:38+08:00"
+      "timestamp": "2026-08-12T11:33:37+08:00"
     }
   ],
   "history": {
-    "policy": "rotating_oldest_first",
-    "eligible": 3739,
-    "requested": 1200,
-    "refreshed": 1117,
+    "policy": "read_only_intraday",
+    "eligible": 2857,
+    "requested": 0,
+    "refreshed": 0,
     "cached": 4656,
-    "errors": [
-      "920161:tencent history insufficient: 0",
-      "920970:tencent history insufficient: 0",
-      "920238:tencent history insufficient: 0",
-      "920178:tencent history insufficient: 0",
-      "920083:tencent history insufficient: 0",
-      "603468:tencent history insufficient: 4",
-      "920211:tencent history insufficient: 0",
-      "920117:tencent history insufficient: 0",
-      "920222:tencent history insufficient: 0",
-      "920533:tencent history insufficient: 0",
-      "603435:tencent history insufficient: 57",
-      "920072:tencent history insufficient: 0",
-      "920065:tencent history insufficient: 0",
-      "920017:tencent history insufficient: 0",
-      "920189:tencent history insufficient: 0",
-      "920193:tencent history insufficient: 0",
-      "920258:tencent history insufficient: 0",
-      "920038:tencent history insufficient: 0",
-      "920079:tencent history insufficient: 0",
-      "920870:tencent history insufficient: 0"
-    ]
+    "eligible_covered": 2833,
+    "coverage_pct": 99.16,
+    "errors": []
   },
   "freshness": {
-    "quote_received_at": "2026-08-11T17:15:47+08:00",
+    "quote_received_at": "2026-08-12T11:30:20+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
   "data_freshness_note": "本次全市场行情源为sina_spot；最终候选使用腾讯报价交叉验证。券商App与公开源冲突时，以券商App为最终执行依据。",
   "invariants_ok": true,
-  "started_at": "2026-08-11T17:15:47+08:00",
-  "validated_at": "2026-08-11T17:28:38+08:00"
+  "started_at": "2026-08-12T11:30:20+08:00",
+  "validated_at": "2026-08-12T11:33:37+08:00"
 }
