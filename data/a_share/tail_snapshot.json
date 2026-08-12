@@ -2,7 +2,7 @@
   "schema_version": 1,
   "strategy": "周月箱体复利战法2.1",
   "market_date": "2026-08-12",
-  "locked_at": "2026-08-12T16:04:45+08:00",
+  "locked_at": "2026-08-12T16:06:09+08:00",
   "snapshot_valid": false,
   "validation_errors": [
     "effective_mode=intraday, pipeline_ok=True, invariants_ok=True"
@@ -15,7 +15,7 @@
   "primary_source": "sina_spot",
   "spot_count": 5334,
   "freshness": {
-    "quote_received_at": "2026-08-12T16:03:15+08:00",
+    "quote_received_at": "2026-08-12T16:05:02+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
@@ -59,7 +59,7 @@
   },
   "candidates": [],
   "market_summary": {
-    "generated_at": "2026-08-12T16:04:45+08:00",
+    "generated_at": "2026-08-12T16:06:09+08:00",
     "stocks": 5334,
     "up": 3977,
     "down": 1238,
@@ -209,6 +209,6 @@
         "amount": 187817582.0
       }
     ],
-    "calculation_started_at": "2026-08-12T16:04:45+08:00"
+    "calculation_started_at": "2026-08-12T16:06:09+08:00"
   }
 }
