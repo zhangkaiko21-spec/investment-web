@@ -24,9 +24,9 @@ on:
       - .github/workflows/a-share-pipeline.yml
   schedule:
     # Native backups in UTC. Beijing: 09:20, 10:20, 13:20, 14:20,
-    # plus staggered tail-decision requests. Early requests are harmless because
-    # pipeline_v3 downgrades decision to intraday before 14:35; delayed GitHub
-    # schedules can still land safely inside the 14:35-14:58 decision window.
+    # plus staggered tail-decision requests. Delayed schedule runs are classified
+    # again by actual Beijing execution time so an early cron landing inside the
+    # 14:35-14:58 tail window can still become a valid decision request.
     - cron: '20 1 * * 1-5'
     - cron: '20 2 * * 1-5'
     - cron: '20 5 * * 1-5'
@@ -42,9 +42,7 @@ permissions:
   contents: write
 
 concurrency:
-  # New queue isolates time-critical runs from old heavy bootstrap jobs.
   group: a-share-box-pipeline-stable-v4
-  # Queue overlapping backups instead of cancelling a valid tail decision.
   cancel-in-progress: false
 
 jobs:
@@ -92,13 +90,19 @@ jobs:
           PY
               )
             else
-              # Code/config updates must be lightweight and may never block tail runs.
               MODE="intraday"
             fi
           elif [[ "${{ github.event.schedule }}" == "20 8 * * 1-5" ]]; then
             MODE="bootstrap"
-          elif [[ "${{ github.event.schedule }}" == "25 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "30 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "35 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "46 6 * * 1-5" ]]; then
-            MODE="decision"
+          elif [[ "${{ github.event_name }}" == "schedule" ]]; then
+            NOW_BJ=$(TZ=Asia/Shanghai date +%H%M)
+            if (( 10#$NOW_BJ >= 1435 && 10#$NOW_BJ <= 1458 )); then
+              MODE="decision"
+            elif [[ "${{ github.event.schedule }}" == "25 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "30 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "35 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "46 6 * * 1-5" ]]; then
+              MODE="decision"
+            else
+              MODE="intraday"
+            fi
           else
             MODE="intraday"
           fi
