@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T15:57:55+08:00",
+  "generated_at": "2026-08-14T15:59:44+08:00",
   "market_date": "2026-08-14",
   "requested_mode": "decision",
   "effective_mode": "intraday",
@@ -39,10 +39,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.78,
-      "secondary_time": "20260814155726",
+      "secondary_time": "20260814155926",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 29.8
+      "secondary_age_seconds": 18.4
     }
   ],
-  "calculation_started_at": "2026-08-14T15:56:28+08:00"
+  "calculation_started_at": "2026-08-14T15:58:15+08:00"
 }
