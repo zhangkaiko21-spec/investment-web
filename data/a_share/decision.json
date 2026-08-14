@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:02:25+08:00",
+  "generated_at": "2026-08-14T16:03:56+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -64,10 +64,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.78,
-      "secondary_time": "20260814160156",
+      "secondary_time": "20260814160326",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 29.7
+      "secondary_age_seconds": 30.3
     }
   ],
-  "calculation_started_at": "2026-08-14T16:02:25+08:00"
+  "calculation_started_at": "2026-08-14T16:03:56+08:00"
 }
