@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T15:28:01+08:00",
+  "generated_at": "2026-08-17T15:29:39+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -16,9 +16,9 @@
   "strict_mode": false,
   "selected_candidate": null,
   "market_date": "2026-08-17",
-  "requested_mode": "intraday",
+  "requested_mode": "decision",
   "effective_mode": "intraday",
-  "mode_reason": "intraday observation",
+  "mode_reason": "decision request outside 14:35-14:58",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
@@ -45,7 +45,7 @@
       "pct_change": -0.114,
       "amount": 544982167.0,
       "source": "sina",
-      "quote_time": "15:27:03",
+      "quote_time": "15:28:33",
       "low15": 8.76,
       "high15": 9.21,
       "width15_pct": 5.137,
@@ -64,10 +64,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.77,
-      "secondary_time": "20260817152758",
+      "secondary_time": "20260817152935",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.5
+      "secondary_age_seconds": 4.6
     }
   ],
-  "calculation_started_at": "2026-08-17T15:28:01+08:00"
+  "calculation_started_at": "2026-08-17T15:29:39+08:00"
 }
