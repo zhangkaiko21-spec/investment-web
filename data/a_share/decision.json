@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T13:55:37+08:00",
+  "generated_at": "2026-08-17T15:18:32+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -41,33 +41,33 @@
     {
       "code": "601985",
       "name": "中国核电",
-      "price": 8.76,
-      "pct_change": -0.228,
-      "amount": 434805124.0,
+      "price": 8.77,
+      "pct_change": -0.114,
+      "amount": 544982167.0,
       "source": "sina",
-      "quote_time": "13:54:28",
+      "quote_time": "15:17:38",
       "low15": 8.76,
       "high15": 9.21,
       "width15_pct": 5.137,
-      "position15": 0.0,
+      "position15": 0.0222,
       "low60": 8.5,
       "high60": 9.24,
       "width60_pct": 8.706,
-      "position60": 0.3514,
+      "position60": 0.3649,
       "recovery_score": 0.8333,
-      "reward_risk": 4.281,
+      "reward_risk": 4.181,
       "target_price": 9.21,
       "stop_price": 8.7162,
-      "score": 75.536,
+      "score": 75.141,
       "history_source": "tencent",
       "history_date": "2026-08-12",
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.77,
-      "secondary_time": "20260817135532",
-      "price_diff_pct": 0.1142,
-      "secondary_age_seconds": 5.4
+      "secondary_time": "20260817151827",
+      "price_diff_pct": 0.0,
+      "secondary_age_seconds": 5.3
     }
   ],
-  "calculation_started_at": "2026-08-17T13:55:37+08:00"
+  "calculation_started_at": "2026-08-17T15:18:32+08:00"
 }
