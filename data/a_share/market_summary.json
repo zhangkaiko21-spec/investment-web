@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-08-17T10:35:39+08:00",
+  "generated_at": "2026-08-17T11:16:01+08:00",
   "stocks": 5334,
-  "up": 2839,
-  "down": 2300,
-  "flat": 195,
-  "total_amount": 1135426858392.0,
+  "up": 3636,
+  "down": 1546,
+  "flat": 152,
+  "total_amount": 1426144413988.0,
   "top_gainers": [
     {
       "code": "920107",
       "name": "N恒兴",
-      "price": 32.77,
-      "pct_change": 104.557,
-      "amount": 420740500.0
+      "price": 32.1,
+      "pct_change": 100.375,
+      "amount": 454655085.0
+    },
+    {
+      "code": "920012",
+      "name": "创达新材",
+      "price": 60.26,
+      "pct_change": 22.604,
+      "amount": 130426990.0
     },
     {
       "code": "300314",
       "name": "戴维医疗",
       "price": 14.74,
       "pct_change": 20.033,
-      "amount": 341506966.0
+      "amount": 360228240.0
     },
     {
       "code": "300313",
       "name": "天山生物",
       "price": 10.73,
       "pct_change": 20.022,
-      "amount": 221837290.0
+      "amount": 229213092.0
+    },
+    {
+      "code": "688035",
+      "name": "德邦科技",
+      "price": 78.83,
+      "pct_change": 20.003,
+      "amount": 706361751.0
+    },
+    {
+      "code": "300570",
+      "name": "太辰光",
+      "price": 193.8,
+      "pct_change": 20.0,
+      "amount": 4401844075.0
+    },
+    {
+      "code": "301626",
+      "name": "苏州天脉",
+      "price": 307.08,
+      "pct_change": 20.0,
+      "amount": 1150094808.0
     },
     {
       "code": "300684",
       "name": "中石科技",
       "price": 80.83,
       "pct_change": 19.997,
-      "amount": 242734996.0
-    },
-    {
-      "code": "300570",
-      "name": "太辰光",
-      "price": 192.66,
-      "pct_change": 19.294,
-      "amount": 4002806801.0
-    },
-    {
-      "code": "920087",
-      "name": "秋乐种业",
-      "price": 12.44,
-      "pct_change": 17.027,
-      "amount": 168645855.0
-    },
-    {
-      "code": "920012",
-      "name": "创达新材",
-      "price": 57.26,
-      "pct_change": 16.501,
-      "amount": 79961520.0
+      "amount": 262029117.0
     },
     {
       "code": "301127",
       "name": "武汉天源",
-      "price": 17.58,
-      "pct_change": 16.27,
-      "amount": 1117731497.0
+      "price": 18.14,
+      "pct_change": 19.974,
+      "amount": 1280657463.0
     },
     {
-      "code": "301626",
-      "name": "苏州天脉",
-      "price": 293.89,
-      "pct_change": 14.846,
-      "amount": 824843219.0
-    },
-    {
-      "code": "688035",
-      "name": "德邦科技",
-      "price": 75.11,
-      "pct_change": 14.34,
-      "amount": 532449256.0
+      "code": "300345",
+      "name": "华民股份",
+      "price": 8.9,
+      "pct_change": 19.946,
+      "amount": 777196808.0
     }
   ],
   "top_losers": [
     {
       "code": "300682",
       "name": "朗新科技",
-      "price": 9.96,
-      "pct_change": -13.089,
-      "amount": 285018890.0
+      "price": 10.15,
+      "pct_change": -11.431,
+      "amount": 334500975.0
     },
     {
       "code": "688100",
       "name": "威胜信息",
-      "price": 25.93,
-      "pct_change": -10.863,
-      "amount": 217201601.0
+      "price": 26.1,
+      "pct_change": -10.278,
+      "amount": 232288631.0
     },
     {
-      "code": "300440",
-      "name": "运达科技",
-      "price": 17.79,
-      "pct_change": -10.693,
-      "amount": 320102931.0
-    },
-    {
-      "code": "688253",
-      "name": "英诺特",
-      "price": 59.95,
-      "pct_change": -10.442,
-      "amount": 200598542.0
+      "code": "002235",
+      "name": "安妮股份",
+      "price": 9.39,
+      "pct_change": -9.971,
+      "amount": 615643482.0
     },
     {
       "code": "000802",
       "name": "北京文化",
       "price": 5.33,
       "pct_change": -9.966,
-      "amount": 69095455.0
+      "amount": 72857369.0
     },
     {
       "code": "001260",
       "name": "坤泰股份",
       "price": 20.83,
       "pct_change": -9.944,
-      "amount": 132486906.0
-    },
-    {
-      "code": "002235",
-      "name": "安妮股份",
-      "price": 9.44,
-      "pct_change": -9.492,
-      "amount": 553297410.0
-    },
-    {
-      "code": "603226",
-      "name": "菲林格尔",
-      "price": 48.47,
-      "pct_change": -9.402,
-      "amount": 199756284.0
+      "amount": 166711550.0
     },
     {
       "code": "002774",
       "name": "快意电梯",
-      "price": 15.94,
-      "pct_change": -9.174,
-      "amount": 284194561.0
+      "price": 15.83,
+      "pct_change": -9.801,
+      "amount": 316164755.0
     },
     {
-      "code": "300368",
-      "name": "汇金股份",
-      "price": 8.32,
-      "pct_change": -8.872,
-      "amount": 234929804.0
+      "code": "688253",
+      "name": "英诺特",
+      "price": 60.63,
+      "pct_change": -9.426,
+      "amount": 237365435.0
+    },
+    {
+      "code": "603226",
+      "name": "菲林格尔",
+      "price": 48.6,
+      "pct_change": -9.159,
+      "amount": 243711974.0
+    },
+    {
+      "code": "002739",
+      "name": "儒意电影",
+      "price": 8.78,
+      "pct_change": -8.446,
+      "amount": 1533101535.0
+    },
+    {
+      "code": "300440",
+      "name": "运达科技",
+      "price": 18.24,
+      "pct_change": -8.434,
+      "amount": 373440058.0
     }
   ],
-  "calculation_started_at": "2026-08-17T10:35:39+08:00"
+  "calculation_started_at": "2026-08-17T11:16:01+08:00"
 }
