@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T15:29:39+08:00",
+  "generated_at": "2026-08-17T15:32:24+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -45,7 +45,7 @@
       "pct_change": -0.114,
       "amount": 544982167.0,
       "source": "sina",
-      "quote_time": "15:28:33",
+      "quote_time": "15:31:28",
       "low15": 8.76,
       "high15": 9.21,
       "width15_pct": 5.137,
@@ -64,10 +64,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.77,
-      "secondary_time": "20260817152935",
+      "secondary_time": "20260817153156",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 4.6
+      "secondary_age_seconds": 27.9
     }
   ],
-  "calculation_started_at": "2026-08-17T15:29:39+08:00"
+  "calculation_started_at": "2026-08-17T15:32:23+08:00"
 }
