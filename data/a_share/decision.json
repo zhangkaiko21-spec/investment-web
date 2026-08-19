@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T15:25:17+08:00",
+  "generated_at": "2026-08-19T15:27:03+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -45,7 +45,7 @@
       "pct_change": -0.68,
       "amount": 494206307.0,
       "source": "sina",
-      "quote_time": "15:24:11",
+      "quote_time": "15:25:53",
       "low15": 8.75,
       "high15": 9.21,
       "width15_pct": 5.257,
@@ -64,9 +64,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.76,
-      "secondary_time": "20260819152514",
+      "secondary_time": "20260819152659",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.3
+      "secondary_age_seconds": 4.2
     },
     {
       "code": "600061",
@@ -75,7 +75,7 @@
       "pct_change": -1.116,
       "amount": 167234067.0,
       "source": "sina",
-      "quote_time": "15:24:10",
+      "quote_time": "15:25:40",
       "low15": 6.31,
       "high15": 6.6,
       "width15_pct": 4.596,
@@ -94,9 +94,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 6.2,
-      "secondary_time": "20260819152514",
+      "secondary_time": "20260819152700",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.3
+      "secondary_age_seconds": 3.2
     },
     {
       "code": "601456",
@@ -105,7 +105,7 @@
       "pct_change": -1.242,
       "amount": 141193541.0,
       "source": "sina",
-      "quote_time": "15:24:16",
+      "quote_time": "15:25:52",
       "low15": 8.77,
       "high15": 9.16,
       "width15_pct": 4.447,
@@ -124,10 +124,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.75,
-      "secondary_time": "20260819152514",
+      "secondary_time": "20260819152659",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.3
+      "secondary_age_seconds": 4.2
     }
   ],
-  "calculation_started_at": "2026-08-19T15:25:17+08:00"
+  "calculation_started_at": "2026-08-19T15:27:03+08:00"
 }
