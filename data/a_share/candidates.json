@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T15:07:21+08:00",
+  "generated_at": "2026-08-20T15:12:18+08:00",
   "market_date": "2026-08-20",
   "requested_mode": "intraday",
   "effective_mode": "intraday",
@@ -20,7 +20,7 @@
       "pct_change": -0.342,
       "amount": 530650428.0,
       "source": "sina",
-      "quote_time": "15:06:25",
+      "quote_time": "15:11:18",
       "low15": 8.75,
       "high15": 9.21,
       "width15_pct": 5.257,
@@ -39,9 +39,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.73,
-      "secondary_time": "20260820150716",
+      "secondary_time": "20260820151214",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 5.6
+      "secondary_age_seconds": 4.9
     },
     {
       "code": "600061",
@@ -69,9 +69,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 6.25,
-      "secondary_time": "20260820150716",
+      "secondary_time": "20260820151214",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 5.6
+      "secondary_age_seconds": 4.9
     },
     {
       "code": "600372",
@@ -99,9 +99,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 10.9,
-      "secondary_time": "20260820150716",
+      "secondary_time": "20260820151214",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 5.6
+      "secondary_age_seconds": 4.9
     },
     {
       "code": "002736",
@@ -110,7 +110,7 @@
       "pct_change": 0.407,
       "amount": 121639367.0,
       "source": "sina",
-      "quote_time": "15:05:45",
+      "quote_time": "15:11:30",
       "low15": 9.82,
       "high15": 10.43,
       "width15_pct": 6.212,
@@ -129,9 +129,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 9.86,
-      "secondary_time": "20260820150715",
+      "secondary_time": "20260820151215",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 6.6
+      "secondary_age_seconds": 3.9
     },
     {
       "code": "601456",
@@ -140,7 +140,7 @@
       "pct_change": 0.686,
       "amount": 94004994.0,
       "source": "sina",
-      "quote_time": "15:00:04",
+      "quote_time": "15:11:21",
       "low15": 8.77,
       "high15": 9.16,
       "width15_pct": 4.447,
@@ -159,9 +159,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.81,
-      "secondary_time": "20260820150716",
+      "secondary_time": "20260820151214",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 5.6
+      "secondary_age_seconds": 4.9
     },
     {
       "code": "002939",
@@ -170,7 +170,7 @@
       "pct_change": 0.0,
       "amount": 138702742.0,
       "source": "sina",
-      "quote_time": "15:06:45",
+      "quote_time": "15:11:00",
       "low15": 7.92,
       "high15": 8.57,
       "width15_pct": 8.207,
@@ -189,9 +189,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 7.94,
-      "secondary_time": "20260820150645",
+      "secondary_time": "20260820151200",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 36.6
+      "secondary_age_seconds": 18.9
     },
     {
       "code": "601021",
@@ -219,9 +219,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 44.28,
-      "secondary_time": "20260820150716",
+      "secondary_time": "20260820151215",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 5.6
+      "secondary_age_seconds": 3.9
     },
     {
       "code": "002206",
@@ -230,7 +230,7 @@
       "pct_change": 0.969,
       "amount": 33817123.0,
       "source": "sina",
-      "quote_time": "15:06:45",
+      "quote_time": "15:10:45",
       "low15": 5.1,
       "high15": 5.45,
       "width15_pct": 6.863,
@@ -249,10 +249,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 5.21,
-      "secondary_time": "20260820150645",
+      "secondary_time": "20260820151145",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 36.6
+      "secondary_age_seconds": 33.9
     }
   ],
-  "calculation_started_at": "2026-08-20T15:06:17+08:00"
+  "calculation_started_at": "2026-08-20T15:11:08+08:00"
 }
