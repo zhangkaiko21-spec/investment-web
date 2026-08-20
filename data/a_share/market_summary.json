@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-20T15:29:32+08:00",
+  "generated_at": "2026-08-20T17:04:03+08:00",
   "stocks": 5335,
   "up": 3922,
   "down": 1321,
   "flat": 92,
-  "total_amount": 2083096282121.0,
+  "total_amount": 2083101818921.0,
   "top_gainers": [
     {
       "code": "301655",
@@ -18,7 +18,7 @@
       "name": "三元基因",
       "price": 24.76,
       "pct_change": 29.974,
-      "amount": 131347324.0
+      "amount": 134015324.0
     },
     {
       "code": "301166",
@@ -149,5 +149,5 @@
       "amount": 399673825.0
     }
   ],
-  "calculation_started_at": "2026-08-20T15:29:32+08:00"
+  "calculation_started_at": "2026-08-20T17:04:03+08:00"
 }
