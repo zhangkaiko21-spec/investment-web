@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T15:13:39+08:00",
+  "generated_at": "2026-08-21T15:15:22+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -16,9 +16,9 @@
   "strict_mode": true,
   "selected_candidate": null,
   "market_date": "2026-08-21",
-  "requested_mode": "intraday",
+  "requested_mode": "decision",
   "effective_mode": "intraday",
-  "mode_reason": "intraday observation",
+  "mode_reason": "decision request outside 14:35-14:58",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
@@ -45,7 +45,7 @@
       "pct_change": -9.542,
       "amount": 335774212.0,
       "source": "sina",
-      "quote_time": "15:12:45",
+      "quote_time": "15:14:00",
       "low15": 25.11,
       "high15": 26.33,
       "width15_pct": 4.859,
@@ -64,9 +64,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 23.7,
-      "secondary_time": "20260821151315",
+      "secondary_time": "20260821151400",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 24.6
+      "secondary_age_seconds": 82.6
     },
     {
       "code": "601985",
@@ -75,7 +75,7 @@
       "pct_change": -0.229,
       "amount": 304644111.0,
       "source": "sina",
-      "quote_time": "15:12:33",
+      "quote_time": "15:14:08",
       "low15": 8.75,
       "high15": 9.21,
       "width15_pct": 5.257,
@@ -94,9 +94,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.71,
-      "secondary_time": "20260821151336",
+      "secondary_time": "20260821151518",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.6
+      "secondary_age_seconds": 4.6
     },
     {
       "code": "601456",
@@ -124,10 +124,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.75,
-      "secondary_time": "20260821151336",
+      "secondary_time": "20260821151518",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.6
+      "secondary_age_seconds": 4.6
     }
   ],
-  "calculation_started_at": "2026-08-21T15:13:39+08:00"
+  "calculation_started_at": "2026-08-21T15:15:22+08:00"
 }
