@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-08-21T13:52:37+08:00",
+  "generated_at": "2026-08-21T15:13:39+08:00",
   "stocks": 5337,
-  "up": 1893,
-  "down": 3285,
-  "flat": 159,
-  "total_amount": 1482888769370.0,
+  "up": 2363,
+  "down": 2818,
+  "flat": 156,
+  "total_amount": 1880264614721.0,
   "top_gainers": [
     {
       "code": "920093",
       "name": "N信胜",
-      "price": 24.46,
-      "pct_change": 70.453,
-      "amount": 555242927.0
+      "price": 23.19,
+      "pct_change": 61.603,
+      "amount": 637029856.0
     },
     {
       "code": "300839",
       "name": "博汇股份",
       "price": 12.47,
       "pct_change": 20.019,
-      "amount": 216626592.0
+      "amount": 225948952.0
+    },
+    {
+      "code": "301591",
+      "name": "肯特股份",
+      "price": 37.78,
+      "pct_change": 20.013,
+      "amount": 381200707.0
+    },
+    {
+      "code": "688185",
+      "name": "康希诺",
+      "price": 77.32,
+      "pct_change": 20.006,
+      "amount": 1891019107.0
     },
     {
       "code": "688137",
       "name": "近岸蛋白",
       "price": 80.99,
       "pct_change": 20.003,
-      "amount": 778163916.0
+      "amount": 794653561.0
     },
     {
       "code": "688356",
       "name": "键凯科技",
       "price": 107.34,
       "pct_change": 20.0,
-      "amount": 340059453.0
+      "amount": 351028206.0
+    },
+    {
+      "code": "300016",
+      "name": "北陆药业",
+      "price": 10.44,
+      "pct_change": 20.0,
+      "amount": 1230292514.0
     },
     {
       "code": "300214",
       "name": "日科化学",
       "price": 12.9,
       "pct_change": 20.0,
-      "amount": 673104637.0
+      "amount": 790411158.0
     },
     {
       "code": "688328",
       "name": "深科达",
       "price": 91.16,
       "pct_change": 19.995,
-      "amount": 997648980.0
+      "amount": 1103203320.0
     },
     {
-      "code": "688185",
-      "name": "康希诺",
-      "price": 77.31,
-      "pct_change": 19.991,
-      "amount": 1772132443.0
-    },
-    {
-      "code": "300016",
-      "name": "北陆药业",
-      "price": 10.23,
-      "pct_change": 17.586,
-      "amount": 884310164.0
-    },
-    {
-      "code": "300004",
-      "name": "南风股份",
-      "price": 10.07,
-      "pct_change": 14.692,
-      "amount": 840511718.0
-    },
-    {
-      "code": "688828",
-      "name": "国仪公司",
-      "price": 91.74,
-      "pct_change": 13.036,
-      "amount": 952795051.0
+      "code": "300864",
+      "name": "南大环境",
+      "price": 24.1,
+      "pct_change": 14.981,
+      "amount": 230377874.0
     }
   ],
   "top_losers": [
     {
       "code": "301655",
       "name": "C绿控",
-      "price": 27.4,
-      "pct_change": -15.666,
-      "amount": 615422354.0
+      "price": 26.6,
+      "pct_change": -18.129,
+      "amount": 779564954.0
     },
     {
-      "code": "300970",
-      "name": "华绿生物",
-      "price": 19.03,
-      "pct_change": -12.466,
-      "amount": 445255530.0
+      "code": "920087",
+      "name": "秋乐种业",
+      "price": 14.27,
+      "pct_change": -15.211,
+      "amount": 335254749.0
     },
     {
       "code": "300069",
       "name": "金利华电",
-      "price": 26.91,
-      "pct_change": -12.374,
-      "amount": 505927285.0
+      "price": 27.0,
+      "pct_change": -12.081,
+      "amount": 660125797.0
+    },
+    {
+      "code": "301207",
+      "name": "华兰疫苗",
+      "price": 17.85,
+      "pct_change": -11.852,
+      "amount": 400390293.0
     },
     {
       "code": "300189",
       "name": "神农种业",
       "price": 5.59,
       "pct_change": -11.83,
-      "amount": 1173560196.0
+      "amount": 1509844224.0
     },
     {
-      "code": "301207",
-      "name": "华兰疫苗",
-      "price": 17.86,
-      "pct_change": -11.802,
-      "amount": 336238186.0
-    },
-    {
-      "code": "920087",
-      "name": "秋乐种业",
-      "price": 14.9,
-      "pct_change": -11.468,
-      "amount": 248908211.0
-    },
-    {
-      "code": "300363",
-      "name": "博腾股份",
-      "price": 21.7,
-      "pct_change": -11.356,
-      "amount": 1256720750.0
+      "code": "300970",
+      "name": "华绿生物",
+      "price": 19.18,
+      "pct_change": -11.776,
+      "amount": 577699766.0
     },
     {
       "code": "300009",
       "name": "安科生物",
-      "price": 9.0,
-      "pct_change": -11.33,
-      "amount": 1190991524.0
+      "price": 8.97,
+      "pct_change": -11.626,
+      "amount": 1383934677.0
     },
     {
       "code": "300006",
       "name": "莱美药业",
-      "price": 5.28,
-      "pct_change": -11.111,
-      "amount": 627750054.0
+      "price": 5.27,
+      "pct_change": -11.279,
+      "amount": 719014814.0
+    },
+    {
+      "code": "300363",
+      "name": "博腾股份",
+      "price": 21.89,
+      "pct_change": -10.58,
+      "amount": 1497714433.0
     },
     {
       "code": "301166",
       "name": "优宁维",
-      "price": 30.55,
-      "pct_change": -10.305,
-      "amount": 305988005.0
+      "price": 30.64,
+      "pct_change": -10.041,
+      "amount": 336265241.0
     }
   ],
-  "calculation_started_at": "2026-08-21T13:52:36+08:00"
+  "calculation_started_at": "2026-08-21T15:13:39+08:00"
 }
