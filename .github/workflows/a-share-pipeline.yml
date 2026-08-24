@@ -71,6 +71,26 @@ jobs:
           restore-keys: |
             a-share-history-${{ runner.os }}-
 
+      - name: Hold early tail backups until decision window
+        if: github.event_name == 'schedule'
+        shell: bash
+        run: |
+          SCHEDULE='${{ github.event.schedule }}'
+          case "$SCHEDULE" in
+            '25 6 * * 1-5'|'30 6 * * 1-5'|'35 6 * * 1-5'|'40 6 * * 1-5'|'46 6 * * 1-5')
+              NOW_BJ=$(TZ=Asia/Shanghai date +%H%M)
+              if (( 10#$NOW_BJ < 1435 )); then
+                NOW_EPOCH=$(date +%s)
+                TARGET_EPOCH=$(TZ=Asia/Shanghai date -d "$(TZ=Asia/Shanghai date +%F) 14:40:00" +%s)
+                WAIT_SECONDS=$((TARGET_EPOCH - NOW_EPOCH))
+                if (( WAIT_SECONDS > 0 && WAIT_SECONDS <= 1800 )); then
+                  echo "Early tail backup arrived at $NOW_BJ Beijing; holding ${WAIT_SECONDS}s until 14:40."
+                  sleep "$WAIT_SECONDS"
+                fi
+              fi
+              ;;
+          esac
+
       - name: Resolve run mode
         id: mode
         shell: bash
