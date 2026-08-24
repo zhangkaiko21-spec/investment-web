@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T11:19:57+08:00",
+  "generated_at": "2026-08-24T13:58:50+08:00",
   "market_date": "2026-08-24",
   "ok": true,
   "pipeline_ok": true,
@@ -7,10 +7,10 @@
   "requested_mode": "intraday",
   "effective_mode": "intraday",
   "mode_reason": "intraday observation",
-  "market_session": "morning",
-  "elapsed_seconds": 71.34,
+  "market_session": "afternoon",
+  "elapsed_seconds": 114.86,
   "spot_count": 5340,
-  "candidate_count": 10,
+  "candidate_count": 0,
   "primary_source": "sina_spot",
   "sources": [
     {
@@ -18,33 +18,33 @@
       "ok": true,
       "records": 5340,
       "error": null,
-      "timestamp": "2026-08-24T11:19:53+08:00"
+      "timestamp": "2026-08-24T13:58:23+08:00"
     },
     {
       "name": "tencent_quote",
-      "ok": true,
-      "records": 10,
-      "error": null,
-      "timestamp": "2026-08-24T11:19:57+08:00"
+      "ok": false,
+      "records": 0,
+      "error": "HTTPSConnectionPool(host='qt.gtimg.cn', port=443): Max retries exceeded with url: /q=sz000513,sz000915,sz000885,sh601985,sh601456,sz002736,sh600372,sz002673,sz002939,sz002206,sh601136 (Caused by NewConnectionError(\"HTTPSConnection(host='qt.gtimg.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "timestamp": "2026-08-24T13:58:50+08:00"
     }
   ],
   "history": {
     "policy": "read_only_intraday",
-    "eligible": 3007,
+    "eligible": 3330,
     "requested": 0,
     "refreshed": 0,
     "cached": 4795,
-    "eligible_covered": 2977,
-    "coverage_pct": 99.0,
+    "eligible_covered": 3297,
+    "coverage_pct": 99.01,
     "errors": []
   },
   "freshness": {
-    "quote_received_at": "2026-08-24T11:18:45+08:00",
+    "quote_received_at": "2026-08-24T13:56:55+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
   "data_freshness_note": "本次全市场行情源为sina_spot；最终候选使用腾讯报价交叉验证。券商App与公开源冲突时，以券商App为最终执行依据。",
   "invariants_ok": true,
-  "started_at": "2026-08-24T11:18:45+08:00",
-  "validated_at": "2026-08-24T11:19:57+08:00"
+  "started_at": "2026-08-24T13:56:55+08:00",
+  "validated_at": "2026-08-24T13:58:50+08:00"
 }
