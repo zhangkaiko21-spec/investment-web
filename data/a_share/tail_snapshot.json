@@ -2,7 +2,7 @@
   "schema_version": 1,
   "strategy": "周月箱体复利战法2.1",
   "market_date": "2026-08-24",
-  "locked_at": "2026-08-24T15:45:05+08:00",
+  "locked_at": "2026-08-24T15:40:53+08:00",
   "snapshot_valid": false,
   "validation_errors": [
     "effective_mode=intraday, pipeline_ok=True, invariants_ok=True"
@@ -15,7 +15,7 @@
   "primary_source": "sina_spot",
   "spot_count": 5340,
   "freshness": {
-    "quote_received_at": "2026-08-24T15:43:36+08:00",
+    "quote_received_at": "2026-08-24T15:39:40+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
@@ -84,9 +84,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 23.8,
-      "secondary_time": "20260824154457",
+      "secondary_time": "20260824153957",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 8.4
+      "secondary_age_seconds": 56.3
     },
     {
       "code": "000513",
@@ -114,9 +114,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 26.34,
-      "secondary_time": "20260824154439",
+      "secondary_time": "20260824154039",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 26.4
+      "secondary_age_seconds": 14.3
     },
     {
       "code": "000885",
@@ -144,9 +144,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 12.1,
-      "secondary_time": "20260824154415",
+      "secondary_time": "20260824154015",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 50.4
+      "secondary_age_seconds": 38.3
     },
     {
       "code": "601456",
@@ -174,9 +174,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.74,
-      "secondary_time": "20260824154437",
+      "secondary_time": "20260824154037",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 28.4
+      "secondary_age_seconds": 16.3
     },
     {
       "code": "601985",
@@ -204,9 +204,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.77,
-      "secondary_time": "20260824154500",
+      "secondary_time": "20260824154030",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 5.4
+      "secondary_age_seconds": 23.3
     },
     {
       "code": "002736",
@@ -234,9 +234,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 9.83,
-      "secondary_time": "20260824154445",
+      "secondary_time": "20260824154045",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 20.4
+      "secondary_age_seconds": 8.3
     },
     {
       "code": "600372",
@@ -264,9 +264,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 10.82,
-      "secondary_time": "20260824154438",
+      "secondary_time": "20260824154038",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 27.4
+      "secondary_age_seconds": 15.3
     },
     {
       "code": "002939",
@@ -294,9 +294,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 7.95,
-      "secondary_time": "20260824154445",
+      "secondary_time": "20260824154045",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 20.4
+      "secondary_age_seconds": 8.3
     },
     {
       "code": "601136",
@@ -324,9 +324,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 13.7,
-      "secondary_time": "20260824154438",
+      "secondary_time": "20260824154038",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 27.4
+      "secondary_age_seconds": 15.3
     },
     {
       "code": "002206",
@@ -354,13 +354,13 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 5.21,
-      "secondary_time": "20260824154406",
+      "secondary_time": "20260824154006",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 59.4
+      "secondary_age_seconds": 47.3
     }
   ],
   "market_summary": {
-    "generated_at": "2026-08-24T15:45:05+08:00",
+    "generated_at": "2026-08-24T15:40:53+08:00",
     "stocks": 5340,
     "up": 1398,
     "down": 3829,
@@ -510,6 +510,6 @@
         "amount": 364805255.0
       }
     ],
-    "calculation_started_at": "2026-08-24T15:45:05+08:00"
+    "calculation_started_at": "2026-08-24T15:40:53+08:00"
   }
 }

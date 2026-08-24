@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:45:05+08:00",
+  "generated_at": "2026-08-24T15:46:34+08:00",
   "mode": "intraday",
   "cycle_id": 2,
   "cycle_status": "active",
@@ -16,9 +16,9 @@
   "strict_mode": true,
   "selected_candidate": null,
   "market_date": "2026-08-24",
-  "requested_mode": "decision",
+  "requested_mode": "intraday",
   "effective_mode": "intraday",
-  "mode_reason": "decision request outside 14:35-14:58",
+  "mode_reason": "intraday observation",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
@@ -64,9 +64,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 23.8,
-      "secondary_time": "20260824154457",
+      "secondary_time": "20260824154557",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 8.4
+      "secondary_age_seconds": 37.2
     },
     {
       "code": "000513",
@@ -94,9 +94,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 26.34,
-      "secondary_time": "20260824154439",
+      "secondary_time": "20260824154539",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 26.4
+      "secondary_age_seconds": 55.2
     },
     {
       "code": "000885",
@@ -124,10 +124,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 12.1,
-      "secondary_time": "20260824154415",
+      "secondary_time": "20260824154615",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 50.4
+      "secondary_age_seconds": 19.2
     }
   ],
-  "calculation_started_at": "2026-08-24T15:45:05+08:00"
+  "calculation_started_at": "2026-08-24T15:46:34+08:00"
 }
