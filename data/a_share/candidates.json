@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:35:09+08:00",
+  "generated_at": "2026-08-24T15:37:50+08:00",
   "market_date": "2026-08-24",
   "requested_mode": "decision",
   "effective_mode": "intraday",
@@ -20,7 +20,7 @@
       "pct_change": 0.422,
       "amount": 110632925.0,
       "source": "sina",
-      "quote_time": "15:33:45",
+      "quote_time": "15:35:45",
       "low15": 25.11,
       "high15": 26.33,
       "width15_pct": 4.859,
@@ -39,9 +39,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 23.8,
-      "secondary_time": "20260824153457",
+      "secondary_time": "20260824153657",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 12.7
+      "secondary_age_seconds": 53.7
     },
     {
       "code": "000513",
@@ -50,7 +50,7 @@
       "pct_change": -9.979,
       "amount": 568709053.0,
       "source": "sina",
-      "quote_time": "15:34:00",
+      "quote_time": "15:36:00",
       "low15": 29.56,
       "high15": 31.4,
       "width15_pct": 6.225,
@@ -69,9 +69,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 26.34,
-      "secondary_time": "20260824153439",
+      "secondary_time": "20260824153739",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 30.7
+      "secondary_age_seconds": 11.7
     },
     {
       "code": "000885",
@@ -80,7 +80,7 @@
       "pct_change": -1.626,
       "amount": 95758292.0,
       "source": "sina",
-      "quote_time": "15:33:45",
+      "quote_time": "15:35:45",
       "low15": 12.55,
       "high15": 13.3,
       "width15_pct": 5.976,
@@ -99,9 +99,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 12.1,
-      "secondary_time": "20260824153415",
+      "secondary_time": "20260824153715",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 54.7
+      "secondary_age_seconds": 35.7
     },
     {
       "code": "601456",
@@ -110,7 +110,7 @@
       "pct_change": -0.114,
       "amount": 92115000.0,
       "source": "sina",
-      "quote_time": "15:34:14",
+      "quote_time": "15:34:59",
       "low15": 8.72,
       "high15": 9.16,
       "width15_pct": 5.046,
@@ -129,9 +129,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.74,
-      "secondary_time": "20260824153507",
+      "secondary_time": "20260824153737",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 2.7
+      "secondary_age_seconds": 13.7
     },
     {
       "code": "601985",
@@ -140,7 +140,7 @@
       "pct_change": 0.689,
       "amount": 410160467.0,
       "source": "sina",
-      "quote_time": "15:34:14",
+      "quote_time": "15:34:59",
       "low15": 8.7,
       "high15": 9.21,
       "width15_pct": 5.862,
@@ -159,9 +159,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.77,
-      "secondary_time": "20260824153500",
+      "secondary_time": "20260824153730",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 9.7
+      "secondary_age_seconds": 20.7
     },
     {
       "code": "002736",
@@ -170,7 +170,7 @@
       "pct_change": 0.102,
       "amount": 169844761.0,
       "source": "sina",
-      "quote_time": "15:34:15",
+      "quote_time": "15:35:15",
       "low15": 9.82,
       "high15": 10.43,
       "width15_pct": 6.212,
@@ -189,9 +189,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 9.83,
-      "secondary_time": "20260824153445",
+      "secondary_time": "20260824153745",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 24.7
+      "secondary_age_seconds": 5.7
     },
     {
       "code": "600372",
@@ -200,7 +200,7 @@
       "pct_change": 0.093,
       "amount": 189361305.0,
       "source": "sina",
-      "quote_time": "15:34:01",
+      "quote_time": "15:34:59",
       "low15": 10.86,
       "high15": 11.6,
       "width15_pct": 6.814,
@@ -219,9 +219,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 10.82,
-      "secondary_time": "20260824153438",
+      "secondary_time": "20260824153738",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 31.7
+      "secondary_age_seconds": 12.7
     },
     {
       "code": "002939",
@@ -230,7 +230,7 @@
       "pct_change": 0.252,
       "amount": 113415351.0,
       "source": "sina",
-      "quote_time": "15:34:00",
+      "quote_time": "15:35:00",
       "low15": 7.92,
       "high15": 8.57,
       "width15_pct": 8.207,
@@ -249,9 +249,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 7.95,
-      "secondary_time": "20260824153445",
+      "secondary_time": "20260824153745",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 24.7
+      "secondary_age_seconds": 5.7
     },
     {
       "code": "601136",
@@ -260,7 +260,7 @@
       "pct_change": -0.218,
       "amount": 84083613.0,
       "source": "sina",
-      "quote_time": "15:34:14",
+      "quote_time": "15:34:59",
       "low15": 13.63,
       "high15": 15.11,
       "width15_pct": 10.858,
@@ -279,9 +279,9 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 13.7,
-      "secondary_time": "20260824153438",
+      "secondary_time": "20260824153738",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 31.7
+      "secondary_age_seconds": 12.7
     },
     {
       "code": "002206",
@@ -290,7 +290,7 @@
       "pct_change": 0.0,
       "amount": 29683719.0,
       "source": "sina",
-      "quote_time": "15:33:45",
+      "quote_time": "15:35:45",
       "low15": 5.1,
       "high15": 5.45,
       "width15_pct": 6.863,
@@ -309,10 +309,10 @@
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 5.21,
-      "secondary_time": "20260824153506",
+      "secondary_time": "20260824153706",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.7
+      "secondary_age_seconds": 44.7
     }
   ],
-  "calculation_started_at": "2026-08-24T15:34:01+08:00"
+  "calculation_started_at": "2026-08-24T15:36:18+08:00"
 }
