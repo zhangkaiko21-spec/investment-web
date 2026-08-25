@@ -1,76 +1,50 @@
 {
-  "generated_at": "2026-08-24T17:18:43+08:00",
-  "market_date": "2026-08-24",
+  "generated_at": "2026-08-25T10:32:40+08:00",
+  "market_date": "2026-08-25",
   "ok": true,
   "pipeline_ok": true,
   "trade_allowed": false,
-  "requested_mode": "bootstrap",
-  "effective_mode": "bootstrap",
-  "mode_reason": "history maintenance",
-  "market_session": "after_close",
-  "elapsed_seconds": 711.47,
-  "spot_count": 5340,
-  "candidate_count": 0,
+  "requested_mode": "intraday",
+  "effective_mode": "intraday",
+  "mode_reason": "intraday observation",
+  "market_session": "morning",
+  "elapsed_seconds": 50.25,
+  "spot_count": 5341,
+  "candidate_count": 7,
   "primary_source": "sina_spot",
   "sources": [
     {
-      "name": "eastmoney_spot",
-      "ok": false,
-      "records": 0,
-      "error": "https://82.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://69.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://push2.eastmoney.com/api/qt/clist/get: insufficient records 100",
-      "timestamp": "2026-08-24T17:06:57+08:00"
-    },
-    {
       "name": "sina_spot",
       "ok": true,
-      "records": 5340,
+      "records": 5341,
       "error": null,
-      "timestamp": "2026-08-24T17:08:04+08:00"
+      "timestamp": "2026-08-25T10:32:37+08:00"
     },
     {
       "name": "tencent_quote",
       "ok": true,
-      "records": 9,
+      "records": 7,
       "error": null,
-      "timestamp": "2026-08-24T17:18:43+08:00"
+      "timestamp": "2026-08-25T10:32:40+08:00"
     }
   ],
   "history": {
-    "policy": "rotating_oldest_first",
-    "eligible": 3688,
-    "requested": 1200,
-    "refreshed": 1172,
+    "policy": "read_only_intraday",
+    "eligible": 2551,
+    "requested": 0,
+    "refreshed": 0,
     "cached": 4807,
-    "errors": [
-      "920189:tencent history insufficient: 0",
-      "688825:tencent history insufficient: 21",
-      "001399:tencent history insufficient: 42",
-      "603468:tencent history insufficient: 13",
-      "920138:tencent history insufficient: 0",
-      "920059:tencent history insufficient: 0",
-      "688828:tencent history insufficient: 10",
-      "920193:tencent history insufficient: 0",
-      "920079:tencent history insufficient: 0",
-      "920211:tencent history insufficient: 0",
-      "920038:tencent history insufficient: 0",
-      "688806:tencent history insufficient: 25",
-      "920083:tencent history insufficient: 0",
-      "920093:tencent history insufficient: 0",
-      "001248:tencent history insufficient: 38",
-      "920107:tencent history insufficient: 0",
-      "920117:tencent history insufficient: 0",
-      "301583:tencent history insufficient: 32",
-      "920238:tencent history insufficient: 0",
-      "001232:tencent history insufficient: 15"
-    ]
+    "eligible_covered": 2531,
+    "coverage_pct": 99.22,
+    "errors": []
   },
   "freshness": {
-    "quote_received_at": "2026-08-24T17:06:51+08:00",
+    "quote_received_at": "2026-08-25T10:31:50+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
   "data_freshness_note": "本次全市场行情源为sina_spot；最终候选使用腾讯报价交叉验证。券商App与公开源冲突时，以券商App为最终执行依据。",
   "invariants_ok": true,
-  "started_at": "2026-08-24T17:06:51+08:00",
-  "validated_at": "2026-08-24T17:18:43+08:00"
+  "started_at": "2026-08-25T10:31:50+08:00",
+  "validated_at": "2026-08-25T10:32:40+08:00"
 }
