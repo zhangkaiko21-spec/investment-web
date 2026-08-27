@@ -6,13 +6,13 @@
   "equity": 10457.53,
   "holdings": [],
   "cycle": {
-    "id": 2,
-    "start": "2026-07-27",
-    "forced_close": "2026-08-27",
+    "id": 3,
+    "start": "2026-08-28",
+    "forced_close": "2026-09-28",
     "starting_capital": 10457.53,
     "target_min": 0.05,
     "target_max": 0.1,
-    "status": "active"
+    "status": "scheduled"
   },
   "locked_trades": [
     {
@@ -53,12 +53,21 @@
       "reason": "到期结算",
       "ending_equity": 10457.53,
       "return_pct": 4.5753
+    },
+    {
+      "cycle_id": 2,
+      "start": "2026-07-27",
+      "forced_close": "2026-08-27",
+      "closed_at": "2026-08-27",
+      "reason": "到期结算",
+      "ending_equity": 10457.53,
+      "return_pct": 0.0
     }
   ],
   "locked_realized_pnl": 457.53,
   "realized_pnl": 457.53,
-  "updated_at": "2026-08-26T17:19:35+08:00",
-  "market_date": "2026-08-26",
-  "generated_at": "2026-08-26T17:19:35+08:00",
-  "calculation_started_at": "2026-08-26T17:04:35+08:00"
+  "updated_at": "2026-08-27T15:12:00+08:00",
+  "market_date": "2026-08-27",
+  "generated_at": "2026-08-27T15:12:00+08:00",
+  "calculation_started_at": "2026-08-27T15:08:00+08:00"
 }
