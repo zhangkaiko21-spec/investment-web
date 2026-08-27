@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-27T19:13:50+08:00",
-  "stocks": 2611,
-  "up": 1552,
-  "down": 982,
-  "flat": 77,
-  "total_amount": 1037472833526.0,
+  "generated_at": "2026-08-27T20:53:28+08:00",
+  "stocks": 5343,
+  "up": 3318,
+  "down": 1837,
+  "flat": 188,
+  "total_amount": 2128244675178.0,
   "top_gainers": [
     {
       "code": "920895",
@@ -12,6 +12,13 @@
       "price": 16.25,
       "pct_change": 30.0,
       "amount": 107431847.0
+    },
+    {
+      "code": "300456",
+      "name": "赛微电子",
+      "price": 37.06,
+      "pct_change": 20.013,
+      "amount": 2873362735.0
     },
     {
       "code": "688790",
@@ -35,55 +42,69 @@
       "amount": 794789891.0
     },
     {
-      "code": "688091",
-      "name": "上海谊众",
-      "price": 43.25,
-      "pct_change": 16.42,
-      "amount": 470975655.0
+      "code": "301399",
+      "name": "英特科技",
+      "price": 21.24,
+      "pct_change": 20.0,
+      "amount": 354092613.0
     },
     {
-      "code": "920971",
-      "name": "天马新材",
-      "price": 28.7,
-      "pct_change": 14.984,
-      "amount": 284720384.0
+      "code": "301591",
+      "name": "肯特股份",
+      "price": 50.4,
+      "pct_change": 20.0,
+      "amount": 779741932.0
     },
     {
-      "code": "920087",
-      "name": "秋乐种业",
-      "price": 17.8,
-      "pct_change": 14.691,
-      "amount": 511067273.0
+      "code": "301666",
+      "name": "大普微",
+      "price": 469.2,
+      "pct_change": 20.0,
+      "amount": 961955872.0
     },
     {
-      "code": "688798",
-      "name": "艾为电子",
-      "price": 61.93,
-      "pct_change": 14.579,
-      "amount": 632213003.0
+      "code": "300368",
+      "name": "汇金股份",
+      "price": 9.62,
+      "pct_change": 19.95,
+      "amount": 606935398.0
     },
     {
-      "code": "688183",
-      "name": "生益电子",
-      "price": 121.69,
-      "pct_change": 14.317,
-      "amount": 4104189329.0
-    },
-    {
-      "code": "688661",
-      "name": "和林微纳",
-      "price": 110.35,
-      "pct_change": 14.222,
-      "amount": 632367051.0
+      "code": "301373",
+      "name": "凌玮科技",
+      "price": 116.8,
+      "pct_change": 17.789,
+      "amount": 1461145883.0
     }
   ],
   "top_losers": [
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "price": 98.84,
+      "pct_change": -12.236,
+      "amount": 14133098171.0
+    },
+    {
+      "code": "002028",
+      "name": "思源电气",
+      "price": 153.44,
+      "pct_change": -10.001,
+      "amount": 1015802575.0
+    },
     {
       "code": "603839",
       "name": "安正时尚",
       "price": 6.49,
       "pct_change": -9.986,
       "amount": 130658824.0
+    },
+    {
+      "code": "003013",
+      "name": "地铁设计",
+      "price": 16.07,
+      "pct_change": -9.972,
+      "amount": 323242877.0
     },
     {
       "code": "920717",
@@ -100,6 +121,20 @@
       "amount": 434311519.0
     },
     {
+      "code": "300486",
+      "name": "东杰智能",
+      "price": 19.3,
+      "pct_change": -8.531,
+      "amount": 562585084.0
+    },
+    {
+      "code": "301177",
+      "name": "迪阿股份",
+      "price": 26.38,
+      "pct_change": -8.18,
+      "amount": 289299755.0
+    },
+    {
       "code": "688676",
       "name": "金盘科技",
       "price": 66.77,
@@ -112,42 +147,7 @@
       "price": 4.31,
       "pct_change": -7.511,
       "amount": 575416379.0
-    },
-    {
-      "code": "603706",
-      "name": "东方环宇",
-      "price": 18.24,
-      "pct_change": -7.458,
-      "amount": 87900097.0
-    },
-    {
-      "code": "603955",
-      "name": "大千生态",
-      "price": 19.86,
-      "pct_change": -6.277,
-      "amount": 121324768.0
-    },
-    {
-      "code": "688175",
-      "name": "高凌信息",
-      "price": 19.6,
-      "pct_change": -6.13,
-      "amount": 169166549.0
-    },
-    {
-      "code": "601801",
-      "name": "皖新传媒",
-      "price": 5.08,
-      "pct_change": -6.1,
-      "amount": 175474944.0
-    },
-    {
-      "code": "600757",
-      "name": "长江传媒",
-      "price": 7.27,
-      "pct_change": -5.829,
-      "amount": 203983537.0
     }
   ],
-  "calculation_started_at": "2026-08-27T19:13:50+08:00"
+  "calculation_started_at": "2026-08-27T20:53:28+08:00"
 }
