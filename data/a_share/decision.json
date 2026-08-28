@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-28T22:26:11+08:00",
+  "generated_at": "2026-08-29T01:29:59+08:00",
   "mode": "intraday",
   "cycle_id": 3,
   "cycle_status": "active",
   "cycle_start": "2026-08-28",
   "forced_close": "2026-09-28",
-  "natural_days_left": 31,
-  "trading_days_left": 21,
+  "natural_days_left": 30,
+  "trading_days_left": 20,
   "equity": 10457.53,
   "target_equity": 10980.41,
   "gap_to_target": 522.88,
@@ -15,7 +15,7 @@
   "can_open": false,
   "strict_mode": false,
   "selected_candidate": null,
-  "market_date": "2026-08-28",
+  "market_date": "2026-08-29",
   "requested_mode": "intraday",
   "effective_mode": "intraday",
   "mode_reason": "intraday observation",
@@ -38,5 +38,5 @@
     }
   },
   "top_candidates": [],
-  "calculation_started_at": "2026-08-28T22:26:11+08:00"
+  "calculation_started_at": "2026-08-29T01:29:59+08:00"
 }
