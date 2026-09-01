@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T14:17:00+08:00",
+  "generated_at": "2026-09-01T15:12:00+08:00",
   "market_date": "2026-09-01",
   "requested_mode": "intraday",
   "effective_mode": "intraday",
@@ -18,9 +18,9 @@
       "name": "城发环境",
       "price": 12.24,
       "pct_change": 0.741,
-      "amount": 38118519.0,
+      "amount": 45955141.0,
       "source": "sina",
-      "quote_time": "14:16:12",
+      "quote_time": "15:10:45",
       "low15": 12.01,
       "high15": 13.3,
       "width15_pct": 10.741,
@@ -33,24 +33,24 @@
       "reward_risk": 4.609,
       "target_price": 13.3,
       "stop_price": 11.9499,
-      "score": 61.213,
+      "score": 61.261,
       "history_source": "tencent",
       "history_date": "2026-08-24",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 12.25,
-      "secondary_time": "20260901141651",
-      "price_diff_pct": 0.0817,
-      "secondary_age_seconds": 8.9
+      "secondary_price": 12.24,
+      "secondary_time": "20260901151145",
+      "price_diff_pct": 0.0,
+      "secondary_age_seconds": 14.9
     },
     {
       "code": "603167",
       "name": "渤海轮渡",
       "price": 8.2,
       "pct_change": 0.613,
-      "amount": 34624296.0,
+      "amount": 40964259.0,
       "source": "sina",
-      "quote_time": "14:16:03",
+      "quote_time": "15:11:07",
       "low15": 8.02,
       "high15": 8.81,
       "width15_pct": 9.85,
@@ -63,16 +63,16 @@
       "reward_risk": 3.389,
       "target_price": 8.81,
       "stop_price": 7.9799,
-      "score": 60.309,
+      "score": 60.347,
       "history_source": "tencent",
       "history_date": "2026-08-26",
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 8.2,
-      "secondary_time": "20260901141657",
+      "secondary_time": "20260901151156",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 2.9
+      "secondary_age_seconds": 3.9
     }
   ],
-  "calculation_started_at": "2026-09-01T14:15:52+08:00"
+  "calculation_started_at": "2026-09-01T15:10:52+08:00"
 }
