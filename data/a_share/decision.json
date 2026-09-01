@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T20:03:33+08:00",
-  "mode": "intraday",
+  "generated_at": "2026-09-01T21:44:02+08:00",
+  "mode": "bootstrap",
   "cycle_id": 3,
   "cycle_status": "active",
   "cycle_start": "2026-08-28",
@@ -16,9 +16,9 @@
   "strict_mode": false,
   "selected_candidate": null,
   "market_date": "2026-09-01",
-  "requested_mode": "decision",
-  "effective_mode": "intraday",
-  "mode_reason": "decision request outside 14:35-14:58",
+  "requested_mode": "bootstrap",
+  "effective_mode": "bootstrap",
+  "mode_reason": "history maintenance",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
@@ -38,5 +38,5 @@
     }
   },
   "top_candidates": [],
-  "calculation_started_at": "2026-09-01T20:03:33+08:00"
+  "calculation_started_at": "2026-09-01T21:44:02+08:00"
 }
