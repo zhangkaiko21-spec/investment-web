@@ -24,9 +24,9 @@ on:
       - .github/workflows/a-share-pipeline.yml
   schedule:
     # Native backups in UTC. Beijing: 09:20, 10:20, 13:20, 14:20,
-    # plus staggered tail-decision requests. Delayed schedule runs are classified
-    # again by actual Beijing execution time so an early cron landing inside the
-    # 14:35-14:58 tail window can still become a valid decision request.
+    # plus staggered tail-decision requests. Any delayed schedule that actually
+    # reaches a useful pre-tail staging window can be held until 14:40, so the
+    # strategy no longer depends on GitHub delivering a specific tail cron on time.
     - cron: '20 1 * * 1-5'
     - cron: '20 2 * * 1-5'
     - cron: '20 5 * * 1-5'
@@ -48,7 +48,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
         with:
@@ -71,25 +71,25 @@ jobs:
           restore-keys: |
             a-share-history-${{ runner.os }}-
 
-      - name: Hold early tail backups until decision window
+      - name: Stage delayed schedules for the tail window
         if: github.event_name == 'schedule'
         shell: bash
         run: |
           SCHEDULE='${{ github.event.schedule }}'
-          case "$SCHEDULE" in
-            '25 6 * * 1-5'|'30 6 * * 1-5'|'35 6 * * 1-5'|'40 6 * * 1-5'|'46 6 * * 1-5')
-              NOW_BJ=$(TZ=Asia/Shanghai date +%H%M)
-              if (( 10#$NOW_BJ < 1435 )); then
-                NOW_EPOCH=$(date +%s)
-                TARGET_EPOCH=$(TZ=Asia/Shanghai date -d "$(TZ=Asia/Shanghai date +%F) 14:40:00" +%s)
-                WAIT_SECONDS=$((TARGET_EPOCH - NOW_EPOCH))
-                if (( WAIT_SECONDS > 0 && WAIT_SECONDS <= 1800 )); then
-                  echo "Early tail backup arrived at $NOW_BJ Beijing; holding ${WAIT_SECONDS}s until 14:40."
-                  sleep "$WAIT_SECONDS"
-                fi
-              fi
-              ;;
-          esac
+          NOW_BJ=$(TZ=Asia/Shanghai date +%H%M)
+
+          # The 16:20 Beijing bootstrap schedule is maintenance-only and must
+          # never be repurposed as a tail sentinel.
+          if [[ "$SCHEDULE" != '20 8 * * 1-5' ]] && \
+             (( 10#$NOW_BJ >= 1330 && 10#$NOW_BJ < 1435 )); then
+            NOW_EPOCH=$(date +%s)
+            TARGET_EPOCH=$(TZ=Asia/Shanghai date -d "$(TZ=Asia/Shanghai date +%F) 14:40:00" +%s)
+            WAIT_SECONDS=$((TARGET_EPOCH - NOW_EPOCH))
+            if (( WAIT_SECONDS > 0 && WAIT_SECONDS <= 4500 )); then
+              echo "Schedule $SCHEDULE actually arrived at $NOW_BJ Beijing; holding ${WAIT_SECONDS}s until 14:40 as a tail sentinel."
+              sleep "$WAIT_SECONDS"
+            fi
+          fi
 
       - name: Resolve run mode
         id: mode
@@ -117,9 +117,30 @@ jobs:
           elif [[ "${{ github.event_name }}" == "schedule" ]]; then
             NOW_BJ=$(TZ=Asia/Shanghai date +%H%M)
             if (( 10#$NOW_BJ >= 1435 && 10#$NOW_BJ <= 1458 )); then
-              MODE="decision"
-            elif [[ "${{ github.event.schedule }}" == "25 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "30 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "35 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "40 6 * * 1-5" ]] || [[ "${{ github.event.schedule }}" == "46 6 * * 1-5" ]]; then
-              MODE="decision"
+              LOCKED_TODAY=$(python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          path = Path('data/a_share/tail_snapshot.json')
+          locked = False
+          if path.exists():
+              try:
+                  payload = json.loads(path.read_text(encoding='utf-8'))
+                  today = datetime.now(ZoneInfo('Asia/Shanghai')).date().isoformat()
+                  locked = payload.get('market_date') == today and payload.get('snapshot_valid') is True
+              except Exception:
+                  locked = False
+          print('1' if locked else '0')
+          PY
+              )
+              if [[ "$LOCKED_TODAY" == "1" ]]; then
+                MODE="intraday"
+                echo "A valid tail snapshot is already locked for today; suppressing duplicate decision."
+              else
+                MODE="decision"
+              fi
             else
               MODE="intraday"
             fi
