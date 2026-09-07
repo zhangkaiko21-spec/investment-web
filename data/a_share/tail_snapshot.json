@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "strategy": "周月箱体复利战法2.1",
-  "market_date": "2026-09-04",
-  "locked_at": "2026-09-04T14:40:52+08:00",
+  "market_date": "2026-09-07",
+  "locked_at": "2026-09-07T14:41:05+08:00",
   "snapshot_valid": true,
   "validation_errors": [],
   "requested_mode": "decision",
@@ -11,9 +11,9 @@
   "invariants_ok": true,
   "trade_allowed": true,
   "primary_source": "sina_spot",
-  "spot_count": 5349,
+  "spot_count": 5351,
   "freshness": {
-    "quote_received_at": "2026-09-04T14:40:00+08:00",
+    "quote_received_at": "2026-09-07T14:40:01+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
@@ -56,7 +56,7 @@
   "decision": {
     "cycle_id": 3,
     "cycle_status": "active",
-    "trading_days_left": 16,
+    "trading_days_left": 15,
     "target_equity": 10980.41,
     "gap_to_target": 522.88,
     "can_open": true,
@@ -66,43 +66,43 @@
   },
   "candidates": [
     {
-      "code": "000885",
-      "name": "城发环境",
-      "price": 12.13,
-      "pct_change": 0.165,
-      "amount": 37440070.0,
+      "code": "601456",
+      "name": "国联民生",
+      "price": 8.83,
+      "pct_change": -1.12,
+      "amount": 191949005.0,
       "source": "sina",
-      "quote_time": "14:40:15",
-      "low15": 12.01,
-      "high15": 13.3,
-      "width15_pct": 10.741,
-      "position15": 0.093,
-      "low60": 11.98,
-      "high60": 13.3,
-      "width60_pct": 11.018,
-      "position60": 0.1136,
-      "recovery_score": 0.6,
-      "reward_risk": 8.038,
-      "target_price": 13.3,
-      "stop_price": 11.9499,
-      "score": 64.919,
+      "quote_time": "14:40:11",
+      "low15": 8.72,
+      "high15": 9.07,
+      "width15_pct": 4.014,
+      "position15": 0.3143,
+      "low60": 8.69,
+      "high60": 9.65,
+      "width60_pct": 11.047,
+      "position60": 0.1458,
+      "recovery_score": 0.7778,
+      "reward_risk": 2.182,
+      "target_price": 9.07,
+      "stop_price": 8.6764,
+      "score": 65.998,
       "history_source": "tencent",
-      "history_date": "2026-08-24",
+      "history_date": "2026-09-03",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 12.14,
-      "secondary_time": "20260904144048",
-      "price_diff_pct": 0.0824,
-      "secondary_age_seconds": 4.8
+      "secondary_price": 8.84,
+      "secondary_time": "20260907144102",
+      "price_diff_pct": 0.1133,
+      "secondary_age_seconds": 3.4
     },
     {
       "code": "603167",
       "name": "渤海轮渡",
       "price": 8.15,
-      "pct_change": -0.123,
-      "amount": 18940874.0,
+      "pct_change": 0.0,
+      "amount": 14191732.0,
       "source": "sina",
-      "quote_time": "14:40:05",
+      "quote_time": "14:40:09",
       "low15": 8.02,
       "high15": 8.81,
       "width15_pct": 9.85,
@@ -115,198 +115,228 @@
       "reward_risk": 5.077,
       "target_price": 8.81,
       "stop_price": 7.9799,
-      "score": 64.08,
+      "score": 64.051,
       "history_source": "tencent",
       "history_date": "2026-08-26",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 8.15,
-      "secondary_time": "20260904144050",
-      "price_diff_pct": 0.0,
-      "secondary_age_seconds": 2.8
+      "secondary_price": 8.16,
+      "secondary_time": "20260907144100",
+      "price_diff_pct": 0.1227,
+      "secondary_age_seconds": 5.4
+    },
+    {
+      "code": "000885",
+      "name": "城发环境",
+      "price": 12.17,
+      "pct_change": 0.082,
+      "amount": 27348436.0,
+      "source": "sina",
+      "quote_time": "14:40:30",
+      "low15": 12.01,
+      "high15": 13.3,
+      "width15_pct": 10.741,
+      "position15": 0.124,
+      "low60": 11.98,
+      "high60": 13.3,
+      "width60_pct": 11.018,
+      "position60": 0.1439,
+      "recovery_score": 0.6,
+      "reward_risk": 7.062,
+      "target_price": 13.3,
+      "stop_price": 11.9499,
+      "score": 63.509,
+      "history_source": "tencent",
+      "history_date": "2026-08-24",
+      "verified": true,
+      "secondary_source": "tencent",
+      "secondary_price": 12.16,
+      "secondary_time": "20260907144100",
+      "price_diff_pct": 0.0822,
+      "secondary_age_seconds": 5.4
     },
     {
       "code": "002236",
       "name": "大华股份",
-      "price": 16.29,
-      "pct_change": 0.0,
-      "amount": 363044926.0,
+      "price": 16.3,
+      "pct_change": -0.061,
+      "amount": 349652944.0,
       "source": "sina",
-      "quote_time": "14:40:21",
+      "quote_time": "14:40:27",
       "low15": 15.87,
       "high15": 17.36,
       "width15_pct": 9.389,
-      "position15": 0.2819,
+      "position15": 0.2886,
       "low60": 15.78,
       "high60": 17.84,
       "width60_pct": 13.054,
-      "position60": 0.2476,
+      "position60": 0.2524,
       "recovery_score": 0.7273,
-      "reward_risk": 2.548,
+      "reward_risk": 2.465,
       "target_price": 17.36,
       "stop_price": 15.7906,
-      "score": 58.091,
+      "score": 57.592,
       "history_source": "tencent",
       "history_date": "2026-08-24",
       "verified": true,
       "secondary_source": "tencent",
       "secondary_price": 16.3,
-      "secondary_time": "20260904144051",
-      "price_diff_pct": 0.0614,
-      "secondary_age_seconds": 1.8
+      "secondary_time": "20260907144100",
+      "price_diff_pct": 0.0,
+      "secondary_age_seconds": 5.4
     }
   ],
   "market_summary": {
-    "generated_at": "2026-09-04T14:40:52+08:00",
-    "stocks": 5349,
-    "up": 2027,
-    "down": 3125,
-    "flat": 197,
-    "total_amount": 1847724457746.0,
+    "generated_at": "2026-09-07T14:41:05+08:00",
+    "stocks": 5351,
+    "up": 3057,
+    "down": 2121,
+    "flat": 173,
+    "total_amount": 1782758869218.0,
     "top_gainers": [
       {
-        "code": "920289",
-        "name": "N华汇",
-        "price": 36.75,
-        "pct_change": 107.51,
-        "amount": 497410218.0
+        "code": "603448",
+        "name": "N天博",
+        "price": 86.87,
+        "pct_change": 38.659,
+        "amount": 1397892465.0
       },
       {
-        "code": "920075",
-        "name": "柏星龙",
-        "price": 21.32,
-        "pct_change": 30.0,
-        "amount": 119641253.0
+        "code": "920269",
+        "name": "N杰锋",
+        "price": 41.56,
+        "pct_change": 35.375,
+        "amount": 351042401.0
       },
       {
-        "code": "920970",
-        "name": "大禹生物",
-        "price": 7.69,
-        "pct_change": 19.41,
-        "amount": 141151723.0
+        "code": "920821",
+        "name": "则成电子",
+        "price": 23.59,
+        "pct_change": 29.972,
+        "amount": 327305800.0
       },
       {
-        "code": "688170",
-        "name": "德龙激光",
-        "price": 61.75,
-        "pct_change": 17.217,
-        "amount": 1022565664.0
+        "code": "300112",
+        "name": "万讯自控",
+        "price": 10.55,
+        "pct_change": 20.023,
+        "amount": 385207609.0
       },
       {
-        "code": "920071",
-        "name": "金钛股份",
-        "price": 28.2,
-        "pct_change": 16.385,
-        "amount": 606302326.0
+        "code": "688001",
+        "name": "华兴源创",
+        "price": 58.26,
+        "pct_change": 20.0,
+        "amount": 1087249907.0
       },
       {
-        "code": "920748",
-        "name": "路桥信息",
-        "price": 34.94,
-        "pct_change": 15.199,
-        "amount": 213467247.0
+        "code": "688655",
+        "name": "迅捷兴",
+        "price": 50.52,
+        "pct_change": 20.0,
+        "amount": 617572161.0
       },
       {
-        "code": "300468",
-        "name": "四方精创",
-        "price": 27.5,
-        "pct_change": 14.583,
-        "amount": 3908951428.0
+        "code": "301516",
+        "name": "中远通",
+        "price": 19.98,
+        "pct_change": 20.0,
+        "amount": 536717281.0
       },
       {
-        "code": "300300",
-        "name": "海峡创新",
-        "price": 8.95,
-        "pct_change": 13.723,
-        "amount": 1234764028.0
+        "code": "688813",
+        "name": "泰金新能",
+        "price": 122.77,
+        "pct_change": 19.998,
+        "amount": 1000829188.0
       },
       {
-        "code": "300864",
-        "name": "南大环境",
-        "price": 29.07,
-        "pct_change": 13.422,
-        "amount": 288013686.0
+        "code": "301550",
+        "name": "斯菱智驱",
+        "price": 97.75,
+        "pct_change": 19.998,
+        "amount": 1568599952.0
       },
       {
-        "code": "920436",
-        "name": "大地电气",
-        "price": 12.69,
-        "pct_change": 12.7,
-        "amount": 74017257.0
+        "code": "300684",
+        "name": "中石科技",
+        "price": 105.62,
+        "pct_change": 18.808,
+        "amount": 4057928130.0
       }
     ],
     "top_losers": [
       {
-        "code": "301326",
-        "name": "捷邦科技",
-        "price": 104.05,
-        "pct_change": -11.447,
-        "amount": 338249829.0
+        "code": "920289",
+        "name": "华汇智能",
+        "price": 28.56,
+        "pct_change": -23.84,
+        "amount": 219321837.0
       },
       {
-        "code": "688809",
-        "name": "强一股份",
-        "price": 403.03,
-        "pct_change": -10.678,
-        "amount": 1003306887.0
+        "code": "688795",
+        "name": "摩尔线程",
+        "price": 415.49,
+        "pct_change": -19.998,
+        "amount": 3245058987.0
       },
       {
-        "code": "300672",
-        "name": "国科微",
-        "price": 168.98,
-        "pct_change": -10.498,
-        "amount": 2646031251.0
+        "code": "300911",
+        "name": "亿田智能",
+        "price": 27.56,
+        "pct_change": -11.496,
+        "amount": 633345777.0
       },
       {
-        "code": "300420",
-        "name": "五洋自控",
-        "price": 7.87,
-        "pct_change": -10.466,
-        "amount": 1201645175.0
+        "code": "300840",
+        "name": "酷特智能",
+        "price": 18.2,
+        "pct_change": -10.389,
+        "amount": 452195250.0
       },
       {
-        "code": "300990",
-        "name": "同飞股份",
-        "price": 96.05,
-        "pct_change": -10.409,
-        "amount": 1420080676.0
+        "code": "600076",
+        "name": "康欣新材",
+        "price": 2.85,
+        "pct_change": -10.095,
+        "amount": 14891250.0
       },
       {
-        "code": "000017",
-        "name": "深中华A",
-        "price": 9.52,
-        "pct_change": -10.019,
-        "amount": 1007137052.0
+        "code": "002674",
+        "name": "兴业科技",
+        "price": 20.93,
+        "pct_change": -10.017,
+        "amount": 28579915.0
       },
       {
-        "code": "600121",
-        "name": "郑州煤电",
-        "price": 5.12,
-        "pct_change": -10.018,
-        "amount": 659573687.0
+        "code": "688802",
+        "name": "沐曦股份",
+        "price": 570.45,
+        "pct_change": -9.61,
+        "amount": 1437685438.0
       },
       {
-        "code": "603353",
-        "name": "和顺石油",
-        "price": 33.91,
-        "pct_change": -10.005,
-        "amount": 425285237.0
+        "code": "605177",
+        "name": "东亚药业",
+        "price": 20.12,
+        "pct_change": -8.421,
+        "amount": 328831841.0
       },
       {
-        "code": "603256",
-        "name": "宏和科技",
-        "price": 120.69,
-        "pct_change": -10.0,
-        "amount": 3283750352.0
+        "code": "688660",
+        "name": "电气风电",
+        "price": 7.77,
+        "pct_change": -7.72,
+        "amount": 335886432.0
       },
       {
-        "code": "605068",
-        "name": "明新旭腾",
-        "price": 21.15,
-        "pct_change": -10.0,
-        "amount": 228392242.0
+        "code": "600295",
+        "name": "鄂尔多斯",
+        "price": 13.61,
+        "pct_change": -7.478,
+        "amount": 308003605.0
       }
     ],
-    "calculation_started_at": "2026-09-04T14:40:52+08:00"
+    "calculation_started_at": "2026-09-07T14:41:05+08:00"
   }
 }
