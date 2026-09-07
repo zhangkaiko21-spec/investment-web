@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-09-07T14:41:05+08:00",
+  "generated_at": "2026-09-07T15:24:02+08:00",
   "stocks": 5351,
-  "up": 3057,
-  "down": 2121,
-  "flat": 173,
-  "total_amount": 1782758869218.0,
+  "up": 3039,
+  "down": 2138,
+  "flat": 174,
+  "total_amount": 1953211411716.0,
   "top_gainers": [
-    {
-      "code": "603448",
-      "name": "N天博",
-      "price": 86.87,
-      "pct_change": 38.659,
-      "amount": 1397892465.0
-    },
     {
       "code": "920269",
       "name": "N杰锋",
-      "price": 41.56,
-      "pct_change": 35.375,
-      "amount": 351042401.0
+      "price": 41.25,
+      "pct_change": 34.365,
+      "amount": 375949274.0
+    },
+    {
+      "code": "603448",
+      "name": "N天博",
+      "price": 83.48,
+      "pct_change": 33.248,
+      "amount": 1554328112.0
     },
     {
       "code": "920821",
       "name": "则成电子",
       "price": 23.59,
       "pct_change": 29.972,
-      "amount": 327305800.0
+      "amount": 329178044.0
     },
     {
       "code": "300112",
       "name": "万讯自控",
       "price": 10.55,
       "pct_change": 20.023,
-      "amount": 385207609.0
+      "amount": 388699659.0
     },
     {
       "code": "688001",
       "name": "华兴源创",
       "price": 58.26,
       "pct_change": 20.0,
-      "amount": 1087249907.0
+      "amount": 1092143572.0
     },
     {
       "code": "688655",
       "name": "迅捷兴",
       "price": 50.52,
       "pct_change": 20.0,
-      "amount": 617572161.0
+      "amount": 620997215.0
     },
     {
       "code": "301516",
       "name": "中远通",
       "price": 19.98,
       "pct_change": 20.0,
-      "amount": 536717281.0
+      "amount": 539352643.0
     },
     {
       "code": "688813",
       "name": "泰金新能",
       "price": 122.77,
       "pct_change": 19.998,
-      "amount": 1000829188.0
+      "amount": 1010064930.0
     },
     {
       "code": "301550",
       "name": "斯菱智驱",
       "price": 97.75,
       "pct_change": 19.998,
-      "amount": 1568599952.0
+      "amount": 1588661869.0
     },
     {
-      "code": "300684",
-      "name": "中石科技",
-      "price": 105.62,
-      "pct_change": 18.808,
-      "amount": 4057928130.0
+      "code": "920045",
+      "name": "蘅东光",
+      "price": 549.5,
+      "pct_change": 18.862,
+      "amount": 1224840083.0
     }
   ],
   "top_losers": [
     {
       "code": "920289",
       "name": "华汇智能",
-      "price": 28.56,
-      "pct_change": -23.84,
-      "amount": 219321837.0
+      "price": 28.24,
+      "pct_change": -24.693,
+      "amount": 248571228.0
     },
     {
       "code": "688795",
       "name": "摩尔线程",
       "price": 415.49,
       "pct_change": -19.998,
-      "amount": 3245058987.0
-    },
-    {
-      "code": "300911",
-      "name": "亿田智能",
-      "price": 27.56,
-      "pct_change": -11.496,
-      "amount": 633345777.0
+      "amount": 3467342041.0
     },
     {
       "code": "300840",
       "name": "酷特智能",
-      "price": 18.2,
-      "pct_change": -10.389,
-      "amount": 452195250.0
+      "price": 18.18,
+      "pct_change": -10.487,
+      "amount": 485929856.0
+    },
+    {
+      "code": "300911",
+      "name": "亿田智能",
+      "price": 27.88,
+      "pct_change": -10.469,
+      "amount": 731107761.0
     },
     {
       "code": "600076",
       "name": "康欣新材",
       "price": 2.85,
       "pct_change": -10.095,
-      "amount": 14891250.0
+      "amount": 16829250.0
     },
     {
       "code": "002674",
       "name": "兴业科技",
       "price": 20.93,
       "pct_change": -10.017,
-      "amount": 28579915.0
+      "amount": 32052202.0
     },
     {
       "code": "688802",
       "name": "沐曦股份",
-      "price": 570.45,
-      "pct_change": -9.61,
-      "amount": 1437685438.0
+      "price": 570.08,
+      "pct_change": -9.669,
+      "amount": 1542153535.0
     },
     {
       "code": "605177",
       "name": "东亚药业",
-      "price": 20.12,
-      "pct_change": -8.421,
-      "amount": 328831841.0
-    },
-    {
-      "code": "688660",
-      "name": "电气风电",
-      "price": 7.77,
-      "pct_change": -7.72,
-      "amount": 335886432.0
+      "price": 20.05,
+      "pct_change": -8.739,
+      "amount": 354210508.0
     },
     {
       "code": "600295",
       "name": "鄂尔多斯",
-      "price": 13.61,
-      "pct_change": -7.478,
-      "amount": 308003605.0
+      "price": 13.62,
+      "pct_change": -7.41,
+      "amount": 329924780.0
+    },
+    {
+      "code": "000007",
+      "name": "全新好",
+      "price": 11.5,
+      "pct_change": -7.407,
+      "amount": 243648981.0
     }
   ],
-  "calculation_started_at": "2026-09-07T14:41:05+08:00"
+  "calculation_started_at": "2026-09-07T15:24:02+08:00"
 }
