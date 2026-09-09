@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T15:27:20+08:00",
+  "generated_at": "2026-09-09T17:53:35+08:00",
   "stocks": 5353,
   "up": 1746,
   "down": 3494,
   "flat": 113,
-  "total_amount": 1861871572148.0,
+  "total_amount": 1861886518562.0,
   "top_gainers": [
     {
       "code": "301699",
@@ -149,5 +149,5 @@
       "amount": 3294277997.0
     }
   ],
-  "calculation_started_at": "2026-09-09T15:27:20+08:00"
+  "calculation_started_at": "2026-09-09T17:53:35+08:00"
 }
