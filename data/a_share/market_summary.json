@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-09-09T14:41:01+08:00",
+  "generated_at": "2026-09-09T15:27:20+08:00",
   "stocks": 5353,
-  "up": 1821,
-  "down": 3403,
-  "flat": 129,
-  "total_amount": 1705047673388.0,
+  "up": 1746,
+  "down": 3494,
+  "flat": 113,
+  "total_amount": 1861871572148.0,
   "top_gainers": [
     {
       "code": "301699",
       "name": "N洛轴",
-      "price": 32.01,
-      "pct_change": 101.574,
-      "amount": 1746613773.0
+      "price": 31.99,
+      "pct_change": 101.448,
+      "amount": 1840767558.0
     },
     {
       "code": "920268",
       "name": "N百迈科",
-      "price": 26.9,
-      "pct_change": 57.31,
-      "amount": 251878949.0
+      "price": 26.88,
+      "pct_change": 57.193,
+      "amount": 270402182.0
     },
     {
       "code": "300913",
       "name": "兆龙互连",
-      "price": 40.79,
-      "pct_change": 13.907,
-      "amount": 1610420351.0
-    },
-    {
-      "code": "920128",
-      "name": "胜业电气",
-      "price": 20.86,
-      "pct_change": 13.803,
-      "amount": 127295975.0
+      "price": 41.08,
+      "pct_change": 14.717,
+      "amount": 1733800812.0
     },
     {
       "code": "920019",
       "name": "铜冠矿建",
-      "price": 18.21,
-      "pct_change": 13.035,
-      "amount": 186360432.0
+      "price": 18.17,
+      "pct_change": 12.787,
+      "amount": 199285009.0
     },
     {
       "code": "688559",
       "name": "海目星",
-      "price": 59.1,
-      "pct_change": 12.636,
-      "amount": 1401972601.0
+      "price": 59.03,
+      "pct_change": 12.502,
+      "amount": 1467165717.0
     },
     {
       "code": "300810",
       "name": "中科海讯",
-      "price": 27.76,
-      "pct_change": 11.71,
-      "amount": 253187585.0
+      "price": 27.73,
+      "pct_change": 11.59,
+      "amount": 276238445.0
     },
     {
       "code": "301322",
       "name": "绿通科技",
-      "price": 45.76,
-      "pct_change": 11.691,
-      "amount": 416711583.0
+      "price": 45.61,
+      "pct_change": 11.325,
+      "amount": 448004427.0
+    },
+    {
+      "code": "920128",
+      "name": "胜业电气",
+      "price": 20.4,
+      "pct_change": 11.293,
+      "amount": 134176929.0
     },
     {
       "code": "301055",
       "name": "张小泉",
-      "price": 31.27,
-      "pct_change": 11.36,
-      "amount": 234687385.0
+      "price": 31.19,
+      "pct_change": 11.075,
+      "amount": 256672022.0
     },
     {
-      "code": "301132",
-      "name": "满坤科技",
-      "price": 46.95,
-      "pct_change": 10.237,
-      "amount": 493384036.0
+      "code": "688028",
+      "name": "沃尔德",
+      "price": 124.35,
+      "pct_change": 10.151,
+      "amount": 1713241342.0
     }
   ],
   "top_losers": [
     {
-      "code": "920371",
-      "name": "欧福蛋业",
-      "price": 9.13,
-      "pct_change": -10.927,
-      "amount": 193404619.0
+      "code": "920021",
+      "name": "流金科技",
+      "price": 8.05,
+      "pct_change": -10.256,
+      "amount": 349320053.0
     },
     {
       "code": "603123",
       "name": "翠微股份",
       "price": 11.05,
       "pct_change": -10.016,
-      "amount": 952658318.0
+      "amount": 973388118.0
+    },
+    {
+      "code": "001366",
+      "name": "播恩集团",
+      "price": 14.74,
+      "pct_change": -10.012,
+      "amount": 397581748.0
     },
     {
       "code": "002084",
       "name": "海鸥住工",
       "price": 6.12,
       "pct_change": -10.0,
-      "amount": 815026393.0
+      "amount": 822975661.0
     },
     {
       "code": "002855",
       "name": "捷荣技术",
       "price": 16.65,
       "pct_change": -10.0,
-      "amount": 197971158.0
+      "amount": 203963493.0
     },
     {
       "code": "605168",
       "name": "三人行",
       "price": 49.64,
       "pct_change": -9.991,
-      "amount": 373215804.0
+      "amount": 377822396.0
     },
     {
       "code": "003005",
       "name": "竞业达",
       "price": 16.85,
       "pct_change": -9.989,
-      "amount": 414223464.0
+      "amount": 419930559.0
     },
     {
       "code": "600892",
       "name": "大晟文化",
       "price": 4.42,
       "pct_change": -9.98,
-      "amount": 509637707.0
+      "amount": 531859864.0
     },
     {
       "code": "601999",
       "name": "出版传媒",
       "price": 7.22,
       "pct_change": -9.975,
-      "amount": 342993346.0
+      "amount": 350738962.0
     },
     {
       "code": "300413",
       "name": "芒果超媒",
-      "price": 18.58,
-      "pct_change": -9.893,
-      "amount": 2996016120.0
-    },
-    {
-      "code": "001366",
-      "name": "播恩集团",
-      "price": 14.79,
-      "pct_change": -9.707,
-      "amount": 377050410.0
+      "price": 18.57,
+      "pct_change": -9.942,
+      "amount": 3294277997.0
     }
   ],
-  "calculation_started_at": "2026-09-09T14:41:01+08:00"
+  "calculation_started_at": "2026-09-09T15:27:20+08:00"
 }
