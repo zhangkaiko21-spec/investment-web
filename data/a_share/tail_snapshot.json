@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "strategy": "周月箱体复利战法2.1",
-  "market_date": "2026-09-09",
-  "locked_at": "2026-09-09T14:41:01+08:00",
+  "market_date": "2026-09-10",
+  "locked_at": "2026-09-10T14:42:52+08:00",
   "snapshot_valid": true,
   "validation_errors": [],
   "requested_mode": "decision",
@@ -13,7 +13,7 @@
   "primary_source": "sina_spot",
   "spot_count": 5353,
   "freshness": {
-    "quote_received_at": "2026-09-09T14:40:00+08:00",
+    "quote_received_at": "2026-09-10T14:40:00+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
@@ -56,7 +56,7 @@
   "decision": {
     "cycle_id": 3,
     "cycle_status": "active",
-    "trading_days_left": 13,
+    "trading_days_left": 12,
     "target_equity": 10980.41,
     "gap_to_target": 522.88,
     "can_open": true,
@@ -69,10 +69,10 @@
       "code": "601456",
       "name": "国联民生",
       "price": 8.84,
-      "pct_change": 0.0,
-      "amount": 82975929.0,
+      "pct_change": 0.113,
+      "amount": 107421476.0,
       "source": "sina",
-      "quote_time": "14:40:07",
+      "quote_time": "14:40:55",
       "low15": 8.72,
       "high15": 9.07,
       "width15_pct": 4.014,
@@ -85,258 +85,258 @@
       "reward_risk": 1.917,
       "target_price": 9.07,
       "stop_price": 8.6764,
-      "score": 63.957,
+      "score": 64.103,
       "history_source": "tencent",
       "history_date": "2026-09-03",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 8.84,
-      "secondary_time": "20260909144058",
-      "price_diff_pct": 0.0,
-      "secondary_age_seconds": 3.8
-    },
-    {
-      "code": "600927",
-      "name": "永安期货",
-      "price": 12.79,
-      "pct_change": 0.078,
-      "amount": 44043125.0,
-      "source": "sina",
-      "quote_time": "14:40:02",
-      "low15": 12.63,
-      "high15": 13.36,
-      "width15_pct": 5.78,
-      "position15": 0.2192,
-      "low60": 12.26,
-      "high60": 13.76,
-      "width60_pct": 12.235,
-      "position60": 0.3533,
-      "recovery_score": 0.8333,
-      "reward_risk": 3.563,
-      "target_price": 13.36,
-      "stop_price": 12.5669,
-      "score": 63.279,
-      "history_source": "eastmoney",
-      "history_date": "2026-09-08",
-      "verified": true,
-      "secondary_source": "tencent",
-      "secondary_price": 12.78,
-      "secondary_time": "20260909144056",
-      "price_diff_pct": 0.0782,
-      "secondary_age_seconds": 5.8
+      "secondary_price": 8.85,
+      "secondary_time": "20260910144249",
+      "price_diff_pct": 0.1131,
+      "secondary_age_seconds": 2.9
     },
     {
       "code": "000885",
       "name": "城发环境",
-      "price": 12.23,
-      "pct_change": 0.0,
-      "amount": 22654657.0,
+      "price": 12.2,
+      "pct_change": -0.164,
+      "amount": 23962933.0,
       "source": "sina",
-      "quote_time": "14:40:30",
+      "quote_time": "14:41:48",
       "low15": 12.01,
       "high15": 13.3,
       "width15_pct": 10.741,
-      "position15": 0.1705,
+      "position15": 0.1473,
       "low60": 11.98,
       "high60": 13.3,
       "width60_pct": 11.018,
-      "position60": 0.1894,
+      "position60": 0.1667,
       "recovery_score": 0.6,
-      "reward_risk": 4.864,
+      "reward_risk": 5.789,
       "target_price": 13.3,
       "stop_price": 11.9499,
-      "score": 61.458,
+      "score": 62.477,
       "history_source": "tencent",
       "history_date": "2026-08-24",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 12.23,
-      "secondary_time": "20260909144057",
-      "price_diff_pct": 0.0,
-      "secondary_age_seconds": 4.8
+      "secondary_price": 12.21,
+      "secondary_time": "20260910144248",
+      "price_diff_pct": 0.082,
+      "secondary_age_seconds": 3.9
     },
     {
       "code": "603167",
       "name": "渤海轮渡",
-      "price": 8.21,
-      "pct_change": 0.367,
-      "amount": 21887919.0,
+      "price": 8.18,
+      "pct_change": -0.365,
+      "amount": 12366800.0,
       "source": "sina",
-      "quote_time": "14:40:06",
+      "quote_time": "14:41:06",
       "low15": 8.02,
       "high15": 8.81,
       "width15_pct": 9.85,
-      "position15": 0.2405,
+      "position15": 0.2025,
       "low60": 7.98,
       "high60": 8.86,
       "width60_pct": 11.028,
-      "position60": 0.2614,
+      "position60": 0.2273,
       "recovery_score": 0.7143,
-      "reward_risk": 3.158,
+      "reward_risk": 3.938,
       "target_price": 8.81,
       "stop_price": 7.9799,
-      "score": 59.242,
+      "score": 62.33,
       "history_source": "tencent",
       "history_date": "2026-08-26",
       "verified": true,
       "secondary_source": "tencent",
-      "secondary_price": 8.21,
-      "secondary_time": "20260909144100",
+      "secondary_price": 8.18,
+      "secondary_time": "20260910144248",
       "price_diff_pct": 0.0,
-      "secondary_age_seconds": 1.8
+      "secondary_age_seconds": 3.9
+    },
+    {
+      "code": "600927",
+      "name": "永安期货",
+      "price": 12.81,
+      "pct_change": 0.471,
+      "amount": 66437353.0,
+      "source": "sina",
+      "quote_time": "14:40:37",
+      "low15": 12.63,
+      "high15": 13.36,
+      "width15_pct": 5.78,
+      "position15": 0.2466,
+      "low60": 12.26,
+      "high60": 13.76,
+      "width60_pct": 12.235,
+      "position60": 0.3667,
+      "recovery_score": 0.8333,
+      "reward_risk": 3.056,
+      "target_price": 13.36,
+      "stop_price": 12.5669,
+      "score": 61.504,
+      "history_source": "eastmoney",
+      "history_date": "2026-09-08",
+      "verified": true,
+      "secondary_source": "tencent",
+      "secondary_price": 12.82,
+      "secondary_time": "20260910144243",
+      "price_diff_pct": 0.0781,
+      "secondary_age_seconds": 8.9
     }
   ],
   "market_summary": {
-    "generated_at": "2026-09-09T14:41:01+08:00",
+    "generated_at": "2026-09-10T14:42:52+08:00",
     "stocks": 5353,
-    "up": 1821,
-    "down": 3403,
-    "flat": 129,
-    "total_amount": 1705047673388.0,
+    "up": 945,
+    "down": 4315,
+    "flat": 93,
+    "total_amount": 1501050171545.0,
     "top_gainers": [
       {
-        "code": "301699",
-        "name": "N洛轴",
-        "price": 32.01,
-        "pct_change": 101.574,
-        "amount": 1746613773.0
+        "code": "301689",
+        "name": "N电科思",
+        "price": 51.01,
+        "pct_change": 218.813,
+        "amount": 2403255005.0
       },
       {
         "code": "920268",
-        "name": "N百迈科",
-        "price": 26.9,
-        "pct_change": 57.31,
-        "amount": 251878949.0
+        "name": "百迈科",
+        "price": 34.94,
+        "pct_change": 29.985,
+        "amount": 259008688.0
       },
       {
-        "code": "300913",
-        "name": "兆龙互连",
-        "price": 40.79,
-        "pct_change": 13.907,
-        "amount": 1610420351.0
+        "code": "301176",
+        "name": "逸豪新材",
+        "price": 56.26,
+        "pct_change": 14.816,
+        "amount": 1030235485.0
       },
       {
-        "code": "920128",
-        "name": "胜业电气",
-        "price": 20.86,
-        "pct_change": 13.803,
-        "amount": 127295975.0
+        "code": "002377",
+        "name": "国创高新",
+        "price": 3.47,
+        "pct_change": 10.159,
+        "amount": 209087105.0
       },
       {
-        "code": "920019",
-        "name": "铜冠矿建",
-        "price": 18.21,
-        "pct_change": 13.035,
-        "amount": 186360432.0
+        "code": "002204",
+        "name": "大连重工",
+        "price": 5.89,
+        "pct_change": 10.093,
+        "amount": 492057362.0
       },
       {
-        "code": "688559",
-        "name": "海目星",
-        "price": 59.1,
-        "pct_change": 12.636,
-        "amount": 1401972601.0
+        "code": "600488",
+        "name": "津药药业",
+        "price": 5.9,
+        "pct_change": 10.075,
+        "amount": 1108130410.0
       },
       {
-        "code": "300810",
-        "name": "中科海讯",
-        "price": 27.76,
-        "pct_change": 11.71,
-        "amount": 253187585.0
+        "code": "600318",
+        "name": "新力金融",
+        "price": 8.09,
+        "pct_change": 10.068,
+        "amount": 902115970.0
       },
       {
-        "code": "301322",
-        "name": "绿通科技",
-        "price": 45.76,
-        "pct_change": 11.691,
-        "amount": 416711583.0
+        "code": "600744",
+        "name": "华银电力",
+        "price": 7.0,
+        "pct_change": 10.063,
+        "amount": 1323601349.0
       },
       {
-        "code": "301055",
-        "name": "张小泉",
-        "price": 31.27,
-        "pct_change": 11.36,
-        "amount": 234687385.0
+        "code": "603601",
+        "name": "再升科技",
+        "price": 9.96,
+        "pct_change": 10.055,
+        "amount": 1948576303.0
       },
       {
-        "code": "301132",
-        "name": "满坤科技",
-        "price": 46.95,
-        "pct_change": 10.237,
-        "amount": 493384036.0
+        "code": "600359",
+        "name": "新农开发",
+        "price": 9.64,
+        "pct_change": 10.046,
+        "amount": 365189560.0
       }
     ],
     "top_losers": [
       {
+        "code": "300328",
+        "name": "宜安科技",
+        "price": 12.48,
+        "pct_change": -14.168,
+        "amount": 839945996.0
+      },
+      {
+        "code": "301575",
+        "name": "艾芬达",
+        "price": 21.77,
+        "pct_change": -14.021,
+        "amount": 268774135.0
+      },
+      {
         "code": "920371",
         "name": "欧福蛋业",
-        "price": 9.13,
-        "pct_change": -10.927,
-        "amount": 193404619.0
+        "price": 8.36,
+        "pct_change": -12.0,
+        "amount": 136481531.0
       },
       {
-        "code": "603123",
-        "name": "翠微股份",
-        "price": 11.05,
+        "code": "300461",
+        "name": "田中精机",
+        "price": 30.14,
+        "pct_change": -11.275,
+        "amount": 323521654.0
+      },
+      {
+        "code": "300901",
+        "name": "中胤时尚",
+        "price": 17.39,
+        "pct_change": -11.23,
+        "amount": 234616951.0
+      },
+      {
+        "code": "300313",
+        "name": "天山生物",
+        "price": 13.31,
+        "pct_change": -11.207,
+        "amount": 394100362.0
+      },
+      {
+        "code": "920786",
+        "name": "骑士乳业",
+        "price": 8.17,
+        "pct_change": -11.196,
+        "amount": 158559955.0
+      },
+      {
+        "code": "000017",
+        "name": "深中华A",
+        "price": 8.33,
+        "pct_change": -10.043,
+        "amount": 410445746.0
+      },
+      {
+        "code": "603042",
+        "name": "华脉科技",
+        "price": 16.8,
         "pct_change": -10.016,
-        "amount": 952658318.0
+        "amount": 979335133.0
       },
       {
-        "code": "002084",
-        "name": "海鸥住工",
-        "price": 6.12,
-        "pct_change": -10.0,
-        "amount": 815026393.0
-      },
-      {
-        "code": "002855",
-        "name": "捷荣技术",
-        "price": 16.65,
-        "pct_change": -10.0,
-        "amount": 197971158.0
-      },
-      {
-        "code": "605168",
-        "name": "三人行",
-        "price": 49.64,
-        "pct_change": -9.991,
-        "amount": 373215804.0
-      },
-      {
-        "code": "003005",
-        "name": "竞业达",
-        "price": 16.85,
-        "pct_change": -9.989,
-        "amount": 414223464.0
-      },
-      {
-        "code": "600892",
-        "name": "大晟文化",
-        "price": 4.42,
-        "pct_change": -9.98,
-        "amount": 509637707.0
-      },
-      {
-        "code": "601999",
-        "name": "出版传媒",
-        "price": 7.22,
-        "pct_change": -9.975,
-        "amount": 342993346.0
-      },
-      {
-        "code": "300413",
-        "name": "芒果超媒",
-        "price": 18.58,
-        "pct_change": -9.893,
-        "amount": 2996016120.0
-      },
-      {
-        "code": "001366",
-        "name": "播恩集团",
-        "price": 14.79,
-        "pct_change": -9.707,
-        "amount": 377050410.0
+        "code": "603090",
+        "name": "宏盛股份",
+        "price": 36.88,
+        "pct_change": -10.005,
+        "amount": 322732920.0
       }
     ],
-    "calculation_started_at": "2026-09-09T14:41:01+08:00"
+    "calculation_started_at": "2026-09-10T14:42:51+08:00"
   }
 }
