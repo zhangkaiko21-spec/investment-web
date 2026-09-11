@@ -1,10 +1,25 @@
 {
   "strategy": "周月箱体复利战法2.1",
   "initial_capital": 10000.0,
-  "cash": 10457.53,
-  "market_value": 0.0,
-  "equity": 10457.53,
-  "holdings": [],
+  "cash": 4369.47,
+  "market_value": 6083.0,
+  "equity": 10452.47,
+  "holdings": [
+    {
+      "code": "601456",
+      "name": "国联民生",
+      "shares": 700,
+      "cost": 8.69,
+      "buy_fees": 5.06,
+      "buy_time": "2026-09-11T14:41:00+08:00",
+      "target_price": 8.9941,
+      "stop_price": 8.6465,
+      "source_candidate_score": 79.037,
+      "breach_count": 0,
+      "last_price": 8.69,
+      "market_value": 6083.0
+    }
+  ],
   "cycle": {
     "id": 3,
     "start": "2026-08-28",
@@ -43,7 +58,24 @@
       "reason": "第二档止盈，已锁定，不得重复"
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "id": "2026-09-11-BUY-601456-700-8.6900",
+      "timestamp": "2026-09-11T14:41:00+08:00",
+      "action": "BUY",
+      "code": "601456",
+      "name": "国联民生",
+      "shares": 700,
+      "price": 8.69,
+      "gross": 6083.0,
+      "fees": 5.06,
+      "net_cash": -6088.06,
+      "reason": "箱体下沿候选，符合周月箱体复利战法2.1",
+      "candidate_score": 79.037,
+      "target_price": 8.9941,
+      "stop_price": 8.6465
+    }
+  ],
   "completed_cycles": [
     {
       "cycle_id": 1,
@@ -66,8 +98,8 @@
   ],
   "locked_realized_pnl": 457.53,
   "realized_pnl": 457.53,
-  "updated_at": "2026-09-10T21:14:38+08:00",
-  "market_date": "2026-09-10",
-  "generated_at": "2026-09-10T21:14:38+08:00",
-  "calculation_started_at": "2026-09-10T20:56:39+08:00"
+  "updated_at": "2026-09-11T14:41:00+08:00",
+  "market_date": "2026-09-11",
+  "generated_at": "2026-09-11T14:41:00+08:00",
+  "calculation_started_at": "2026-09-11T14:40:00+08:00"
 }
