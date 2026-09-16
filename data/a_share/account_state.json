@@ -1,23 +1,23 @@
 {
   "strategy": "周月箱体复利战法2.1",
   "initial_capital": 10000.0,
-  "cash": 4356.33,
-  "market_value": 6020.0,
-  "equity": 10376.33,
+  "cash": 4343.19,
+  "market_value": 6048.0,
+  "equity": 10391.19,
   "holdings": [
     {
       "code": "601456",
       "name": "国联民生",
       "shares": 700,
-      "cost": 8.62,
+      "cost": 8.64,
       "buy_fees": 5.06,
-      "buy_time": "2026-09-15T14:41:19+08:00",
-      "target_price": 8.9217,
+      "buy_time": "2026-09-16T14:40:58+08:00",
+      "target_price": 8.9424,
       "stop_price": 8.6465,
-      "source_candidate_score": 78.97,
+      "source_candidate_score": 79.046,
       "breach_count": 0,
-      "last_price": 8.6,
-      "market_value": 6020.0
+      "last_price": 8.64,
+      "market_value": 6048.0
     }
   ],
   "cycle": {
@@ -104,6 +104,36 @@
       "candidate_score": 78.97,
       "target_price": 8.9217,
       "stop_price": 8.6465
+    },
+    {
+      "id": "2026-09-16-SELL-601456-700-8.6400",
+      "timestamp": "2026-09-16T14:40:58+08:00",
+      "action": "SELL",
+      "code": "601456",
+      "name": "国联民生",
+      "shares": 700,
+      "price": 8.64,
+      "gross": 6048.0,
+      "fees": 8.08,
+      "net_cash": 6039.92,
+      "realized_pnl": 0.86,
+      "reason": "尾盘跌破止损位"
+    },
+    {
+      "id": "2026-09-16-BUY-601456-700-8.6400",
+      "timestamp": "2026-09-16T14:40:58+08:00",
+      "action": "BUY",
+      "code": "601456",
+      "name": "国联民生",
+      "shares": 700,
+      "price": 8.64,
+      "gross": 6048.0,
+      "fees": 5.06,
+      "net_cash": -6053.06,
+      "reason": "箱体下沿候选，符合周月箱体复利战法2.1",
+      "candidate_score": 79.046,
+      "target_price": 8.9424,
+      "stop_price": 8.6465
     }
   ],
   "completed_cycles": [
@@ -127,9 +157,9 @@
     }
   ],
   "locked_realized_pnl": 457.53,
-  "realized_pnl": 395.39,
-  "updated_at": "2026-09-15T21:53:09+08:00",
-  "market_date": "2026-09-15",
-  "generated_at": "2026-09-15T21:53:09+08:00",
-  "calculation_started_at": "2026-09-15T21:36:57+08:00"
+  "realized_pnl": 396.25,
+  "updated_at": "2026-09-16T14:40:58+08:00",
+  "market_date": "2026-09-16",
+  "generated_at": "2026-09-16T14:40:58+08:00",
+  "calculation_started_at": "2026-09-16T14:40:00+08:00"
 }
