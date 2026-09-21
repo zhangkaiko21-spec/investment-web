@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-09-21T14:41:00+08:00",
+  "generated_at": "2026-09-21T16:02:30+08:00",
   "stocks": 5358,
-  "up": 4346,
-  "down": 925,
-  "flat": 87,
-  "total_amount": 1850520624793.0,
+  "up": 4386,
+  "down": 895,
+  "flat": 77,
+  "total_amount": 2037074207622.0,
   "top_gainers": [
     {
       "code": "920427",
       "name": "华维设计",
       "price": 11.03,
       "pct_change": 29.918,
-      "amount": 109084127.0
+      "amount": 120722156.0
     },
     {
       "code": "920478",
       "name": "峆一药业",
       "price": 12.38,
       "pct_change": 29.906,
-      "amount": 241213570.0
+      "amount": 241912644.0
     },
     {
       "code": "300110",
       "name": "华仁药业",
       "price": 3.29,
       "pct_change": 20.073,
-      "amount": 594557568.0
+      "amount": 601594888.0
     },
     {
       "code": "300829",
       "name": "金丹科技",
       "price": 25.72,
       "pct_change": 20.019,
-      "amount": 775840252.0
+      "amount": 779988888.0
     },
     {
       "code": "688137",
       "name": "近岸蛋白",
       "price": 118.84,
       "pct_change": 20.004,
-      "amount": 1085279528.0
+      "amount": 1089562759.0
     },
     {
       "code": "688112",
       "name": "鼎阳科技",
       "price": 91.79,
       "pct_change": 20.003,
-      "amount": 905578568.0
+      "amount": 942813911.0
     },
     {
       "code": "688315",
       "name": "诺禾致源科技",
       "price": 18.18,
       "pct_change": 20.0,
-      "amount": 318157452.0
+      "amount": 320788153.0
     },
     {
       "code": "300691",
       "name": "联合光电",
       "price": 17.76,
       "pct_change": 20.0,
-      "amount": 501980075.0
+      "amount": 504945995.0
     },
     {
       "code": "300642",
       "name": "透景生命",
       "price": 20.35,
       "pct_change": 19.988,
-      "amount": 685714817.0
+      "amount": 691404677.0
     },
     {
       "code": "688026",
       "name": "洁特生物股份",
       "price": 25.22,
       "pct_change": 19.981,
-      "amount": 383959130.0
+      "amount": 398048989.0
     }
   ],
   "top_losers": [
     {
       "code": "601091",
       "name": "C沈鼓集团",
-      "price": 39.02,
-      "pct_change": -32.456,
-      "amount": 5753514450.0
+      "price": 37.72,
+      "pct_change": -34.707,
+      "amount": 6770866376.0
     },
     {
       "code": "688135",
       "name": "利扬芯片",
-      "price": 36.34,
-      "pct_change": -12.833,
-      "amount": 1333619351.0
-    },
-    {
-      "code": "300424",
-      "name": "航新科技",
-      "price": 14.45,
-      "pct_change": -10.193,
-      "amount": 627934089.0
+      "price": 36.37,
+      "pct_change": -12.761,
+      "amount": 1423345728.0
     },
     {
       "code": "003013",
       "name": "地铁设计",
       "price": 17.25,
       "pct_change": -10.016,
-      "amount": 302752855.0
+      "amount": 314781433.0
     },
     {
       "code": "605198",
       "name": "安德利",
       "price": 77.29,
       "pct_change": -10.002,
-      "amount": 354163124.0
+      "amount": 358205391.0
+    },
+    {
+      "code": "300424",
+      "name": "航新科技",
+      "price": 14.55,
+      "pct_change": -9.571,
+      "amount": 669768222.0
     },
     {
       "code": "300086",
       "name": "康芝药业",
-      "price": 5.72,
-      "pct_change": -8.772,
-      "amount": 428846207.0
+      "price": 5.73,
+      "pct_change": -8.612,
+      "amount": 459138761.0
     },
     {
       "code": "000668",
       "name": "荣丰控股",
-      "price": 19.28,
-      "pct_change": -8.365,
-      "amount": 152370203.0
+      "price": 19.35,
+      "pct_change": -8.032,
+      "amount": 160706968.0
     },
     {
       "code": "002980",
       "name": "华盛昌",
-      "price": 118.25,
-      "pct_change": -7.639,
-      "amount": 1998436738.0
+      "price": 118.45,
+      "pct_change": -7.483,
+      "amount": 2202695743.0
     },
     {
-      "code": "301390",
-      "name": "经纬股份",
-      "price": 50.25,
-      "pct_change": -6.944,
-      "amount": 587955320.0
+      "code": "688777",
+      "name": "中控技术",
+      "price": 81.8,
+      "pct_change": -7.045,
+      "amount": 1513169250.0
     },
     {
-      "code": "603226",
-      "name": "菲林格尔",
-      "price": 36.39,
-      "pct_change": -6.883,
-      "amount": 438678963.0
+      "code": "688248",
+      "name": "南方电网电力科技",
+      "price": 51.45,
+      "pct_change": -6.861,
+      "amount": 546116539.0
     }
   ],
-  "calculation_started_at": "2026-09-21T14:40:59+08:00"
+  "calculation_started_at": "2026-09-21T16:02:30+08:00"
 }
