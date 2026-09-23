@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-09-22T21:45:38+08:00",
-  "stocks": 5359,
-  "up": 2310,
-  "down": 2909,
-  "flat": 140,
-  "total_amount": 2141672301812.0,
+  "generated_at": "2026-09-23T14:41:14+08:00",
+  "stocks": 5360,
+  "up": 1944,
+  "down": 3280,
+  "flat": 136,
+  "total_amount": 1607456795654.0,
   "top_gainers": [
     {
-      "code": "920229",
-      "name": "N世纪",
-      "price": 132.0,
-      "pct_change": 742.374,
-      "amount": 772332912.0
+      "code": "920025",
+      "name": "N凯达",
+      "price": 29.45,
+      "pct_change": 591.315,
+      "amount": 1485246391.0
     },
     {
-      "code": "301686",
-      "name": "N中塑",
-      "price": 433.0,
-      "pct_change": 683.285,
-      "amount": 2339147535.0
+      "code": "688512",
+      "name": "慧智微电子",
+      "price": 17.32,
+      "pct_change": 20.028,
+      "amount": 846807876.0
     },
     {
-      "code": "920526",
-      "name": "凯华材料",
-      "price": 26.14,
-      "pct_change": 29.985,
-      "amount": 334439254.0
+      "code": "688656",
+      "name": "浩欧博生物",
+      "price": 141.04,
+      "pct_change": 20.003,
+      "amount": 243322254.0
     },
     {
-      "code": "300110",
-      "name": "华仁药业",
-      "price": 3.95,
-      "pct_change": 20.061,
-      "amount": 1285470564.0
-    },
-    {
-      "code": "688781",
-      "name": "视涯科技",
-      "price": 51.95,
-      "pct_change": 20.005,
-      "amount": 576188211.0
-    },
-    {
-      "code": "300324",
-      "name": "旋极信息",
-      "price": 4.14,
+      "code": "688056",
+      "name": "莱伯泰科仪器",
+      "price": 52.92,
       "pct_change": 20.0,
-      "amount": 1162992703.0
+      "amount": 124526220.0
     },
     {
-      "code": "301234",
-      "name": "五洲医疗",
-      "price": 139.74,
+      "code": "688337",
+      "name": "普源精电",
+      "price": 57.18,
       "pct_change": 20.0,
-      "amount": 682924429.0
+      "amount": 739584397.0
     },
     {
-      "code": "301047",
-      "name": "义翘神州",
-      "price": 136.22,
-      "pct_change": 16.09,
-      "amount": 2454359058.0
+      "code": "301150",
+      "name": "中一科技",
+      "price": 49.2,
+      "pct_change": 20.0,
+      "amount": 2000163923.0
     },
     {
-      "code": "688105",
-      "name": "诺唯赞生物",
-      "price": 26.45,
-      "pct_change": 15.502,
-      "amount": 987247159.0
+      "code": "688628",
+      "name": "优利德科技",
+      "price": 114.44,
+      "pct_change": 19.996,
+      "amount": 1402060145.0
     },
     {
-      "code": "688112",
-      "name": "鼎阳科技",
-      "price": 105.01,
-      "pct_change": 14.402,
-      "amount": 1358874167.0
+      "code": "300931",
+      "name": "通用电梯",
+      "price": 19.21,
+      "pct_change": 19.988,
+      "amount": 855977893.0
+    },
+    {
+      "code": "300192",
+      "name": "科德教育",
+      "price": 22.93,
+      "pct_change": 16.871,
+      "amount": 1138036354.0
+    },
+    {
+      "code": "688662",
+      "name": "广东富信科技",
+      "price": 130.34,
+      "pct_change": 15.971,
+      "amount": 2481264540.0
     }
   ],
   "top_losers": [
     {
-      "code": "688117",
-      "name": "圣诺生物",
-      "price": 19.99,
-      "pct_change": -18.607,
-      "amount": 954151298.0
+      "code": "301686",
+      "name": "C中塑",
+      "price": 289.01,
+      "pct_change": -33.254,
+      "amount": 1878794902.0
     },
     {
-      "code": "688837",
-      "name": "C信诺维",
-      "price": 52.88,
-      "pct_change": -13.026,
-      "amount": 1479193638.0
+      "code": "920229",
+      "name": "世纪数码",
+      "price": 92.4,
+      "pct_change": -30.0,
+      "amount": 42212293.0
     },
     {
-      "code": "920298",
-      "name": "腾信精密",
-      "price": 84.0,
-      "pct_change": -11.111,
-      "amount": 662156960.0
+      "code": "601091",
+      "name": "C沈鼓集团",
+      "price": 30.6,
+      "pct_change": -19.431,
+      "amount": 3170402717.0
     },
     {
-      "code": "603226",
-      "name": "菲林格尔",
-      "price": 32.91,
-      "pct_change": -10.008,
-      "amount": 380653489.0
+      "code": "300788",
+      "name": "中信出版",
+      "price": 30.52,
+      "pct_change": -12.274,
+      "amount": 566329590.0
     },
     {
-      "code": "603375",
-      "name": "盛景微电子",
-      "price": 48.42,
-      "pct_change": -10.0,
-      "amount": 466901023.0
+      "code": "301234",
+      "name": "五洲医疗",
+      "price": 122.91,
+      "pct_change": -12.044,
+      "amount": 535086440.0
     },
     {
-      "code": "000668",
-      "name": "荣丰控股",
-      "price": 17.42,
-      "pct_change": -9.974,
-      "amount": 201315381.0
+      "code": "300740",
+      "name": "水羊股份",
+      "price": 20.63,
+      "pct_change": -11.345,
+      "amount": 1040110779.0
     },
     {
-      "code": "600499",
-      "name": "科达制造",
-      "price": 12.06,
-      "pct_change": -9.933,
-      "amount": 1250252987.0
+      "code": "301201",
+      "name": "诚达药业",
+      "price": 32.95,
+      "pct_change": -11.162,
+      "amount": 486734670.0
     },
     {
-      "code": "688146",
-      "name": "中船派瑞特气",
-      "price": 214.61,
-      "pct_change": -9.839,
-      "amount": 5309035631.0
+      "code": "300137",
+      "name": "先河环保",
+      "price": 10.24,
+      "pct_change": -10.879,
+      "amount": 487423037.0
     },
     {
-      "code": "920895",
-      "name": "花溪科技",
-      "price": 24.22,
-      "pct_change": -9.627,
-      "amount": 229883953.0
+      "code": "000607",
+      "name": "华媒控股",
+      "price": 4.48,
+      "pct_change": -10.04,
+      "amount": 616798105.0
     },
     {
-      "code": "002453",
-      "name": "华软科技",
-      "price": 5.31,
-      "pct_change": -9.54,
-      "amount": 822437801.0
+      "code": "002253",
+      "name": "川大智胜",
+      "price": 9.24,
+      "pct_change": -10.029,
+      "amount": 16386216.0
     }
   ],
-  "calculation_started_at": "2026-09-22T21:45:38+08:00"
+  "calculation_started_at": "2026-09-23T14:41:14+08:00"
 }
