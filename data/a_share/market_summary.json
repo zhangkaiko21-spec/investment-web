@@ -1,80 +1,80 @@
 {
-  "generated_at": "2026-09-24T14:41:14+08:00",
+  "generated_at": "2026-09-24T15:40:12+08:00",
   "stocks": 5362,
-  "up": 1051,
-  "down": 4205,
-  "flat": 106,
-  "total_amount": 1501314267789.0,
+  "up": 1066,
+  "down": 4174,
+  "flat": 122,
+  "total_amount": 1660071497401.0,
   "top_gainers": [
     {
       "code": "920201",
       "name": "N百瑞吉",
-      "price": 74.45,
-      "pct_change": 343.948,
-      "amount": 574787378.0
+      "price": 72.35,
+      "pct_change": 331.425,
+      "amount": 608990444.0
     },
     {
       "code": "920748",
       "name": "路桥信息",
-      "price": 34.02,
-      "pct_change": 21.154,
-      "amount": 152359607.0
+      "price": 36.5,
+      "pct_change": 29.986,
+      "amount": 241390812.0
     },
     {
       "code": "301311",
       "name": "昆船智能",
       "price": 17.98,
       "pct_change": 20.027,
-      "amount": 557647663.0
+      "amount": 569676283.0
+    },
+    {
+      "code": "301689",
+      "name": "电科思仪",
+      "price": 83.88,
+      "pct_change": 20.0,
+      "amount": 2532466819.0
     },
     {
       "code": "688682",
       "name": "霍莱沃技术",
       "price": 37.94,
       "pct_change": 19.987,
-      "amount": 204367641.0
+      "amount": 222120487.0
     },
     {
       "code": "301699",
       "name": "洛轴股份",
       "price": 35.54,
       "pct_change": 19.986,
-      "amount": 863757609.0
+      "amount": 867521295.0
     },
     {
       "code": "300300",
       "name": "海峡创新",
       "price": 10.81,
       "pct_change": 19.978,
-      "amount": 1517241456.0
+      "amount": 1604221029.0
     },
     {
-      "code": "301689",
-      "name": "电科思仪",
-      "price": 82.21,
-      "pct_change": 17.611,
-      "amount": 2413948789.0
+      "code": "920706",
+      "name": "铁拓机械",
+      "price": 18.01,
+      "pct_change": 19.351,
+      "amount": 129510860.0
     },
     {
-      "code": "300647",
-      "name": "超频三",
-      "price": 9.58,
-      "pct_change": 12.047,
-      "amount": 899762030.0
+      "code": "920445",
+      "name": "龙竹科技",
+      "price": 8.03,
+      "pct_change": 13.099,
+      "amount": 68420656.0
     },
     {
-      "code": "301339",
-      "name": "通行宝",
-      "price": 13.46,
-      "pct_change": 11.24,
-      "amount": 444441633.0
-    },
-    {
-      "code": "301560",
-      "name": "众捷股份",
-      "price": 29.14,
-      "pct_change": 10.672,
-      "amount": 397633607.0
+      "code": "301136",
+      "name": "招标股份",
+      "price": 13.3,
+      "pct_change": 12.331,
+      "amount": 325910117.0
     }
   ],
   "top_losers": [
@@ -83,71 +83,71 @@
       "name": "凯达重工",
       "price": 20.3,
       "pct_change": -30.0,
-      "amount": 572977554.0
+      "amount": 577722354.0
     },
     {
       "code": "920229",
       "name": "世纪数码",
       "price": 64.68,
       "pct_change": -30.0,
-      "amount": 565486698.0
+      "amount": 574268948.0
     },
     {
       "code": "920427",
       "name": "华维设计",
-      "price": 10.09,
-      "pct_change": -14.636,
-      "amount": 120195377.0
+      "price": 10.3,
+      "pct_change": -12.86,
+      "amount": 140937389.0
     },
     {
       "code": "688781",
       "name": "视涯科技",
-      "price": 45.84,
-      "pct_change": -11.094,
-      "amount": 336352852.0
+      "price": 45.02,
+      "pct_change": -12.684,
+      "amount": 391644978.0
+    },
+    {
+      "code": "688837",
+      "name": "C信诺维",
+      "price": 47.31,
+      "pct_change": -11.735,
+      "amount": 1020530716.0
     },
     {
       "code": "301176",
       "name": "逸豪新材",
-      "price": 58.5,
-      "pct_change": -10.714,
-      "amount": 971994028.0
+      "price": 58.43,
+      "pct_change": -10.821,
+      "amount": 1067921726.0
     },
     {
       "code": "688428",
       "name": "诺诚健华",
       "price": 29.86,
       "pct_change": -10.599,
-      "amount": 890935777.0
+      "amount": 950806138.0
     },
     {
-      "code": "300155",
-      "name": "安居宝",
-      "price": 4.55,
-      "pct_change": -10.079,
-      "amount": 283571080.0
-    },
-    {
-      "code": "688837",
-      "name": "C信诺维",
-      "price": 48.2,
-      "pct_change": -10.075,
-      "amount": 934009450.0
+      "code": "300741",
+      "name": "华宝股份",
+      "price": 26.6,
+      "pct_change": -10.105,
+      "amount": 853318367.0
     },
     {
       "code": "000607",
       "name": "华媒控股",
       "price": 4.03,
       "pct_change": -10.045,
-      "amount": 463015475.0
+      "amount": 488481951.0
     },
     {
       "code": "603322",
       "name": "超讯科技",
       "price": 29.12,
       "pct_change": -10.012,
-      "amount": 349627503.0
+      "amount": 364776213.0
     }
   ],
-  "calculation_started_at": "2026-09-24T14:41:14+08:00"
+  "calculation_started_at": "2026-09-24T15:40:12+08:00"
 }
