@@ -1,33 +1,18 @@
 {
   "strategy": "周月箱体复利战法2.1",
   "initial_capital": 10000.0,
-  "cash": 4493.06,
-  "market_value": 5904.0,
-  "equity": 10397.06,
-  "holdings": [
-    {
-      "code": "002736",
-      "name": "国信证券",
-      "shares": 600,
-      "cost": 9.75,
-      "buy_fees": 5.06,
-      "buy_time": "2026-09-17T14:43:48+08:00",
-      "target_price": 10.0912,
-      "stop_price": 9.741,
-      "source_candidate_score": 80.914,
-      "breach_count": 0,
-      "last_price": 9.84,
-      "market_value": 5904.0
-    }
-  ],
+  "cash": 10305.09,
+  "market_value": 0.0,
+  "equity": 10305.09,
+  "holdings": [],
   "cycle": {
-    "id": 3,
-    "start": "2026-08-28",
-    "forced_close": "2026-09-28",
-    "starting_capital": 10457.53,
+    "id": 4,
+    "start": "2026-09-29",
+    "forced_close": "2026-10-29",
+    "starting_capital": 10305.09,
     "target_min": 0.05,
     "target_max": 0.1,
-    "status": "active"
+    "status": "scheduled"
   },
   "locked_trades": [
     {
@@ -164,6 +149,20 @@
       "candidate_score": 80.914,
       "target_price": 10.0912,
       "stop_price": 9.741
+    },
+    {
+      "id": "2026-09-28-SELL-002736-600-9.7000",
+      "timestamp": "2026-09-28T15:00:05+08:00",
+      "action": "SELL",
+      "code": "002736",
+      "name": "国信证券",
+      "shares": 600,
+      "price": 9.7,
+      "gross": 5820.0,
+      "fees": 7.97,
+      "net_cash": 5812.03,
+      "realized_pnl": -43.03,
+      "reason": "本轮到期强制结算"
     }
   ],
   "completed_cycles": [
@@ -184,12 +183,21 @@
       "reason": "到期结算",
       "ending_equity": 10457.53,
       "return_pct": 0.0
+    },
+    {
+      "cycle_id": 3,
+      "start": "2026-08-28",
+      "forced_close": "2026-09-28",
+      "closed_at": "2026-09-28",
+      "reason": "到期结算",
+      "ending_equity": 10305.09,
+      "return_pct": -1.4577
     }
   ],
   "locked_realized_pnl": 457.53,
-  "realized_pnl": 348.12,
-  "updated_at": "2026-09-25T22:08:19+08:00",
-  "market_date": "2026-09-25",
-  "generated_at": "2026-09-25T22:08:19+08:00",
-  "calculation_started_at": "2026-09-25T21:52:19+08:00"
+  "realized_pnl": 305.09,
+  "updated_at": "2026-09-28T15:01:30+08:00",
+  "market_date": "2026-09-28",
+  "generated_at": "2026-09-28T15:01:30+08:00",
+  "calculation_started_at": "2026-09-28T15:00:20+08:00"
 }
