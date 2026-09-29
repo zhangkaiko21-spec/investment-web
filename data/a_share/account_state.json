@@ -1,10 +1,25 @@
 {
   "strategy": "周月箱体复利战法2.1",
   "initial_capital": 10000.0,
-  "cash": 10305.09,
-  "market_value": 0.0,
-  "equity": 10305.09,
-  "holdings": [],
+  "cash": 4474.03,
+  "market_value": 5826.0,
+  "equity": 10300.03,
+  "holdings": [
+    {
+      "code": "002736",
+      "name": "国信证券",
+      "shares": 600,
+      "cost": 9.71,
+      "buy_fees": 5.06,
+      "buy_time": "2026-09-29T14:59:13+08:00",
+      "target_price": 10.0498,
+      "stop_price": 9.741,
+      "source_candidate_score": 80.684,
+      "breach_count": 0,
+      "last_price": 9.71,
+      "market_value": 5826.0
+    }
+  ],
   "cycle": {
     "id": 4,
     "start": "2026-09-29",
@@ -163,6 +178,22 @@
       "net_cash": 5812.03,
       "realized_pnl": -43.03,
       "reason": "本轮到期强制结算"
+    },
+    {
+      "id": "2026-09-29-BUY-002736-600-9.7100",
+      "timestamp": "2026-09-29T14:59:13+08:00",
+      "action": "BUY",
+      "code": "002736",
+      "name": "国信证券",
+      "shares": 600,
+      "price": 9.71,
+      "gross": 5826.0,
+      "fees": 5.06,
+      "net_cash": -5831.06,
+      "reason": "箱体下沿候选，符合周月箱体复利战法2.1",
+      "candidate_score": 80.684,
+      "target_price": 10.0498,
+      "stop_price": 9.741
     }
   ],
   "completed_cycles": [
@@ -196,8 +227,8 @@
   ],
   "locked_realized_pnl": 457.53,
   "realized_pnl": 305.09,
-  "updated_at": "2026-09-29T01:01:29+08:00",
+  "updated_at": "2026-09-29T14:59:13+08:00",
   "market_date": "2026-09-29",
-  "generated_at": "2026-09-29T01:01:29+08:00",
-  "calculation_started_at": "2026-09-29T00:47:14+08:00"
+  "generated_at": "2026-09-29T14:59:13+08:00",
+  "calculation_started_at": "2026-09-29T14:57:50+08:00"
 }
