@@ -1,153 +1,153 @@
 {
-  "generated_at": "2026-09-29T23:05:39+08:00",
+  "generated_at": "2026-09-30T14:47:31+08:00",
   "stocks": 5366,
-  "up": 3353,
-  "down": 1869,
-  "flat": 144,
-  "total_amount": 1412949834191.0,
+  "up": 2568,
+  "down": 2646,
+  "flat": 152,
+  "total_amount": 1329378599152.0,
   "top_gainers": [
     {
-      "code": "301716",
-      "name": "N鸿富诚",
-      "price": 578.88,
-      "pct_change": 653.162,
-      "amount": 6231355537.0
-    },
-    {
-      "code": "920202",
-      "name": "N安达",
-      "price": 26.16,
-      "pct_change": 246.49,
-      "amount": 644052496.0
-    },
-    {
-      "code": "920779",
-      "name": "武汉蓝电",
-      "price": 28.4,
-      "pct_change": 29.977,
-      "amount": 162736666.0
-    },
-    {
-      "code": "301560",
-      "name": "众捷股份",
-      "price": 33.88,
-      "pct_change": 20.014,
-      "amount": 456100825.0
-    },
-    {
-      "code": "688685",
-      "name": "迈信林",
-      "price": 39.7,
-      "pct_change": 20.012,
-      "amount": 332588937.0
-    },
-    {
-      "code": "688655",
-      "name": "迅捷兴",
-      "price": 75.7,
-      "pct_change": 20.006,
-      "amount": 953119828.0
+      "code": "001246",
+      "name": "N力勤",
+      "price": 66.0,
+      "pct_change": 210.881,
+      "amount": 7784662670.0
     },
     {
       "code": "301190",
       "name": "善水科技",
-      "price": 29.94,
-      "pct_change": 20.0,
-      "amount": 592781778.0
+      "price": 35.93,
+      "pct_change": 20.007,
+      "amount": 505680281.0
     },
     {
-      "code": "301513",
-      "name": "尚水智能",
-      "price": 51.42,
-      "pct_change": 20.0,
-      "amount": 143519666.0
+      "code": "688185",
+      "name": "康希诺",
+      "price": 102.64,
+      "pct_change": 20.005,
+      "amount": 1058205269.0
     },
     {
-      "code": "301282",
-      "name": "金禄电子",
-      "price": 45.49,
-      "pct_change": 13.64,
-      "amount": 891279375.0
+      "code": "688806",
+      "name": "泰诺麦博",
+      "price": 30.67,
+      "pct_change": 19.992,
+      "amount": 346126441.0
     },
     {
-      "code": "300917",
-      "name": "特发服务",
-      "price": 36.18,
-      "pct_change": 13.488,
-      "amount": 1045757627.0
+      "code": "300893",
+      "name": "松原安全",
+      "price": 15.13,
+      "pct_change": 19.984,
+      "amount": 322376214.0
+    },
+    {
+      "code": "688265",
+      "name": "南模生物",
+      "price": 63.52,
+      "pct_change": 17.174,
+      "amount": 395186371.0
+    },
+    {
+      "code": "920344",
+      "name": "三元基因",
+      "price": 24.39,
+      "pct_change": 15.977,
+      "amount": 297097197.0
+    },
+    {
+      "code": "301218",
+      "name": "华是科技",
+      "price": 69.3,
+      "pct_change": 15.097,
+      "amount": 1522718631.0
+    },
+    {
+      "code": "688137",
+      "name": "近岸蛋白",
+      "price": 161.98,
+      "pct_change": 14.595,
+      "amount": 1495433880.0
+    },
+    {
+      "code": "688837",
+      "name": "信诺维",
+      "price": 49.01,
+      "pct_change": 12.382,
+      "amount": 808933076.0
     }
   ],
   "top_losers": [
     {
+      "code": "920202",
+      "name": "安达股份",
+      "price": 18.32,
+      "pct_change": -29.969,
+      "amount": 308688745.0
+    },
+    {
       "code": "301686",
-      "name": "C中塑",
-      "price": 192.06,
-      "pct_change": -17.098,
-      "amount": 964909788.0
+      "name": "中塑股份",
+      "price": 166.26,
+      "pct_change": -13.433,
+      "amount": 645778333.0
     },
     {
-      "code": "920025",
-      "name": "凯达重工",
-      "price": 13.24,
-      "pct_change": -12.895,
-      "amount": 266604820.0
+      "code": "300746",
+      "name": "汉嘉数智",
+      "price": 14.9,
+      "pct_change": -11.362,
+      "amount": 326091457.0
     },
     {
-      "code": "920229",
-      "name": "世纪数码",
-      "price": 49.14,
-      "pct_change": -12.062,
-      "amount": 275449741.0
+      "code": "688521",
+      "name": "芯原股份",
+      "price": 171.99,
+      "pct_change": -11.181,
+      "amount": 5128641032.0
     },
     {
-      "code": "920201",
-      "name": "百瑞吉",
-      "price": 46.03,
-      "pct_change": -11.498,
-      "amount": 169549475.0
+      "code": "301373",
+      "name": "凌玮科技",
+      "price": 118.73,
+      "pct_change": -10.237,
+      "amount": 858901800.0
     },
     {
-      "code": "600815",
-      "name": "厦工股份",
-      "price": 3.77,
-      "pct_change": -10.024,
-      "amount": 698680903.0
+      "code": "603797",
+      "name": "联泰环保",
+      "price": 4.82,
+      "pct_change": -10.075,
+      "amount": 158829767.0
     },
     {
-      "code": "600371",
-      "name": "万向德农",
-      "price": 12.84,
-      "pct_change": -10.021,
-      "amount": 439783617.0
+      "code": "600156",
+      "name": "华升股份",
+      "price": 7.35,
+      "pct_change": -10.037,
+      "amount": 309388356.0
+    },
+    {
+      "code": "605162",
+      "name": "新中港",
+      "price": 10.59,
+      "pct_change": -10.025,
+      "amount": 358606460.0
     },
     {
       "code": "001234",
       "name": "泰慕士",
-      "price": 28.67,
-      "pct_change": -10.013,
-      "amount": 586646112.0
+      "price": 25.8,
+      "pct_change": -10.01,
+      "amount": 284876921.0
     },
     {
-      "code": "603396",
-      "name": "金辰股份",
-      "price": 35.28,
-      "pct_change": -10.0,
-      "amount": 531242447.0
-    },
-    {
-      "code": "001368",
-      "name": "通达创智",
-      "price": 37.62,
-      "pct_change": -10.0,
-      "amount": 66977308.0
-    },
-    {
-      "code": "002827",
-      "name": "高争民爆",
-      "price": 62.04,
-      "pct_change": -9.996,
-      "amount": 1480701592.0
+      "code": "001216",
+      "name": "华瓷股份",
+      "price": 26.18,
+      "pct_change": -10.003,
+      "amount": 714851443.0
     }
   ],
-  "calculation_started_at": "2026-09-29T23:05:39+08:00"
+  "calculation_started_at": "2026-09-30T14:47:31+08:00"
 }
