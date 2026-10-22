@@ -1,23 +1,23 @@
 {
   "strategy": "周月箱体复利战法2.1",
   "initial_capital": 10000.0,
-  "cash": 4147.04,
-  "market_value": 6050.0,
-  "equity": 10197.04,
+  "cash": 4106.93,
+  "market_value": 6000.0,
+  "equity": 10106.93,
   "holdings": [
     {
-      "code": "601377",
-      "name": "兴业证券",
-      "shares": 1100,
-      "cost": 5.5,
+      "code": "600720",
+      "name": "中交设计",
+      "shares": 1200,
+      "cost": 5.0,
       "buy_fees": 5.06,
-      "buy_time": "2026-10-21T14:40:51+08:00",
-      "target_price": 5.6925,
-      "stop_price": 5.6715,
-      "source_candidate_score": 80.709,
+      "buy_time": "2026-10-22T14:40:47+08:00",
+      "target_price": 5.175,
+      "stop_price": 4.975,
+      "source_candidate_score": 84.552,
       "breach_count": 0,
-      "last_price": 5.5,
-      "market_value": 6050.0
+      "last_price": 5.0,
+      "market_value": 6000.0
     }
   ],
   "cycle": {
@@ -224,6 +224,36 @@
       "candidate_score": 80.709,
       "target_price": 5.6925,
       "stop_price": 5.6715
+    },
+    {
+      "id": "2026-10-22-SELL-601377-1100-5.4300",
+      "timestamp": "2026-10-22T14:40:47+08:00",
+      "action": "SELL",
+      "code": "601377",
+      "name": "兴业证券",
+      "shares": 1100,
+      "price": 5.43,
+      "gross": 5973.0,
+      "fees": 8.05,
+      "net_cash": 5964.95,
+      "realized_pnl": -90.11,
+      "reason": "尾盘跌破止损位"
+    },
+    {
+      "id": "2026-10-22-BUY-600720-1200-5.0000",
+      "timestamp": "2026-10-22T14:40:47+08:00",
+      "action": "BUY",
+      "code": "600720",
+      "name": "中交设计",
+      "shares": 1200,
+      "price": 5.0,
+      "gross": 6000.0,
+      "fees": 5.06,
+      "net_cash": -6005.06,
+      "reason": "箱体下沿候选，符合周月箱体复利战法2.1",
+      "candidate_score": 84.552,
+      "target_price": 5.175,
+      "stop_price": 4.975
     }
   ],
   "completed_cycles": [
@@ -256,9 +286,9 @@
     }
   ],
   "locked_realized_pnl": 457.53,
-  "realized_pnl": 202.1,
-  "updated_at": "2026-10-21T22:08:06+08:00",
-  "market_date": "2026-10-21",
-  "generated_at": "2026-10-21T22:08:06+08:00",
-  "calculation_started_at": "2026-10-21T21:51:28+08:00"
+  "realized_pnl": 111.99,
+  "updated_at": "2026-10-22T14:40:47+08:00",
+  "market_date": "2026-10-22",
+  "generated_at": "2026-10-22T14:40:47+08:00",
+  "calculation_started_at": "2026-10-22T14:40:01+08:00"
 }
