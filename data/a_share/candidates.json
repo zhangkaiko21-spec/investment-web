@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T22:40:35+08:00",
+  "generated_at": "2026-11-11T22:43:24+08:00",
   "market_date": "2026-11-11",
   "requested_mode": "intraday",
   "effective_mode": "intraday",
@@ -13,5 +13,5 @@
     "min_reward_risk": 1.5
   },
   "candidates": [],
-  "calculation_started_at": "2026-11-11T22:39:46+08:00"
+  "calculation_started_at": "2026-11-11T22:42:30+08:00"
 }
