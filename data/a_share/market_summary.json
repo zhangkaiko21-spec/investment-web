@@ -1,38 +1,17 @@
 {
-  "generated_at": "2026-11-11T15:47:15+08:00",
-  "stocks": 5380,
-  "up": 3455,
-  "down": 1734,
-  "flat": 191,
-  "total_amount": 1681066802677.0,
+  "generated_at": "2026-11-11T17:33:09+08:00",
+  "stocks": 4817,
+  "up": 3147,
+  "down": 1489,
+  "flat": 181,
+  "total_amount": 1590661911443.0,
   "top_gainers": [
-    {
-      "code": "920157",
-      "name": "宇特光电",
-      "price": 57.69,
-      "pct_change": 29.991,
-      "amount": 380422459.0
-    },
-    {
-      "code": "920045",
-      "name": "蘅东光",
-      "price": 414.5,
-      "pct_change": 26.445,
-      "amount": 1234422309.0
-    },
     {
       "code": "688135",
       "name": "利扬芯片",
       "price": 35.02,
       "pct_change": 20.014,
       "amount": 989370139.0
-    },
-    {
-      "code": "301636",
-      "name": "泽润新能",
-      "price": 47.2,
-      "pct_change": 20.01,
-      "amount": 380033251.0
     },
     {
       "code": "300473",
@@ -70,21 +49,35 @@
       "amount": 898172142.0
     },
     {
-      "code": "301596",
-      "name": "瑞迪智驱",
-      "price": 58.4,
-      "pct_change": 19.992,
-      "amount": 685763587.0
+      "code": "300570",
+      "name": "太辰光",
+      "price": 125.0,
+      "pct_change": 17.052,
+      "amount": 4224879540.0
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "price": 215.0,
+      "pct_change": 16.975,
+      "amount": 25233996400.0
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "price": 542.0,
+      "pct_change": 15.074,
+      "amount": 31229065541.0
+    },
+    {
+      "code": "688025",
+      "name": "杰普特",
+      "price": 329.62,
+      "pct_change": 14.914,
+      "amount": 1768082287.0
     }
   ],
   "top_losers": [
-    {
-      "code": "688827",
-      "name": "C钶锐",
-      "price": 108.1,
-      "pct_change": -16.331,
-      "amount": 859118060.0
-    },
     {
       "code": "688199",
       "name": "久日新材",
@@ -147,7 +140,14 @@
       "price": 4.29,
       "pct_change": -6.941,
       "amount": 1488080319.0
+    },
+    {
+      "code": "300949",
+      "name": "奥雅股份",
+      "price": 50.54,
+      "pct_change": -6.873,
+      "amount": 515718590.0
     }
   ],
-  "calculation_started_at": "2026-11-11T15:47:15+08:00"
+  "calculation_started_at": "2026-11-11T17:33:09+08:00"
 }
