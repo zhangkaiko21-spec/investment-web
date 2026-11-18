@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-11-18T01:40:25+08:00",
-  "mode": "bootstrap",
+  "generated_at": "2026-11-18T16:36:12+08:00",
+  "mode": "intraday",
   "cycle_id": 4,
   "cycle_status": "active",
   "cycle_start": "2026-09-29",
   "forced_close": "2026-10-29",
   "natural_days_left": 0,
   "trading_days_left": 0,
-  "equity": 9854.93,
+  "equity": 9794.93,
   "target_equity": 10820.34,
-  "gap_to_target": 965.41,
+  "gap_to_target": 1025.41,
   "target_reached": false,
   "deadline_reached": true,
   "can_open": false,
   "strict_mode": true,
   "selected_candidate": null,
   "market_date": "2026-11-18",
-  "requested_mode": "bootstrap",
-  "effective_mode": "bootstrap",
-  "mode_reason": "history maintenance",
+  "requested_mode": "intraday",
+  "effective_mode": "intraday",
+  "mode_reason": "intraday observation",
   "pipeline_ok": true,
   "trade_allowed": false,
   "actions": [],
   "account_summary": {
     "cash": 4106.93,
-    "market_value": 5748.0,
-    "equity": 9854.93,
+    "market_value": 5688.0,
+    "equity": 9794.93,
     "holdings": [
       {
         "code": "600720",
@@ -38,8 +38,8 @@
         "stop_price": 4.975,
         "source_candidate_score": 84.552,
         "breach_count": 0,
-        "last_price": 4.79,
-        "market_value": 5748.0
+        "last_price": 4.74,
+        "market_value": 5688.0
       }
     ],
     "cycle": {
@@ -53,5 +53,5 @@
     }
   },
   "top_candidates": [],
-  "calculation_started_at": "2026-11-18T01:40:25+08:00"
+  "calculation_started_at": "2026-11-18T16:36:12+08:00"
 }
