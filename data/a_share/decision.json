@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T23:58:13+08:00",
+  "generated_at": "2026-11-20T00:01:59+08:00",
   "mode": "intraday",
   "cycle_id": 4,
   "cycle_status": "active",
@@ -15,7 +15,7 @@
   "can_open": false,
   "strict_mode": true,
   "selected_candidate": null,
-  "market_date": "2026-11-19",
+  "market_date": "2026-11-20",
   "requested_mode": "intraday",
   "effective_mode": "intraday",
   "mode_reason": "intraday observation",
@@ -53,5 +53,5 @@
     }
   },
   "top_candidates": [],
-  "calculation_started_at": "2026-11-19T23:58:12+08:00"
+  "calculation_started_at": "2026-11-20T00:01:59+08:00"
 }
