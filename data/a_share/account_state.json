@@ -2,8 +2,8 @@
   "strategy": "周月箱体复利战法2.1",
   "initial_capital": 10000.0,
   "cash": 4106.93,
-  "market_value": 5268.0,
-  "equity": 9374.93,
+  "market_value": 5256.0,
+  "equity": 9362.93,
   "holdings": [
     {
       "code": "600720",
@@ -16,8 +16,8 @@
       "stop_price": 4.975,
       "source_candidate_score": 84.552,
       "breach_count": 0,
-      "last_price": 4.39,
-      "market_value": 5268.0
+      "last_price": 4.38,
+      "market_value": 5256.0
     }
   ],
   "cycle": {
@@ -287,8 +287,8 @@
   ],
   "locked_realized_pnl": 457.53,
   "realized_pnl": 111.99,
-  "updated_at": "2026-11-25T03:39:32+08:00",
+  "updated_at": "2026-11-25T17:54:38+08:00",
   "market_date": "2026-11-25",
-  "generated_at": "2026-11-25T03:39:32+08:00",
-  "calculation_started_at": "2026-11-25T03:31:25+08:00"
+  "generated_at": "2026-11-25T17:54:38+08:00",
+  "calculation_started_at": "2026-11-25T17:53:21+08:00"
 }
