@@ -1,76 +1,50 @@
 {
-  "generated_at": "2026-11-26T02:48:32+08:00",
+  "generated_at": "2026-11-26T17:36:20+08:00",
   "market_date": "2026-11-26",
   "ok": true,
   "pipeline_ok": true,
   "trade_allowed": false,
-  "requested_mode": "bootstrap",
-  "effective_mode": "bootstrap",
-  "mode_reason": "history maintenance",
-  "market_session": "pre_open",
-  "elapsed_seconds": 510.66,
-  "spot_count": 4817,
+  "requested_mode": "intraday",
+  "effective_mode": "intraday",
+  "mode_reason": "intraday observation",
+  "market_session": "after_close",
+  "elapsed_seconds": 74.69,
+  "spot_count": 5383,
   "candidate_count": 0,
   "primary_source": "sina_spot",
   "sources": [
     {
-      "name": "eastmoney_spot",
-      "ok": false,
-      "records": 0,
-      "error": "https://82.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://69.push2.eastmoney.com/api/qt/clist/get: insufficient records 100 | https://push2.eastmoney.com/api/qt/clist/get: insufficient records 100",
-      "timestamp": "2026-11-26T02:40:07+08:00"
-    },
-    {
       "name": "sina_spot",
       "ok": true,
-      "records": 4817,
+      "records": 5383,
       "error": null,
-      "timestamp": "2026-11-26T02:40:54+08:00"
+      "timestamp": "2026-11-26T17:36:16+08:00"
     },
     {
       "name": "tencent_quote",
       "ok": true,
       "records": 25,
       "error": null,
-      "timestamp": "2026-11-26T02:48:32+08:00"
+      "timestamp": "2026-11-26T17:36:20+08:00"
     }
   ],
   "history": {
-    "policy": "rotating_oldest_first",
-    "eligible": 3263,
-    "requested": 1200,
-    "refreshed": 710,
+    "policy": "read_only_intraday",
+    "eligible": 3402,
+    "requested": 0,
+    "refreshed": 0,
     "cached": 5149,
-    "errors": [
-      "002058:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz002058%2Cday%2C%2C%2C120%2Cqfq",
-      "000657:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000657%2Cday%2C%2C%2C120%2Cqfq",
-      "603083:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh603083%2Cday%2C%2C%2C120%2Cqfq",
-      "002980:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz002980%2Cday%2C%2C%2C120%2Cqfq",
-      "002916:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz002916%2Cday%2C%2C%2C120%2Cqfq",
-      "603716:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh603716%2Cday%2C%2C%2C120%2Cqfq",
-      "002975:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz002975%2Cday%2C%2C%2C120%2Cqfq",
-      "688433:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688433%2Cday%2C%2C%2C120%2Cqfq",
-      "688507:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688507%2Cday%2C%2C%2C120%2Cqfq",
-      "688513:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688513%2Cday%2C%2C%2C120%2Cqfq",
-      "688582:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688582%2Cday%2C%2C%2C120%2Cqfq",
-      "688556:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688556%2Cday%2C%2C%2C120%2Cqfq",
-      "688585:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688585%2Cday%2C%2C%2C120%2Cqfq",
-      "688593:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688593%2Cday%2C%2C%2C120%2Cqfq",
-      "688578:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688578%2Cday%2C%2C%2C120%2Cqfq",
-      "688584:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688584%2Cday%2C%2C%2C120%2Cqfq",
-      "688596:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688596%2Cday%2C%2C%2C120%2Cqfq",
-      "688598:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688598%2Cday%2C%2C%2C120%2Cqfq",
-      "688599:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688599%2Cday%2C%2C%2C120%2Cqfq",
-      "688603:request failed: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get: 501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh688603%2Cday%2C%2C%2C120%2Cqfq"
-    ]
+    "eligible_covered": 3378,
+    "coverage_pct": 99.29,
+    "errors": []
   },
   "freshness": {
-    "quote_received_at": "2026-11-26T02:40:01+08:00",
+    "quote_received_at": "2026-11-26T17:35:05+08:00",
     "fresh": true,
     "maximum_trade_age_seconds": 900
   },
   "data_freshness_note": "本次全市场行情源为sina_spot；最终候选使用腾讯报价交叉验证。券商App与公开源冲突时，以券商App为最终执行依据。",
   "invariants_ok": true,
-  "started_at": "2026-11-26T02:40:01+08:00",
-  "validated_at": "2026-11-26T02:48:32+08:00"
+  "started_at": "2026-11-26T17:35:05+08:00",
+  "validated_at": "2026-11-26T17:36:20+08:00"
 }
